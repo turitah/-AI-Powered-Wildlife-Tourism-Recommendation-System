@@ -1,0 +1,1501 @@
+RecordID,Park,Animal,Visitors,TempC,RainfallMM,Season,Detected,ModelScore,VisitDate
+1,Kibale,Elephant,32,30.6,125.0,Dry,Yes,0.86,2024-12-12
+2,Kibale,Leopard,64,28,16.0,Dry,Yes,0.61,2024-09-15
+3,Lake Mburo,Elephant,307,21.4,279.0,Wet,Yes,0.72,2024-05-22
+4,Mgahinga,Chimpanzee,23,30.9,81.0,Wet,No,0.64,2024-04-20
+5,Mgahinga,Gorilla,72,19.6,49.0,Wet,No,0.8,2024-01-23
+6,Kibale,Buffalo,294,20.1,193.0,Dry,No,0.91,2024-11-12
+7,Mgahinga,Gorilla,315,21.3,35.0,Dry,Yes,0.88,2024-02-10
+8,Mgahinga,Lion,463,19.7,142.0,Wet,No,0.58,2024-06-30
+9,Queen Elizabeth,Hippo,156,29.9,36.0,Dry,Yes,0.58,2024-07-13
+10,Kidepo,Hippo,372,27.5,166.0,Dry,Yes,0.9,2024-06-10
+11,Bwindi,,53,21.6,290.0,Wet,Yes,0.82,2024-07-21
+12,Kibale,Buffalo,93,22.5,126.0,Wet,No,0.94,2024-07-23
+13,Kidepo,Lion,90,26.7,46.0,Dry,Yes,0.57,2024-03-22
+14,Mgahinga,Hippo,236,28.1,197.0,Wet,No,0.76,2024-10-10
+15,Mgahinga,Elephant,368,30.3,274.0,Wet,No,0.55,2024-08-10
+16,Queen Elizabeth,Buffalo,21,34.2,134.0,Dry,Yes,0.93,2024-06-01
+17,Mgahinga,Hippo,279,28.4,78.0,Wet,Yes,0.76,2024-09-28
+18,Murchison Falls,Leopard,185,26.3,57.0,Wet,No,0.62,2024-05-03
+19,Lake Mburo,Elephant,63,30.4,35.0,Dry,Yes,0.82,2024-10-08
+20,Queen Elizabeth,Gorilla,290,32.8,216.0,Dry,Yes,0.85,2024-07-23
+21,Kibale,Hippo,many,25.4,264.0,Wet,Yes,0.62,2024-02-02
+22,Kidepo,Elephant,321,27.4,112.0,Dry,Yes,0.85,2024-01-31
+23,Queen Elizabeth,Elephant,483,18.5,169.0,Dry,Yes,0.64,2024-09-05
+24,Queen Elizabeth,Leopard,87,30.3,292.0,Wet,Yes,0.88,2024-07-27
+25,Queen Elizabeth,Elephant,69,29.2,181.0,Wet,No,0.73,2024-01-28
+26,Kibale,Hippo,350,19.7,206.0,Wet,Yes,0.62,2024-04-07
+27,Lake Mburo,Buffalo,91,25.2,142.0,Wet,Yes,0.93,2024-02-08
+28,Bwindi,Chimpanzee,461,32.6,50.0,Dry,Yes,0.97,2024-05-01
+29,Queen Elizabeth,Buffalo,268,26.2,205.0,Dry,Yes,0.69,2024-07-18
+30,Kidepo,Chimpanzee,421,25.7,216.0,Wet,Yes,0.59,2024-04-21
+31,Murchison Falls,Leopard,396,27.2,160.0,Dry,Yes,0.79,2024-09-14
+32,Mgahinga,Leopard,100,19,260.0,Dry,Yes,0.53,2024-02-04
+33,Kibale,Chimpanzee,140,24.9,291.0,Dry,Yes,0.8,2024-08-02
+34,Kibale,Leopard,309,26.9,133.0,Dry,No,0.62,2024-07-21
+35,Queen Elizabeth,Hippo,350,23.1,161.0,Dry,Yes,0.72,2024-10-15
+36,Murchison Falls,Elephant,295,21.6,135.0,Dry,No,0.93,2024-05-05
+37,Kidepo,Gorilla,100,25.4,278.0,Wet,Yes,0.83,2024-10-10
+38,Kidepo,Hippo,73,34,68.0,Wet,Yes,0.94,2024-10-10
+39,Queen Elizabeth,Gorilla,164,28.3,175.0,Dry,No,0.75,2024-05-08
+40,Mgahinga,Elephant,67,28.8,141.0,Dry,Yes,0.66,2024-03-07
+41,Kibale,Gorilla,102,hot,282.0,Wet,Yes,0.55,2024-12-19
+42,Queen Elizabeth,Leopard,38,32.2,298.0,Dry,No,0.56,2024-06-06
+43,Kidepo,Chimpanzee,460,18.7,183.0,Dry,Yes,0.83,2024-06-30
+44,Mgahinga,Leopard,472,32.9,79.0,Dry,Yes,0.98,2024-03-31
+45,Bwindi,Elephant,111,30.5,170.0,Wet,Yes,0.63,2024-12-25
+46,Murchison Falls,Buffalo,466,18.7,240.0,Dry,Yes,0.9,2024-08-23
+47,Kidepo,Gorilla,440,31.5,116.0,Dry,Yes,0.82,2024-07-23
+48,Kidepo,Gorilla,462,19.2,142.0,Wet,No,0.83,2024-10-01
+49,Kidepo,Elephant,79,32.9,133.0,Dry,No,0.52,2024-11-01
+50,Bwindi,Gorilla,393,31.4,223.0,Dry,No,0.94,2024-04-07
+51,Kidepo,Elephant,382,25.4,266.0,Dry,No,0.71,2024-12-06
+52,Kidepo,Leopard,180,29.3,63.0,Wet,No,0.83,2024-06-16
+53,Bwindi,Hippo,171,27.4,98.0,Wet,No,0.83,2024-03-30
+54,Lake Mburo,Leopard,174,24.9,0.0,Wet,No,0.6,2024-10-23
+55,Lake Mburo,Hippo,184,25.9,226.0,Dry,No,0.89,2024-03-27
+56,Kibale,Elephant,165,26.8,171.0,Dry,Yes,0.83,2024-04-25
+57,Mgahinga,Lion,95,18.4,125.0,Wet,Yes,0.72,2024-11-18
+58,Lake Mburo,Lion,387,29.8,253.0,Wet,Yes,0.57,2024-12-18
+59,Murchison Falls,Chimpanzee,460,31.1,54.0,Wet,Yes,0.59,2024-12-22
+60,Lake Mburo,Buffalo,45,27.5,62.0,Wet,Yes,0.89,2024-12-07
+61,Lake Mburo,Leopard,324,23.4,226.0,Summer,No,0.94,2024-08-31
+62,Bwindi,Gorilla,404,22.2,141.0,Wet,Yes,0.63,2024-02-09
+63,Kibale,Gorilla,140,22.6,163.0,Dry,Yes,0.57,2024-07-15
+64,Kibale,Lion,381,21.6,212.0,Wet,No,0.77,2024-07-31
+65,Murchison Falls,Lion,446,25.1,299.0,Dry,No,0.73,2024-06-29
+66,Kidepo,Chimpanzee,219,32.5,214.0,Dry,No,0.61,2024-08-11
+67,Bwindi,Elephant,219,23.7,207.0,Dry,No,0.95,2024-11-14
+68,Lake Mburo,Elephant,484,24.7,288.0,Dry,Yes,0.81,2024-03-10
+69,Mgahinga,Buffalo,113,18.9,194.0,Wet,Yes,0.72,2024-06-21
+70,Mgahinga,Buffalo,162,30.8,215.0,Wet,Yes,0.73,2024-10-03
+71,Murchison Falls,Gorilla,134,29.1,20.0,Dry,Yes,0.6,2024-01-11
+72,Lake Mburo,Lion,142,20.1,58.0,Dry,No,0.84,2024-07-07
+73,Queen Elizabeth,Leopard,330,34.4,58.0,Dry,No,0.55,2024-01-14
+74,Kidepo,Leopard,366,33.4,192.0,Wet,Yes,0.54,2024-12-19
+75,Mgahinga,Hippo,144,19.7,154.0,Dry,Yes,0.67,2024-08-07
+76,Kibale,Gorilla,55,26.6,174.0,Dry,No,0.9,2024-02-24
+77,Bwindi,Gorilla,345,33.2,235.0,Dry,No,0.59,2024-09-24
+78,Kibale,Gorilla,335,31.7,275.0,Wet,No,0.71,2024-10-30
+79,Kidepo,Gorilla,456,22.2,44.0,Wet,No,0.62,2024-08-25
+80,Lake Mburo,Leopard,362,24.4,14.0,Wet,No,0.59,2024-04-18
+81,Kidepo,Chimpanzee,152,23.8,141.0,Dry,Maybe,0.54,2024-07-27
+82,Bwindi,Leopard,408,22.1,243.0,Wet,No,0.89,2024-02-17
+83,Kidepo,Lion,227,29.8,156.0,Wet,No,0.77,2024-06-25
+84,Bwindi,Hippo,301,23.6,232.0,Wet,No,0.62,2024-03-02
+85,Kibale,Lion,181,20,274.0,Dry,Yes,0.61,2024-09-04
+86,Kidepo,Hippo,321,34.6,268.0,Wet,Yes,0.91,2024-05-31
+87,Queen Elizabeth,Gorilla,111,23.1,273.0,Dry,No,0.52,2024-01-28
+88,Lake Mburo,Gorilla,377,34,251.0,Dry,Yes,0.78,2024-08-28
+89,Bwindi,Buffalo,194,21.1,26.0,Wet,No,0.56,2024-02-03
+90,Bwindi,Buffalo,57,27.8,27.0,Dry,Yes,0.9,2024-06-04
+91,Murchison Falls,Lion,80,27.5,213.0,Dry,No,0.72,2024-08-14
+92,Kidepo,Chimpanzee,321,34.8,156.0,Dry,Yes,0.96,2024-04-16
+93,Kibale,Lion,155,29.2,80.0,Dry,Yes,0.77,2024-03-21
+94,Murchison Falls,Buffalo,250,29.7,240.0,Wet,Yes,0.61,2024-12-27
+95,Kidepo,Hippo,460,25.7,119.0,Wet,Yes,0.71,2024-10-05
+96,Queen Elizabeth,Hippo,96,33.4,72.0,Dry,Yes,0.58,2024-06-06
+97,Lake Mburo,Hippo,442,27.7,147.0,Wet,Yes,0.73,2024-06-04
+98,Kibale,Buffalo,159,26.5,252.0,Wet,Yes,0.79,2024-08-09
+99,Kibale,Gorilla,329,22.3,46.0,Dry,Yes,0.99,2024-12-10
+100,Mgahinga,Gorilla,315,18.7,89.0,Wet,No,0.95,2024-04-02
+101,Lake Mburo,Buffalo,345,31.8,46.0,Wet,No,1.5,2024-06-13
+102,Kibale,Elephant,459,20.7,210.0,Wet,No,0.82,2024-07-24
+103,Mgahinga,Chimpanzee,301,18.6,45.0,Wet,No,0.66,2024-07-25
+104,Mgahinga,Leopard,442,34.8,277.0,Wet,No,0.53,2024-09-22
+105,Kidepo,Leopard,407,26.5,226.0,Dry,Yes,0.63,2024-03-08
+106,Kidepo,Buffalo,470,29.9,62.0,Dry,Yes,0.85,2024-06-08
+107,Lake Mburo,Elephant,302,24.9,115.0,Dry,No,0.96,2024-11-27
+108,Mgahinga,Lion,275,33.9,149.0,Wet,No,0.91,2024-08-29
+109,Queen Elizabeth,Buffalo,302,20.5,97.0,Dry,Yes,0.64,2024-07-31
+110,Kidepo,Chimpanzee,279,22.5,1.0,Wet,No,0.91,2024-10-23
+111,Kibale,Buffalo,463,20.5,275.0,Wet,No,0.66,2024-10-05
+112,Bwindi,Buffalo,497,23.5,96.0,Dry,No,0.61,2024-07-29
+113,Murchison Falls,Gorilla,401,26,195.0,Wet,Yes,0.74,2024-01-19
+114,Queen Elizabeth,Leopard,322,23.6,51.0,Wet,Yes,0.76,2024-08-21
+115,Murchison Falls,Hippo,93,25,79.0,Dry,No,0.88,2024-05-15
+116,Kidepo,Leopard,374,24.8,41.0,Wet,No,0.97,2024-11-16
+117,Kibale,Chimpanzee,269,32.8,18.0,Dry,Yes,0.81,2024-05-27
+118,Queen Elizabeth,Hippo,66,25.4,50.0,Dry,No,0.58,2024-06-02
+119,Murchison Falls,Elephant,186,31.5,150.0,Wet,No,0.71,2024-05-05
+120,Lake Mburo,Buffalo,309,29.6,92.0,Dry,Yes,0.54,2024-07-14
+121,UnknownPark,Hippo,143,26.5,298.0,Dry,Yes,0.73,2024-05-10
+122,Bwindi,Gorilla,361,18.2,238.0,Wet,Yes,0.54,2024-06-25
+123,Lake Mburo,Gorilla,347,34.4,128.0,Wet,No,0.6,2024-07-15
+124,Mgahinga,Buffalo,74,22,292.0,Wet,No,0.99,2024-05-31
+125,Murchison Falls,Chimpanzee,357,24.7,4.0,Dry,No,0.91,2024-05-26
+126,Mgahinga,Chimpanzee,137,28.3,180.0,Dry,Yes,0.8,2024-12-13
+127,Mgahinga,Hippo,412,29.2,70.0,Dry,Yes,0.65,2024-08-13
+128,Murchison Falls,Leopard,206,30.5,46.0,Wet,No,0.87,2024-03-30
+129,Queen Elizabeth,Lion,422,27.2,187.0,Wet,Yes,0.63,2024-09-03
+130,Mgahinga,Gorilla,402,32.8,58.0,Wet,Yes,0.57,2024-04-25
+131,Mgahinga,Hippo,390,29.5,203.0,Wet,Yes,0.89,2024-01-08
+132,Kidepo,Leopard,83,25.7,134.0,Wet,No,0.55,2024-04-29
+133,Bwindi,Elephant,337,33,287.0,Wet,Yes,0.82,2024-11-21
+134,Mgahinga,Buffalo,485,29.9,209.0,Dry,Yes,0.52,2024-01-20
+135,Kidepo,Buffalo,79,19.7,275.0,Dry,No,0.72,2024-12-09
+136,Kibale,Hippo,296,25.1,79.0,Wet,Yes,0.91,2024-11-11
+137,Bwindi,Gorilla,36,29.7,111.0,Wet,No,0.97,2024-07-04
+138,Murchison Falls,Hippo,208,27.3,183.0,Dry,No,0.64,2024-03-03
+139,Mgahinga,Chimpanzee,252,19.6,108.0,Dry,Yes,0.89,2024-05-04
+140,Queen Elizabeth,Chimpanzee,309,21.5,283.0,Dry,Yes,0.9,2024-04-29
+141,Kidepo,Chimpanzee,95,31.4,1.0,Wet,Yes,0.98,12/31/2024
+142,Kidepo,Chimpanzee,109,19.9,13.0,Dry,Yes,0.68,2024-05-01
+143,Lake Mburo,Gorilla,28,21,26.0,Dry,No,0.76,2024-02-02
+144,Bwindi,Buffalo,418,24.2,55.0,Wet,Yes,0.96,2024-01-23
+145,Kibale,Chimpanzee,485,32.7,266.0,Wet,No,0.82,2024-01-16
+146,Murchison Falls,Buffalo,453,24.8,55.0,Wet,No,0.54,2024-02-11
+147,Kidepo,Leopard,95,19.1,140.0,Wet,No,0.99,2024-09-28
+148,Kidepo,Buffalo,278,28.3,50.0,Dry,Yes,0.71,2024-04-26
+149,Bwindi,Gorilla,443,25.7,212.0,Dry,No,0.71,2024-12-06
+150,Kidepo,Gorilla,98,29.7,242.0,Dry,Yes,0.91,2024-02-17
+151,Bwindi,Elephant,401,30.6,66.0,Dry,No,0.83,2024-07-29
+152,Kidepo,Chimpanzee,360,34,216.0,Dry,No,0.79,2024-06-29
+153,Murchison Falls,Leopard,279,21.6,246.0,Dry,Yes,0.67,2024-10-11
+154,Kidepo,Elephant,410,22.7,115.0,Wet,Yes,0.8,2024-12-02
+155,Mgahinga,Hippo,156,18.5,139.0,Wet,No,0.67,2024-04-02
+156,Mgahinga,Lion,309,29.2,35.0,Dry,Yes,0.54,2024-09-28
+157,Queen Elizabeth,Buffalo,234,25.7,80.0,Wet,No,0.85,2024-10-17
+158,Lake Mburo,Elephant,472,18.9,80.0,Dry,Yes,0.63,2024-12-04
+159,Bwindi,Buffalo,330,25.5,139.0,Dry,Yes,0.67,2024-02-26
+160,Kidepo,Hippo,367,28.1,269.0,Wet,Yes,0.61,2024-11-02
+161,Murchison Falls,Elephant,124,23.1,108.0,Dry,No,0.64,31-01-2024
+162,Murchison Falls,Buffalo,402,25.3,66.0,Wet,Yes,0.75,2024-12-08
+163,Mgahinga,Gorilla,56,24.8,21.0,Wet,Yes,0.73,2024-02-09
+164,Mgahinga,Gorilla,314,25.3,207.0,Wet,No,0.56,2024-01-11
+165,Kidepo,Lion,430,34.1,235.0,Wet,Yes,0.71,2024-02-24
+166,Queen Elizabeth,Buffalo,321,24.8,40.0,Wet,No,0.87,2024-04-23
+167,Kidepo,Chimpanzee,106,19.3,58.0,Dry,No,0.67,2024-11-26
+168,Mgahinga,Lion,140,19.7,131.0,Dry,Yes,0.8,2024-12-01
+169,Murchison Falls,Lion,415,28.7,237.0,Wet,No,0.92,2024-11-17
+170,Kidepo,Lion,245,19.2,226.0,Wet,No,0.79,2024-06-29
+171,Lake Mburo,Elephant,178,25.8,19.0,Dry,No,0.91,2024-02-09
+172,Kibale,Chimpanzee,457,19.5,259.0,Wet,No,0.78,2024-01-22
+173,Bwindi,Chimpanzee,312,29.1,164.0,Wet,Yes,0.97,2024-08-18
+174,Murchison Falls,Chimpanzee,480,32.2,43.0,Dry,Yes,0.62,2024-08-12
+175,Bwindi,Leopard,287,28.4,186.0,Wet,No,0.69,2024-06-22
+176,Kibale,Leopard,46,31.4,171.0,Dry,No,0.55,2024-12-13
+177,Bwindi,Gorilla,149,30.3,76.0,Wet,Yes,0.79,2024-03-13
+178,Kidepo,Gorilla,355,29.9,200.0,Dry,Yes,0.65,2024-07-11
+179,Kibale,Chimpanzee,188,31.8,269.0,Dry,No,0.75,2024-01-10
+180,Kidepo,Gorilla,112,34.2,174.0,Wet,Yes,0.61,2024-03-11
+181,Queen Elizabeth,Elephant,171,"25,5",51.0,Dry,No,0.93,2024-11-12
+182,Queen Elizabeth,Leopard,212,20.6,92.0,Dry,No,0.52,2024-07-05
+183,Kibale,Hippo,141,34.5,145.0,Wet,Yes,0.76,2024-06-07
+184,Mgahinga,Chimpanzee,260,33.4,99.0,Wet,No,0.73,2024-05-24
+185,Mgahinga,Buffalo,277,27,82.0,Dry,Yes,0.93,2024-01-27
+186,Kibale,Buffalo,467,24.3,52.0,Dry,No,0.54,2024-03-23
+187,Kidepo,Buffalo,483,26.7,223.0,Dry,Yes,0.9,2024-06-27
+188,Murchison Falls,Buffalo,47,24.7,191.0,Dry,No,0.99,2024-07-10
+189,Queen Elizabeth,Elephant,183,33.8,171.0,Dry,Yes,0.52,2024-08-29
+190,Kibale,Chimpanzee,91,30.9,240.0,Wet,Yes,0.94,2024-01-10
+191,Kidepo,Lion,447,20.5,270.0,Wet,Yes,0.88,2024-05-01
+192,Kidepo,Elephant,44,22.1,234.0,Dry,Yes,0.91,2024-09-12
+193,Lake Mburo,Leopard,28,28.7,294.0,Dry,Yes,0.64,2024-01-01
+194,Lake Mburo,Gorilla,143,27.7,95.0,Dry,No,0.53,2024-09-26
+195,Lake Mburo,Leopard,422,34.8,283.0,Dry,No,0.93,2024-01-23
+196,Kibale,Buffalo,211,22.3,8.0,Wet,Yes,0.67,2024-12-02
+197,Kibale,Elephant,415,27.9,170.0,Dry,Yes,0.67,2024-06-22
+198,Mgahinga,Hippo,109,32.1,237.0,Wet,Yes,0.9,2024-02-02
+199,Kibale,Chimpanzee,254,18.6,103.0,Dry,Yes,0.93,2024-06-10
+200,Kidepo,Leopard,223,34.8,278.0,Wet,No,0.52,2024-11-27
+201,Queen Elizabeth,Gorilla,202,32.7,,Wet,No,0.56,2024-07-07
+202,Bwindi,Buffalo,400,25.5,197.0,Wet,Yes,0.74,2024-09-11
+203,Kidepo,Chimpanzee,285,22.5,42.0,Wet,Yes,0.71,2024-04-02
+204,Lake Mburo,Gorilla,184,19.7,167.0,Wet,No,0.72,2024-08-06
+205,Queen Elizabeth,Hippo,247,24,21.0,Wet,No,0.63,2024-01-30
+206,Murchison Falls,Hippo,346,24.9,262.0,Dry,Yes,0.57,2024-11-07
+207,Kibale,Chimpanzee,244,18.6,34.0,Dry,No,0.68,2024-10-17
+208,Murchison Falls,Leopard,98,29.5,189.0,Wet,No,0.87,2024-10-20
+209,Queen Elizabeth,Leopard,207,24.8,142.0,Dry,Yes,0.51,2024-04-05
+210,Bwindi,Leopard,218,33.5,60.0,Wet,No,0.84,2024-04-19
+211,Lake Mburo,Gorilla,375,33.6,251.0,Dry,Yes,0.57,2024-02-07
+212,Bwindi,Lion,480,30.1,44.0,Wet,No,0.85,2024-10-08
+213,Lake Mburo,Gorilla,476,23.1,80.0,Dry,No,0.75,2024-03-03
+214,Queen Elizabeth,Chimpanzee,91,22,252.0,Dry,No,0.77,2024-07-07
+215,Bwindi,Chimpanzee,302,20.2,44.0,Dry,No,0.7,2024-09-02
+216,Lake Mburo,Buffalo,413,25,294.0,Dry,Yes,0.98,2024-11-24
+217,Murchison Falls,Buffalo,258,29.6,176.0,Dry,Yes,0.88,2024-03-07
+218,Bwindi,Leopard,486,32.8,63.0,Dry,No,0.58,2024-06-14
+219,Kibale,Lion,197,34.1,265.0,Wet,Yes,0.62,2024-11-21
+220,Lake Mburo,Gorilla,84,28.6,273.0,Dry,Yes,0.79,2024-10-24
+ID-221,Queen Elizabeth,Lion,357,28.6,172.0,Dry,Yes,0.54,2024-11-24
+222,Mgahinga,Leopard,155,29.1,292.0,Wet,Yes,0.74,2024-11-17
+223,Lake Mburo,Gorilla,348,34.3,247.0,Dry,No,0.65,2024-02-07
+224,Kibale,Elephant,100,25.5,247.0,Wet,Yes,0.67,2024-03-14
+225,Kidepo,Chimpanzee,387,23.4,176.0,Wet,Yes,0.87,2024-09-20
+226,Lake Mburo,Elephant,183,22.1,62.0,Wet,No,0.62,2024-02-19
+227,Murchison Falls,Gorilla,216,32.7,214.0,Dry,Yes,0.9,2024-10-22
+228,Kibale,Gorilla,117,31,255.0,Wet,No,0.93,2024-09-11
+229,Murchison Falls,Elephant,221,26.6,123.0,Dry,No,0.52,2024-05-24
+230,Bwindi,Leopard,471,32.3,240.0,Wet,Yes,0.92,2024-08-08
+231,Queen Elizabeth,Gorilla,392,24.2,206.0,Wet,Yes,0.7,2024-10-18
+232,Lake Mburo,Lion,205,27.4,37.0,Wet,No,0.87,2024-05-23
+233,Mgahinga,Leopard,368,28.4,65.0,Dry,No,0.68,2024-06-22
+234,Lake Mburo,Gorilla,406,20.5,260.0,Wet,Yes,0.52,2024-03-11
+235,Kibale,Gorilla,431,26.1,233.0,Dry,Yes,0.66,2024-11-09
+236,Kidepo,Lion,221,34.8,153.0,Wet,No,0.85,2024-06-02
+237,Bwindi,Chimpanzee,28,24.3,56.0,Wet,No,0.89,2024-12-18
+238,Kibale,Elephant,325,26.1,296.0,Dry,Yes,0.79,2024-03-28
+239,Lake Mburo,Hippo,389,28.5,194.0,Dry,Yes,0.52,2024-12-24
+240,Murchison Falls,Lion,29,25.5,214.0,Dry,No,0.84,2024-07-29
+241,Lake Mburo,Chimpanzee,333,33.6,31.0,Dry,Yes,0.77,2024-12-05
+242,Bwindi,Leopard,212,23.3,88.0,Wet,No,0.77,2024-12-12
+243,Mgahinga,Chimpanzee,389,29.6,135.0,Wet,Yes,0.97,2024-05-22
+244,Lake Mburo,Gorilla,135,34,152.0,Wet,Yes,0.84,2024-09-07
+245,Kidepo,Buffalo,198,27.5,140.0,Wet,Yes,0.78,2024-10-05
+246,Bwindi,Buffalo,439,23.9,74.0,Wet,Yes,0.64,2024-12-31
+247,Murchison Falls,Gorilla,493,25.5,131.0,Wet,Yes,0.6,2024-10-02
+248,Kidepo,Leopard,376,22.6,55.0,Dry,Yes,0.52,2024-09-28
+249,Queen Elizabeth,Hippo,139,18.9,211.0,Wet,No,0.55,2024-03-11
+250,Murchison Falls,Leopard,495,20.7,243.0,Wet,Yes,0.87,2024-05-27
+251,Kidepo,Gorilla,350,19,45.0,Dry,Yes,0.95,2024-03-30
+252,Bwindi,Chimpanzee,110,33.9,18.0,Wet,No,0.59,2024-05-28
+253,Murchison Falls,Elephant,172,27.7,54.0,Wet,No,0.72,2024-11-24
+254,Lake Mburo,Leopard,272,33.1,68.0,Wet,No,0.59,2024-02-27
+255,Kidepo,Lion,394,25.8,131.0,Dry,Yes,0.86,2024-05-31
+256,Lake Mburo,Hippo,407,21.3,207.0,Wet,No,0.54,2024-12-08
+257,Murchison Falls,Lion,91,26.1,127.0,Dry,No,0.69,2024-08-16
+258,Mgahinga,Gorilla,188,23.1,293.0,Dry,No,0.82,2024-12-20
+259,Queen Elizabeth,Elephant,361,20,157.0,Dry,No,0.84,2024-12-26
+260,Mgahinga,Gorilla,373,20,151.0,Wet,Yes,0.61,2024-03-09
+261,Bwindi,Lion,252,30.7,191.0,Wet,No,0.87,2024-12-06
+262,Mgahinga,Lion,410,22.2,41.0,Wet,No,0.54,2024-10-15
+263,Murchison Falls,Elephant,444,27.3,258.0,Dry,Yes,0.58,2024-09-23
+264,Bwindi,Elephant,368,21.5,298.0,Wet,Yes,0.94,2024-08-16
+265,Mgahinga,Elephant,252,20.2,212.0,Wet,Yes,0.77,2024-12-10
+266,Mgahinga,Gorilla,390,18.4,130.0,Dry,Yes,0.78,2024-01-24
+267,Bwindi,Gorilla,378,19.1,30.0,Dry,No,0.52,2024-07-28
+268,Queen Elizabeth,Chimpanzee,89,31,215.0,Wet,No,0.72,2024-07-12
+269,Bwindi,Elephant,369,34.4,276.0,Dry,No,0.56,2024-10-02
+270,Bwindi,Leopard,85,30.4,114.0,Dry,Yes,0.98,2024-08-25
+271,Kibale,Hippo,298,25.2,194.0,Dry,Yes,0.73,2024-03-20
+272,Kidepo,Lion,499,32.9,57.0,Dry,No,0.8,2024-01-09
+273,Queen Elizabeth,Lion,54,19.7,17.0,Wet,Yes,0.62,2024-01-23
+274,Bwindi,Buffalo,139,27.2,28.0,Dry,No,0.61,2024-10-21
+275,Kidepo,Leopard,326,31.1,164.0,Dry,No,0.93,2024-12-04
+276,Lake Mburo,Lion,231,23.1,31.0,Dry,No,0.77,2024-01-25
+277,Kidepo,Hippo,363,24.5,268.0,Wet,No,0.7,2024-06-02
+278,Bwindi,Lion,406,27.1,123.0,Dry,No,0.92,2024-03-14
+279,Mgahinga,Buffalo,488,19,211.0,Wet,Yes,0.69,2024-05-10
+280,Queen Elizabeth,Gorilla,351,19.3,230.0,Wet,Yes,0.76,2024-04-07
+281,Murchison Falls,Gorilla,213,29.5,20.0,Dry,Yes,0.89,2024-10-27
+282,Kibale,Hippo,306,21.7,106.0,Wet,No,0.97,2024-01-08
+283,Queen Elizabeth,Lion,399,20,245.0,Dry,Yes,0.69,2024-05-02
+284,Lake Mburo,Gorilla,417,22.8,238.0,Wet,No,0.63,2024-09-19
+285,Bwindi,Buffalo,70,31.6,240.0,Wet,Yes,0.68,2024-07-30
+286,Murchison Falls,Leopard,462,21.8,74.0,Dry,No,0.77,2024-10-26
+287,Lake Mburo,Hippo,233,23,100.0,Wet,Yes,0.69,2024-05-05
+288,Bwindi,Leopard,355,34,172.0,Wet,No,0.97,2024-11-24
+289,Kibale,Buffalo,255,20.9,180.0,Dry,Yes,0.85,2024-09-07
+290,Queen Elizabeth,Leopard,348,34.3,268.0,Dry,Yes,0.96,2024-12-08
+291,Murchison Falls,Chimpanzee,23,25,118.0,Dry,Yes,0.5,2024-09-15
+292,Bwindi,Gorilla,50,28.5,247.0,Wet,Yes,0.5,2024-10-09
+293,Bwindi,Elephant,28,27,140.0,Wet,Yes,0.75,2024-12-23
+294,Kibale,Buffalo,432,34,91.0,Dry,Yes,0.76,2024-05-03
+295,Queen Elizabeth,Leopard,289,22.3,181.0,Wet,No,0.54,2024-07-26
+296,Bwindi,Leopard,144,34.8,115.0,Wet,Yes,0.82,2024-11-28
+297,Mgahinga,Elephant,67,24.9,193.0,Wet,Yes,0.81,2024-12-25
+298,Queen Elizabeth,Elephant,275,32.4,169.0,Dry,Yes,0.61,2024-12-20
+299,Lake Mburo,Buffalo,158,18.8,38.0,Wet,Yes,0.59,2024-06-10
+300,Murchison Falls,Lion,320,20.5,203.0,Dry,No,0.58,2024-05-03
+301,Lake Mburo,Chimpanzee,454,24.6,276.0,Wet,No,0.87,2024-03-12
+302,Mgahinga,Hippo,390,19.3,177.0,Dry,Yes,0.71,2024-02-08
+303,Kidepo,Leopard,413,28.4,203.0,Wet,Yes,0.81,2024-08-18
+304,Bwindi,Lion,202,27.4,192.0,Wet,Yes,0.83,2024-12-04
+305,Bwindi,Elephant,415,28.5,126.0,Dry,Yes,0.63,2024-07-13
+306,Kibale,Chimpanzee,344,20.6,199.0,Wet,No,0.55,2024-01-03
+307,Kidepo,Buffalo,204,30.9,52.0,Dry,Yes,0.59,2024-08-17
+308,Lake Mburo,Leopard,282,24.9,13.0,Dry,No,0.77,2024-11-01
+309,Lake Mburo,Chimpanzee,186,32.7,6.0,Wet,No,0.69,2024-02-13
+310,Kibale,Leopard,483,34.9,124.0,Dry,No,0.58,2024-05-17
+311,Kidepo,Gorilla,272,20.5,85.0,Wet,No,0.71,2024-09-04
+312,Mgahinga,Elephant,204,22.3,126.0,Wet,Yes,0.72,2024-03-10
+313,Kidepo,Elephant,222,23.6,194.0,Wet,No,0.66,2024-11-29
+314,Lake Mburo,Lion,173,23.5,102.0,Wet,No,0.59,2024-07-22
+315,Kidepo,Gorilla,396,29.8,251.0,Dry,No,0.68,2024-07-20
+316,Kidepo,Elephant,497,27.6,279.0,Dry,Yes,0.97,2024-08-24
+317,Kibale,Lion,244,31.6,35.0,Wet,No,0.57,2024-06-04
+318,Queen Elizabeth,Gorilla,357,20.6,216.0,Wet,Yes,0.72,2024-11-02
+319,Bwindi,Leopard,225,27.1,214.0,Dry,No,0.84,2024-10-01
+320,Lake Mburo,Hippo,488,19.4,127.0,Wet,Yes,0.82,2024-01-23
+321,Lake Mburo,Hippo,366,29,169.0,Wet,Yes,0.51,2024-05-12
+322,Queen Elizabeth,Leopard,402,26.8,297.0,Dry,No,0.68,2024-08-25
+323,Mgahinga,Hippo,321,29.7,77.0,Wet,Yes,0.74,2024-05-31
+324,Bwindi,Elephant,79,32.1,72.0,Wet,No,0.67,2024-04-15
+325,Lake Mburo,Buffalo,198,26.1,224.0,Wet,No,0.53,2024-01-23
+326,Mgahinga,Hippo,78,18.4,175.0,Dry,Yes,0.96,2024-05-04
+327,Lake Mburo,Lion,302,20.7,286.0,Wet,No,0.61,2024-07-26
+328,Kibale,Lion,115,28.9,221.0,Wet,Yes,0.86,2024-04-11
+329,Bwindi,Leopard,239,24.6,109.0,Dry,No,0.87,2024-02-02
+330,Lake Mburo,Elephant,429,32.8,95.0,Wet,No,0.6,2024-02-28
+331,Kidepo,Hippo,461,26.3,160.0,Wet,No,0.79,2024-06-27
+332,Kidepo,Chimpanzee,254,28.5,152.0,Dry,Yes,0.65,2024-05-02
+333,Kidepo,Elephant,113,24.3,72.0,Wet,No,0.79,2024-10-21
+334,Bwindi,Buffalo,115,26.3,275.0,Dry,Yes,0.74,2024-03-12
+335,Queen Elizabeth,Gorilla,451,25.7,27.0,Wet,Yes,0.74,2024-04-09
+336,Mgahinga,Buffalo,307,26.6,253.0,Wet,No,0.7,2024-08-15
+337,Bwindi,Lion,62,27.6,112.0,Wet,Yes,0.63,2024-10-02
+338,Kidepo,Lion,419,25.8,253.0,Dry,Yes,0.63,2024-10-05
+339,Mgahinga,Gorilla,297,32,21.0,Wet,Yes,0.98,2024-02-22
+340,Kibale,Chimpanzee,354,30.8,152.0,Dry,No,0.63,2024-02-14
+341,Bwindi,Chimpanzee,80,31.2,121.0,Dry,No,0.92,2024-11-08
+342,Kibale,Buffalo,104,28.5,105.0,Dry,Yes,0.78,2024-09-29
+343,Kidepo,Leopard,295,20.9,149.0,Wet,No,0.97,2024-09-20
+344,Kibale,Chimpanzee,68,20.3,210.0,Dry,No,0.92,2024-03-05
+345,Kibale,Chimpanzee,87,22.2,164.0,Dry,No,0.74,2024-10-22
+346,Kibale,Gorilla,341,25,231.0,Dry,Yes,0.7,2024-05-22
+347,Kibale,Gorilla,252,34.2,167.0,Dry,Yes,0.86,2024-08-22
+348,Kibale,Hippo,377,24.1,32.0,Wet,Yes,0.97,2024-04-18
+349,Bwindi,Gorilla,185,32.1,172.0,Dry,No,0.89,2024-12-15
+350,Mgahinga,Elephant,43,19.7,235.0,Dry,Yes,0.96,2024-03-21
+351,Bwindi,Buffalo,20,34.9,219.0,Dry,Yes,0.93,2024-06-03
+352,Queen Elizabeth,Chimpanzee,497,32.9,47.0,Wet,No,0.54,2024-12-06
+353,Kibale,Lion,46,24.7,156.0,Dry,No,0.82,2024-12-26
+354,Murchison Falls,Elephant,129,26.1,67.0,Dry,No,0.5,2024-12-22
+355,Kidepo,Chimpanzee,81,34.8,216.0,Dry,No,0.53,2024-07-15
+356,Murchison Falls,Hippo,432,19.7,160.0,Wet,No,0.57,2024-03-09
+357,Kibale,Hippo,93,19.2,288.0,Dry,Yes,0.72,2024-04-19
+358,Kibale,Hippo,97,33.6,226.0,Dry,Yes,0.94,2024-03-12
+359,Mgahinga,Elephant,321,30.4,179.0,Wet,No,0.89,2024-05-06
+360,Kidepo,Hippo,63,22.2,145.0,Dry,No,0.6,2024-11-06
+361,Lake Mburo,Lion,402,24.7,27.0,Dry,No,0.69,2024-05-03
+362,Bwindi,Hippo,324,19.2,6.0,Wet,No,0.56,2024-10-18
+363,Bwindi,Gorilla,299,29.6,241.0,Dry,Yes,0.79,2024-01-08
+364,Kidepo,Lion,40,33.7,203.0,Wet,No,0.71,2024-07-24
+365,Murchison Falls,Hippo,294,27.1,78.0,Wet,Yes,0.65,2024-09-18
+366,Queen Elizabeth,Chimpanzee,99,27.1,200.0,Dry,No,0.84,2024-05-02
+367,Murchison Falls,Lion,64,33.7,59.0,Wet,Yes,0.65,2024-12-02
+368,Kibale,Lion,81,18.2,70.0,Dry,Yes,0.74,2024-06-26
+369,Lake Mburo,Leopard,420,32,132.0,Dry,No,0.56,2024-05-17
+370,Kibale,Elephant,414,33.3,171.0,Wet,No,0.76,2024-05-14
+371,Kibale,Leopard,341,19.3,233.0,Wet,Yes,0.74,2024-10-17
+372,Queen Elizabeth,Gorilla,100,22.3,52.0,Dry,Yes,0.86,2024-01-02
+373,Murchison Falls,Chimpanzee,461,18.2,23.0,Wet,No,0.69,2024-03-17
+374,Queen Elizabeth,Chimpanzee,38,27.4,214.0,Dry,No,0.62,2024-06-12
+375,Kidepo,Chimpanzee,59,27.7,61.0,Dry,Yes,0.61,2024-09-21
+376,Murchison Falls,Buffalo,55,32.9,144.0,Wet,No,0.54,2024-08-21
+377,Murchison Falls,Gorilla,122,23,155.0,Dry,No,0.68,2024-09-09
+378,Mgahinga,Chimpanzee,120,30.5,279.0,Dry,Yes,0.5,2024-07-28
+379,Murchison Falls,Lion,297,23.9,4.0,Wet,Yes,0.87,2024-07-11
+380,Mgahinga,Hippo,392,23.2,105.0,Dry,No,0.74,2024-01-31
+381,Queen Elizabeth,Hippo,163,19.6,118.0,Wet,No,0.72,2024-02-13
+382,Lake Mburo,Elephant,278,20.3,201.0,Dry,Yes,0.71,2024-03-07
+383,Queen Elizabeth,Gorilla,153,32.5,201.0,Wet,No,0.72,2024-04-29
+384,Murchison Falls,Lion,89,31.3,299.0,Dry,Yes,0.55,2024-08-18
+385,Bwindi,Gorilla,228,20.1,183.0,Dry,No,0.65,2024-05-15
+386,Mgahinga,Elephant,66,20.7,155.0,Dry,Yes,0.91,2024-06-16
+387,Queen Elizabeth,Elephant,384,22.2,182.0,Wet,Yes,0.83,2024-05-13
+388,Mgahinga,Lion,35,34.2,231.0,Dry,Yes,0.73,2024-03-12
+389,Murchison Falls,Elephant,51,32.1,113.0,Dry,Yes,0.9,2024-07-09
+390,Kibale,Hippo,500,29,298.0,Wet,Yes,0.51,2024-02-03
+391,Queen Elizabeth,Hippo,247,31.8,47.0,Wet,Yes,0.52,2024-08-24
+392,Murchison Falls,Lion,493,27.8,202.0,Wet,Yes,0.69,2024-08-06
+393,Queen Elizabeth,Gorilla,129,33.4,140.0,Wet,No,0.93,2024-01-18
+394,Lake Mburo,Leopard,335,22.2,151.0,Wet,No,0.93,2024-09-02
+395,Murchison Falls,Elephant,163,24.5,214.0,Dry,Yes,0.81,2024-10-05
+396,Mgahinga,Elephant,215,31.3,183.0,Wet,No,0.67,2024-10-16
+397,Lake Mburo,Gorilla,218,22.6,13.0,Wet,Yes,0.51,2024-05-23
+398,Murchison Falls,Chimpanzee,261,27,299.0,Dry,Yes,0.55,2024-12-02
+399,Queen Elizabeth,Gorilla,293,31.9,28.0,Dry,No,0.67,2024-03-29
+400,Queen Elizabeth,Lion,323,23.4,183.0,Dry,No,0.96,2024-10-15
+401,Queen Elizabeth,Leopard,116,32.2,252.0,Wet,Yes,0.74,2024-02-16
+402,Murchison Falls,Lion,328,21.7,269.0,Wet,Yes,0.66,2024-11-10
+403,Queen Elizabeth,Chimpanzee,86,23.8,90.0,Wet,Yes,0.51,2024-10-27
+404,Kibale,Lion,416,19.9,269.0,Wet,Yes,0.68,2024-12-05
+405,Bwindi,Leopard,71,23.7,165.0,Dry,Yes,0.86,2024-08-11
+406,Mgahinga,Hippo,269,29,89.0,Wet,Yes,0.83,2024-03-30
+407,Bwindi,Gorilla,395,29.7,65.0,Dry,Yes,0.96,2024-10-20
+408,Bwindi,Chimpanzee,414,34.4,16.0,Dry,No,0.95,2024-11-09
+409,Queen Elizabeth,Hippo,309,19.8,254.0,Dry,No,0.87,2024-05-01
+410,Kidepo,Gorilla,105,28.8,45.0,Wet,No,0.51,2024-04-17
+411,Queen Elizabeth,Hippo,54,24,55.0,Dry,Yes,0.69,2024-08-02
+412,Queen Elizabeth,Buffalo,272,33,179.0,Wet,Yes,0.91,2024-10-22
+413,Kibale,Chimpanzee,371,21.8,231.0,Dry,Yes,0.64,2024-06-12
+414,Kidepo,Elephant,57,23.8,192.0,Dry,Yes,0.77,2024-02-17
+415,Kidepo,Leopard,334,33.2,15.0,Wet,Yes,0.8,2024-08-10
+416,Queen Elizabeth,Elephant,71,23.6,97.0,Wet,No,0.82,2024-06-01
+417,Queen Elizabeth,Elephant,45,24.7,281.0,Wet,Yes,0.53,2024-01-02
+418,Bwindi,Elephant,170,32,245.0,Dry,Yes,0.51,2024-03-28
+419,Kibale,Gorilla,61,26.1,59.0,Wet,No,0.73,2024-12-04
+420,Kidepo,Elephant,348,27.3,94.0,Wet,No,0.68,2024-08-16
+421,Murchison Falls,Gorilla,245,25.9,115.0,Wet,Yes,0.57,2024-12-22
+422,Kibale,Elephant,63,29.4,277.0,Wet,Yes,0.77,2024-07-17
+423,Mgahinga,Leopard,234,34.4,243.0,Dry,No,0.65,2024-07-21
+424,Mgahinga,Hippo,37,26.5,264.0,Dry,Yes,0.97,2024-08-17
+425,Queen Elizabeth,Lion,128,31.7,64.0,Dry,No,0.54,2024-12-15
+426,Bwindi,Lion,441,28.7,132.0,Wet,Yes,0.54,2024-10-11
+427,Bwindi,Leopard,186,32.6,266.0,Wet,Yes,0.89,2024-11-15
+428,Lake Mburo,Leopard,420,25.1,212.0,Dry,Yes,0.78,2024-10-25
+429,Mgahinga,Elephant,493,19.8,51.0,Wet,No,0.93,2024-05-15
+430,Bwindi,Hippo,268,27.7,242.0,Dry,Yes,0.63,2024-03-14
+431,Lake Mburo,Leopard,368,29.8,19.0,Wet,No,0.84,2024-01-26
+432,Kibale,Buffalo,491,22.6,190.0,Dry,No,0.9,2024-06-04
+433,Kidepo,Gorilla,451,26.4,50.0,Dry,Yes,0.65,2024-08-14
+434,Mgahinga,Chimpanzee,184,22.6,213.0,Dry,Yes,0.72,2024-07-27
+435,Kibale,Buffalo,408,26.8,191.0,Dry,Yes,0.53,2024-12-29
+436,Lake Mburo,Buffalo,89,31.3,268.0,Dry,Yes,0.59,2024-04-12
+437,Mgahinga,Elephant,147,18.6,25.0,Wet,Yes,0.63,2024-08-25
+438,Lake Mburo,Buffalo,345,33.7,15.0,Dry,No,0.74,2024-08-16
+439,Queen Elizabeth,Chimpanzee,262,28,179.0,Wet,Yes,0.91,2024-05-12
+440,Kibale,Chimpanzee,372,19.5,14.0,Wet,Yes,0.58,2024-10-19
+441,Mgahinga,Lion,458,21.8,115.0,Dry,No,0.82,2024-09-19
+442,Murchison Falls,Chimpanzee,419,34.4,4.0,Wet,Yes,0.82,2024-11-03
+443,Mgahinga,Elephant,134,22.3,156.0,Wet,No,0.94,2024-06-27
+444,Bwindi,Gorilla,131,25.9,266.0,Wet,Yes,0.5,2024-12-05
+445,Mgahinga,Chimpanzee,211,27.5,144.0,Wet,Yes,0.74,2024-06-21
+446,Kidepo,Hippo,186,32.6,133.0,Wet,Yes,0.57,2024-05-03
+447,Murchison Falls,Chimpanzee,458,31.6,206.0,Wet,Yes,0.85,2024-12-01
+448,Bwindi,Gorilla,152,33.4,207.0,Wet,Yes,0.79,2024-10-19
+449,Mgahinga,Lion,195,30.4,113.0,Wet,No,0.75,2024-03-28
+450,Mgahinga,Hippo,468,27.5,150.0,Dry,No,0.56,2024-05-12
+451,Kibale,Chimpanzee,306,31,93.0,Wet,Yes,0.61,2024-04-24
+452,Kibale,Chimpanzee,177,25.1,169.0,Wet,No,0.79,2024-08-25
+453,Mgahinga,Elephant,260,18.9,298.0,Dry,No,0.94,2024-09-13
+454,Murchison Falls,Chimpanzee,368,24.5,152.0,Wet,Yes,0.93,2024-03-18
+455,Queen Elizabeth,Lion,195,25,291.0,Wet,Yes,0.66,2024-04-02
+456,Mgahinga,Elephant,269,23.7,90.0,Wet,Yes,0.5,2024-05-20
+457,Queen Elizabeth,Chimpanzee,416,20.9,81.0,Wet,Yes,0.56,2024-08-10
+458,Kibale,Buffalo,226,25.3,244.0,Wet,Yes,0.52,2024-04-12
+459,Kibale,Gorilla,27,33.2,271.0,Dry,Yes,0.83,2024-11-16
+460,Kibale,Lion,135,29.8,176.0,Wet,Yes,0.55,2024-09-14
+461,Lake Mburo,Gorilla,105,19.1,23.0,Wet,No,0.72,2024-09-23
+462,Lake Mburo,Leopard,192,25.4,68.0,Wet,No,0.68,2024-04-06
+463,Queen Elizabeth,Chimpanzee,226,18.3,114.0,Dry,Yes,0.86,2024-10-28
+464,Lake Mburo,Lion,83,24.2,19.0,Wet,No,0.88,2024-11-15
+465,Murchison Falls,Leopard,44,29.3,10.0,Dry,Yes,0.7,2024-07-13
+466,Murchison Falls,Leopard,149,26.1,78.0,Dry,Yes,0.65,2024-12-04
+467,Murchison Falls,Hippo,286,22.6,70.0,Wet,Yes,0.75,2024-11-12
+468,Murchison Falls,Gorilla,78,31.3,254.0,Dry,Yes,0.88,2024-09-24
+469,Queen Elizabeth,Gorilla,380,25,82.0,Dry,No,0.95,2024-12-18
+470,Bwindi,Gorilla,140,18,45.0,Dry,No,0.57,2024-02-16
+471,Mgahinga,Leopard,58,30.3,51.0,Wet,Yes,0.72,2024-05-31
+472,Kidepo,Buffalo,45,19.7,89.0,Dry,No,0.68,2024-12-12
+473,Kidepo,Buffalo,398,20,23.0,Dry,Yes,0.83,2024-03-28
+474,Kidepo,Gorilla,477,25.4,137.0,Dry,No,0.9,2024-04-03
+475,Murchison Falls,Buffalo,224,34.4,139.0,Wet,No,0.89,2024-11-28
+476,Mgahinga,Lion,77,20.3,30.0,Dry,Yes,0.7,2024-10-29
+477,Bwindi,Chimpanzee,311,29.5,92.0,Wet,No,0.8,2024-12-16
+478,Mgahinga,Hippo,476,20.2,249.0,Dry,No,0.72,2024-02-02
+479,Kidepo,Hippo,180,18.2,268.0,Dry,No,0.75,2024-12-18
+480,Kibale,Leopard,68,25.4,127.0,Wet,No,0.83,2024-11-24
+481,Bwindi,Lion,449,32,27.0,Dry,Yes,0.75,2024-08-28
+482,Mgahinga,Buffalo,465,20.8,251.0,Wet,Yes,0.66,2024-05-22
+483,Murchison Falls,Leopard,134,27.4,193.0,Wet,Yes,0.54,2024-08-15
+484,Mgahinga,Leopard,249,19.5,255.0,Wet,No,0.56,2024-09-11
+485,Kibale,Hippo,29,19.7,211.0,Dry,Yes,0.9,2024-11-05
+486,Lake Mburo,Hippo,175,33.1,287.0,Dry,No,0.97,2024-07-05
+487,Mgahinga,Elephant,438,21.8,232.0,Wet,No,0.85,2024-07-05
+488,Kibale,Buffalo,78,19.7,113.0,Dry,No,0.67,2024-11-20
+489,Mgahinga,Gorilla,300,26.9,54.0,Dry,Yes,0.74,2024-07-28
+490,Murchison Falls,Gorilla,332,21.3,61.0,Wet,Yes,0.72,2024-04-07
+491,Kibale,Gorilla,75,30.9,23.0,Dry,No,0.72,2024-10-28
+492,Lake Mburo,Lion,275,18.1,24.0,Wet,No,0.95,2024-03-31
+493,Kibale,Leopard,108,30.4,65.0,Dry,No,0.82,2024-11-06
+494,Kidepo,Leopard,471,24.5,127.0,Wet,No,0.97,2024-05-30
+495,Bwindi,Chimpanzee,88,20.3,262.0,Wet,No,0.85,2024-10-10
+496,Kibale,Lion,122,21.6,148.0,Wet,Yes,0.98,2024-11-28
+497,Queen Elizabeth,Leopard,297,29.8,165.0,Dry,No,0.78,2024-10-25
+498,Lake Mburo,Hippo,383,25.1,273.0,Wet,No,0.9,2024-09-24
+499,Murchison Falls,Elephant,215,20.5,28.0,Dry,No,0.87,2024-03-23
+500,Kidepo,Hippo,148,20.5,31.0,Wet,Yes,0.87,2024-01-17
+501,Kidepo,Chimpanzee,251,19.7,287.0,Dry,No,0.62,2024-12-22
+502,Kidepo,Hippo,360,18.8,195.0,Wet,No,0.97,2024-12-16
+503,Kidepo,Leopard,47,18.2,128.0,Dry,No,0.91,2024-11-20
+504,Kibale,Hippo,351,24.3,279.0,Dry,Yes,0.64,2024-03-31
+505,Kibale,Elephant,115,34.4,263.0,Dry,No,0.52,2024-05-22
+506,Lake Mburo,Gorilla,86,20.7,130.0,Dry,No,0.73,2024-03-20
+507,Murchison Falls,Lion,495,23.5,26.0,Wet,No,0.89,2024-10-08
+508,Kidepo,Elephant,421,30,269.0,Dry,Yes,0.76,2024-09-15
+509,Queen Elizabeth,Buffalo,298,27.1,47.0,Wet,Yes,0.93,2024-12-05
+510,Kidepo,Gorilla,204,23,271.0,Wet,Yes,0.56,2024-06-26
+511,Bwindi,Lion,483,28.9,124.0,Dry,No,0.69,2024-02-28
+512,Bwindi,Gorilla,296,30.3,12.0,Wet,No,0.74,2024-05-31
+513,Kibale,Lion,184,26.7,49.0,Dry,Yes,0.81,2024-04-17
+514,Kibale,Hippo,416,21.6,217.0,Dry,Yes,0.76,2024-12-25
+515,Kibale,Chimpanzee,242,29,36.0,Dry,Yes,0.73,2024-06-18
+516,Murchison Falls,Elephant,57,18.9,128.0,Dry,Yes,0.95,2024-07-27
+517,Bwindi,Buffalo,342,24.9,161.0,Dry,No,0.83,2024-09-30
+518,Murchison Falls,Hippo,388,28.5,299.0,Dry,Yes,0.68,2024-09-14
+519,Murchison Falls,Gorilla,422,29.7,44.0,Wet,No,0.69,2024-12-04
+520,Murchison Falls,Buffalo,100,27.1,69.0,Wet,No,0.97,2024-03-14
+521,Kidepo,Hippo,474,33.5,191.0,Dry,Yes,0.56,2024-01-03
+522,Lake Mburo,Leopard,221,27.1,43.0,Wet,Yes,0.87,2024-06-25
+523,Queen Elizabeth,Buffalo,483,29,262.0,Dry,Yes,0.59,2024-11-11
+524,Mgahinga,Gorilla,119,19.9,290.0,Dry,No,0.82,2024-02-07
+525,Kidepo,Hippo,54,22.3,101.0,Wet,No,0.67,2024-12-09
+526,Kibale,Lion,71,22.8,35.0,Dry,No,0.74,2024-06-17
+527,Lake Mburo,Hippo,176,29.8,78.0,Wet,No,0.97,2024-03-27
+528,Murchison Falls,Gorilla,146,31.4,223.0,Wet,No,0.57,2024-06-18
+529,Bwindi,Buffalo,248,24.1,156.0,Wet,Yes,0.59,2024-11-06
+530,Murchison Falls,Chimpanzee,163,32.6,71.0,Dry,No,0.86,2024-11-16
+531,Murchison Falls,Hippo,58,33.2,259.0,Dry,No,0.88,2024-04-18
+532,Murchison Falls,Leopard,153,27.2,276.0,Wet,Yes,0.68,2024-04-24
+533,Mgahinga,Leopard,395,32.6,68.0,Wet,Yes,0.69,2024-09-14
+534,Murchison Falls,Hippo,142,32.4,84.0,Dry,No,0.58,2024-10-16
+535,Lake Mburo,Hippo,466,34.5,247.0,Wet,Yes,0.61,2024-09-06
+536,Queen Elizabeth,Elephant,155,24.3,21.0,Dry,No,0.69,2024-08-20
+537,Murchison Falls,Elephant,352,23.5,266.0,Wet,No,0.78,2024-10-18
+538,Queen Elizabeth,Buffalo,354,24.4,300.0,Dry,No,0.68,2024-04-24
+539,Lake Mburo,Buffalo,200,31.9,176.0,Wet,No,0.93,2024-01-04
+540,Lake Mburo,Lion,245,20.8,39.0,Wet,Yes,0.57,2024-03-21
+541,Kidepo,Leopard,387,31.9,117.0,Wet,No,0.85,2024-09-03
+542,Kibale,Buffalo,265,21.6,82.0,Wet,Yes,0.62,2024-03-06
+543,Lake Mburo,Leopard,102,20.3,262.0,Dry,Yes,0.53,2024-05-12
+544,Queen Elizabeth,Leopard,227,28.2,288.0,Dry,No,0.96,2024-04-20
+545,Bwindi,Leopard,261,32.7,87.0,Dry,No,0.79,2024-10-25
+546,Mgahinga,Chimpanzee,113,28.6,261.0,Wet,Yes,0.85,2024-06-24
+547,Bwindi,Leopard,322,19.2,193.0,Wet,Yes,0.55,2024-04-13
+548,Lake Mburo,Chimpanzee,485,26.6,214.0,Dry,Yes,0.59,2024-11-10
+549,Lake Mburo,Elephant,469,31.3,257.0,Dry,Yes,0.74,2024-03-07
+550,Lake Mburo,Leopard,443,18,220.0,Wet,No,0.93,2024-12-23
+551,Lake Mburo,Buffalo,137,34,246.0,Wet,No,0.79,2024-12-22
+552,Lake Mburo,Elephant,237,20.3,244.0,Dry,Yes,0.64,2024-10-05
+553,Bwindi,Gorilla,116,18.1,3.0,Dry,Yes,0.68,2024-04-15
+554,Kibale,Chimpanzee,181,25,54.0,Dry,No,0.82,2024-05-09
+555,Kidepo,Chimpanzee,294,25.2,187.0,Wet,No,0.87,2024-07-30
+556,Lake Mburo,Chimpanzee,305,26.2,189.0,Wet,No,0.98,2024-10-22
+557,Kidepo,Chimpanzee,381,24.8,70.0,Dry,Yes,0.72,2024-12-24
+558,Queen Elizabeth,Elephant,129,26.6,173.0,Dry,Yes,0.69,2024-11-21
+559,Murchison Falls,Chimpanzee,66,32,241.0,Wet,Yes,0.53,2024-04-23
+560,Kidepo,Elephant,331,18.6,196.0,Wet,No,0.85,2024-11-01
+561,Murchison Falls,Chimpanzee,439,21,253.0,Wet,Yes,0.6,2024-12-02
+562,Mgahinga,Leopard,166,21.3,261.0,Dry,Yes,0.83,2024-07-03
+563,Queen Elizabeth,Hippo,20,34.6,44.0,Wet,No,0.67,2024-07-21
+564,Bwindi,Leopard,122,26.8,35.0,Dry,No,0.86,2024-10-13
+565,Lake Mburo,Gorilla,197,34.4,141.0,Dry,Yes,0.72,2024-07-25
+566,Lake Mburo,Elephant,153,21,259.0,Dry,Yes,0.75,2024-06-23
+567,Murchison Falls,Chimpanzee,282,34.3,275.0,Wet,No,0.97,2024-10-15
+568,Bwindi,Chimpanzee,144,30.9,234.0,Wet,Yes,0.74,2024-05-12
+569,Murchison Falls,Buffalo,344,31.4,112.0,Dry,No,0.7,2024-06-29
+570,Lake Mburo,Leopard,24,29.9,134.0,Dry,No,0.55,2024-12-10
+571,Kibale,Chimpanzee,195,19.3,91.0,Wet,No,0.67,2024-10-20
+572,Kidepo,Lion,402,29.6,97.0,Wet,Yes,0.62,2024-05-03
+573,Mgahinga,Gorilla,125,21.9,127.0,Wet,Yes,0.88,2024-03-02
+574,Murchison Falls,Hippo,359,26.4,3.0,Dry,No,0.68,2024-06-10
+575,Bwindi,Leopard,464,22.7,93.0,Wet,No,0.61,2024-10-22
+576,Queen Elizabeth,Elephant,289,31.6,244.0,Dry,No,0.69,2024-12-17
+577,Mgahinga,Lion,254,34.6,265.0,Wet,No,0.84,2024-01-07
+578,Kibale,Lion,214,27.9,166.0,Wet,No,0.59,2024-05-14
+579,Queen Elizabeth,Gorilla,261,34.3,175.0,Wet,Yes,0.74,2024-04-17
+580,Bwindi,Hippo,405,24.3,205.0,Wet,No,0.59,2024-03-08
+581,Lake Mburo,Hippo,137,31.8,138.0,Dry,No,0.92,2024-04-10
+582,Queen Elizabeth,Chimpanzee,398,20.5,4.0,Dry,No,0.74,2024-11-18
+583,Lake Mburo,Leopard,388,23.4,249.0,Wet,No,0.78,2024-10-17
+584,Murchison Falls,Buffalo,70,29.7,30.0,Dry,No,0.73,2024-11-18
+585,Murchison Falls,Buffalo,401,23.7,184.0,Wet,No,0.67,2024-07-29
+586,Murchison Falls,Gorilla,464,29.6,101.0,Dry,No,0.67,2024-12-10
+587,Lake Mburo,Buffalo,416,30.5,40.0,Wet,No,0.73,2024-03-15
+588,Mgahinga,Lion,347,31.7,172.0,Wet,No,0.92,2024-02-06
+589,Murchison Falls,Lion,195,21.9,162.0,Wet,No,0.8,2024-07-21
+590,Kidepo,Buffalo,419,32.7,185.0,Wet,No,0.58,2024-01-12
+591,Queen Elizabeth,Hippo,140,29.3,40.0,Dry,Yes,0.69,2024-02-18
+592,Murchison Falls,Buffalo,300,18.9,203.0,Dry,Yes,0.63,2024-03-20
+593,Murchison Falls,Hippo,496,33.1,158.0,Dry,Yes,0.86,2024-08-14
+594,Kibale,Lion,87,27,87.0,Dry,Yes,0.83,2024-06-15
+595,Mgahinga,Buffalo,259,34.6,276.0,Wet,No,0.57,2024-12-23
+596,Lake Mburo,Lion,322,28.2,288.0,Wet,No,0.95,2024-09-03
+597,Lake Mburo,Lion,432,19.5,157.0,Wet,No,0.63,2024-06-04
+598,Murchison Falls,Elephant,287,31.9,69.0,Wet,No,0.73,2024-01-05
+599,Kibale,Buffalo,406,26.1,4.0,Wet,No,0.79,2024-01-04
+600,Lake Mburo,Gorilla,116,25,287.0,Wet,No,0.62,2024-11-26
+601,Bwindi,Chimpanzee,213,21.8,40.0,Wet,Yes,0.75,2024-11-09
+602,Mgahinga,Hippo,370,22.6,272.0,Wet,No,0.59,2024-02-05
+603,Queen Elizabeth,Lion,168,19.9,233.0,Wet,No,0.84,2024-09-08
+604,Queen Elizabeth,Gorilla,29,20.6,273.0,Dry,Yes,0.98,2024-05-24
+605,Kidepo,Lion,386,25.5,4.0,Dry,Yes,0.57,2024-09-09
+606,Queen Elizabeth,Gorilla,235,23.3,255.0,Wet,No,0.84,2024-01-17
+607,Kidepo,Elephant,451,30.8,74.0,Dry,No,0.88,2024-02-06
+608,Lake Mburo,Buffalo,112,21.3,128.0,Wet,Yes,0.56,2024-12-31
+609,Queen Elizabeth,Buffalo,414,34.6,126.0,Dry,Yes,0.73,2024-02-18
+610,Lake Mburo,Hippo,126,26,159.0,Wet,Yes,0.81,2024-01-22
+611,Kibale,Leopard,286,20.1,246.0,Wet,Yes,0.68,2024-01-27
+612,Mgahinga,Hippo,131,34.5,120.0,Wet,No,0.51,2024-05-21
+613,Lake Mburo,Elephant,222,31.4,4.0,Dry,No,0.84,2024-03-20
+614,Kidepo,Chimpanzee,65,22.2,255.0,Dry,No,0.96,2024-11-16
+615,Murchison Falls,Elephant,202,29,274.0,Dry,Yes,0.74,2024-06-11
+616,Lake Mburo,Chimpanzee,350,30.9,224.0,Dry,Yes,0.84,2024-07-02
+617,Kibale,Lion,148,33.3,248.0,Wet,No,0.77,2024-09-07
+618,Queen Elizabeth,Leopard,115,27.2,165.0,Wet,No,0.93,2024-11-02
+619,Mgahinga,Leopard,102,19.2,79.0,Wet,No,0.9,2024-10-04
+620,Kidepo,Buffalo,20,31.2,259.0,Wet,Yes,0.93,2024-11-13
+621,Mgahinga,Gorilla,417,28.5,164.0,Dry,No,0.59,2024-12-15
+622,Bwindi,Chimpanzee,302,20.6,144.0,Wet,No,0.81,2024-02-26
+623,Murchison Falls,Leopard,357,19.1,66.0,Dry,Yes,0.6,2024-09-05
+624,Queen Elizabeth,Elephant,36,27.7,198.0,Wet,No,0.52,2024-04-23
+625,Lake Mburo,Hippo,56,18.2,106.0,Wet,Yes,0.73,2024-11-23
+626,Murchison Falls,Gorilla,305,30.6,212.0,Wet,Yes,0.9,2024-05-16
+627,Lake Mburo,Elephant,395,19.2,155.0,Dry,Yes,0.97,2024-02-19
+628,Murchison Falls,Hippo,138,27,97.0,Dry,Yes,0.78,2024-04-01
+629,Lake Mburo,Hippo,305,25.1,54.0,Wet,No,0.84,2024-08-06
+630,Murchison Falls,Lion,425,21.1,205.0,Wet,Yes,0.76,2024-11-03
+631,Bwindi,Gorilla,482,23.4,166.0,Wet,No,0.87,2024-08-08
+632,Mgahinga,Hippo,185,28.3,288.0,Dry,No,0.88,2024-05-10
+633,Kidepo,Buffalo,249,34.3,0.0,Dry,No,0.79,2024-09-22
+634,Queen Elizabeth,Gorilla,23,23.1,113.0,Dry,No,0.51,2024-12-19
+635,Mgahinga,Gorilla,490,27.4,284.0,Dry,Yes,0.52,2024-07-01
+636,Queen Elizabeth,Lion,155,24.2,298.0,Dry,Yes,0.63,2024-06-02
+637,Murchison Falls,Leopard,224,27.7,111.0,Dry,No,0.89,2024-03-29
+638,Bwindi,Chimpanzee,480,29.7,295.0,Dry,No,0.52,2024-10-22
+639,Bwindi,Elephant,419,19,171.0,Wet,No,0.7,2024-03-02
+640,Mgahinga,Chimpanzee,136,30.7,5.0,Wet,Yes,0.65,2024-01-22
+641,Kidepo,Leopard,309,20.5,257.0,Dry,Yes,0.52,2024-07-20
+642,Bwindi,Chimpanzee,324,27.8,46.0,Dry,No,0.64,2024-07-20
+643,Queen Elizabeth,Lion,192,19.4,292.0,Dry,No,0.63,2024-07-23
+644,Lake Mburo,Buffalo,416,29.9,69.0,Wet,Yes,0.74,2024-11-29
+645,Lake Mburo,Lion,307,28.5,268.0,Dry,Yes,0.54,2024-08-08
+646,Kidepo,Hippo,493,27.8,57.0,Wet,No,0.68,2024-04-07
+647,Kidepo,Gorilla,324,29.1,156.0,Dry,No,0.8,2024-08-14
+648,Lake Mburo,Lion,245,18.8,119.0,Dry,No,0.58,2024-02-13
+649,Murchison Falls,Hippo,47,22.1,75.0,Wet,Yes,0.67,2024-02-26
+650,Kidepo,Buffalo,261,18.4,107.0,Dry,Yes,0.77,2024-05-12
+651,Lake Mburo,Buffalo,338,30.4,72.0,Dry,No,0.79,2024-12-05
+652,Lake Mburo,Elephant,150,20.9,145.0,Dry,No,0.53,2024-12-01
+653,Murchison Falls,Elephant,218,29.2,184.0,Dry,Yes,0.64,2024-11-28
+654,Bwindi,Lion,214,26.6,50.0,Wet,No,0.92,2024-09-29
+655,Murchison Falls,Lion,121,26.5,234.0,Dry,Yes,0.62,2024-09-28
+656,Kidepo,Gorilla,270,24.7,80.0,Dry,No,0.84,2024-06-30
+657,Kibale,Gorilla,140,34.9,256.0,Wet,Yes,0.81,2024-07-17
+658,Mgahinga,Elephant,304,34.1,115.0,Dry,No,0.94,2024-12-02
+659,Queen Elizabeth,Elephant,393,24.5,116.0,Wet,Yes,0.78,2024-08-06
+660,Kidepo,Leopard,188,25.6,67.0,Dry,Yes,0.78,2024-12-16
+661,Mgahinga,Lion,461,20.3,268.0,Dry,No,0.99,2024-03-15
+662,Kibale,Leopard,489,20.7,34.0,Dry,Yes,0.66,2024-03-15
+663,Kibale,Elephant,411,23.4,211.0,Wet,No,0.72,2024-11-22
+664,Kibale,Gorilla,97,31.2,54.0,Dry,Yes,0.51,2024-11-09
+665,Lake Mburo,Gorilla,330,27.6,118.0,Dry,Yes,0.84,2024-07-02
+666,Murchison Falls,Hippo,419,26.1,257.0,Wet,No,0.59,2024-07-17
+667,Bwindi,Buffalo,90,20.8,115.0,Dry,No,0.87,2024-01-08
+668,Kidepo,Buffalo,133,30.6,103.0,Dry,Yes,0.59,2024-08-12
+669,Mgahinga,Leopard,270,29.7,234.0,Dry,No,0.7,2024-01-22
+670,Lake Mburo,Hippo,442,24.5,160.0,Wet,Yes,0.76,2024-08-19
+671,Bwindi,Chimpanzee,469,18.7,125.0,Wet,Yes,0.77,2024-09-21
+672,Mgahinga,Hippo,45,21.2,225.0,Wet,No,0.88,2024-05-26
+673,Bwindi,Lion,236,23,27.0,Dry,No,0.91,2024-08-19
+674,Murchison Falls,Hippo,276,19.9,299.0,Dry,No,0.7,2024-08-18
+675,Murchison Falls,Lion,252,28,103.0,Wet,Yes,0.62,2024-12-20
+676,Kibale,Hippo,427,20.8,63.0,Dry,Yes,0.85,2024-11-20
+677,Kidepo,Elephant,288,30,261.0,Dry,No,0.77,2024-01-23
+678,Mgahinga,Lion,487,23.7,76.0,Dry,Yes,0.59,2024-12-30
+679,Murchison Falls,Buffalo,177,23.3,228.0,Wet,Yes,0.56,2024-03-08
+680,Queen Elizabeth,Elephant,338,31,6.0,Wet,No,0.92,2024-10-05
+681,Mgahinga,Elephant,331,33,121.0,Dry,No,0.72,2024-08-14
+682,Murchison Falls,Leopard,327,18.1,280.0,Wet,Yes,0.52,2024-03-16
+683,Murchison Falls,Hippo,198,18.6,16.0,Wet,No,0.95,2024-01-26
+684,Murchison Falls,Buffalo,111,20.7,145.0,Dry,No,0.87,2024-07-03
+685,Murchison Falls,Elephant,413,23.1,188.0,Wet,Yes,0.87,2024-10-08
+686,Murchison Falls,Gorilla,261,20.3,140.0,Wet,No,0.76,2024-12-22
+687,Queen Elizabeth,Leopard,49,19.9,270.0,Dry,No,0.85,2024-11-05
+688,Mgahinga,Hippo,167,25.3,162.0,Wet,No,0.95,2024-11-10
+689,Lake Mburo,Buffalo,286,30.4,254.0,Wet,Yes,0.93,2024-04-29
+690,Kibale,Gorilla,119,18,12.0,Wet,Yes,0.86,2024-04-16
+691,Mgahinga,Leopard,232,25,170.0,Wet,Yes,0.51,2024-04-13
+692,Kibale,Gorilla,150,31.4,157.0,Wet,No,0.88,2024-02-28
+693,Kibale,Gorilla,194,24.7,291.0,Dry,Yes,0.6,2024-06-22
+694,Kibale,Buffalo,489,26.1,18.0,Dry,No,0.58,2024-08-23
+695,Mgahinga,Leopard,478,23.7,211.0,Dry,No,0.78,2024-12-13
+696,Kidepo,Leopard,294,18.3,295.0,Wet,No,0.53,2024-03-17
+697,Kidepo,Chimpanzee,35,23.8,192.0,Dry,No,0.59,2024-02-29
+698,Mgahinga,Chimpanzee,404,23.2,161.0,Dry,No,0.7,2024-09-11
+699,Queen Elizabeth,Gorilla,251,32.1,154.0,Dry,No,0.59,2024-07-10
+700,Mgahinga,Elephant,418,21.4,47.0,Wet,Yes,0.89,2024-09-13
+701,Queen Elizabeth,Lion,194,33.7,268.0,Wet,No,0.57,2024-02-20
+702,Mgahinga,Leopard,366,34.9,105.0,Dry,No,0.69,2024-09-24
+703,Murchison Falls,Elephant,179,33.8,44.0,Wet,No,0.94,2024-02-22
+704,Lake Mburo,Chimpanzee,357,30.7,11.0,Wet,Yes,0.66,2024-04-08
+705,Kidepo,Gorilla,292,23.4,225.0,Dry,No,0.57,2024-05-20
+706,Murchison Falls,Elephant,338,27.5,52.0,Dry,No,0.77,2024-05-18
+707,Queen Elizabeth,Hippo,431,22.8,125.0,Dry,Yes,0.65,2024-06-22
+708,Lake Mburo,Buffalo,45,20.2,241.0,Dry,Yes,0.69,2024-02-14
+709,Bwindi,Buffalo,111,30,228.0,Wet,No,0.66,2024-04-11
+710,Kibale,Chimpanzee,363,31.8,40.0,Wet,Yes,0.55,2024-12-23
+711,Bwindi,Elephant,253,23.3,238.0,Wet,Yes,0.96,2024-03-14
+712,Mgahinga,Leopard,152,33.5,200.0,Dry,No,0.89,2024-06-15
+713,Bwindi,Buffalo,35,19.1,57.0,Wet,No,0.73,2024-03-28
+714,Kidepo,Chimpanzee,198,28.3,65.0,Dry,No,0.9,2024-02-24
+715,Kidepo,Leopard,352,19.2,154.0,Wet,No,0.79,2024-05-02
+716,Lake Mburo,Lion,300,20.7,246.0,Wet,Yes,0.67,2024-12-21
+717,Lake Mburo,Buffalo,421,34.7,290.0,Wet,Yes,0.58,2024-12-08
+718,Murchison Falls,Hippo,496,30.1,249.0,Dry,No,0.66,2024-02-19
+719,Mgahinga,Buffalo,110,23.2,207.0,Dry,Yes,0.84,2024-11-01
+720,Mgahinga,Chimpanzee,214,23.6,31.0,Dry,Yes,0.9,2024-10-24
+721,Mgahinga,Hippo,434,18,75.0,Dry,No,0.76,2024-07-18
+722,Lake Mburo,Leopard,248,21.3,162.0,Wet,No,0.95,2024-08-10
+723,Kibale,Gorilla,65,27.9,261.0,Wet,Yes,0.92,2024-02-01
+724,Kidepo,Leopard,47,18,286.0,Wet,Yes,0.92,2024-01-16
+725,Queen Elizabeth,Buffalo,379,28,162.0,Wet,No,0.69,2024-10-06
+726,Queen Elizabeth,Hippo,108,26.1,96.0,Wet,No,0.91,2024-03-19
+727,Kidepo,Chimpanzee,363,20.1,5.0,Dry,Yes,0.57,2024-09-06
+728,Kibale,Buffalo,89,19.4,212.0,Wet,No,0.81,2024-08-20
+729,Lake Mburo,Buffalo,302,31.9,196.0,Wet,Yes,0.59,2024-11-05
+730,Murchison Falls,Leopard,275,32.4,121.0,Wet,No,0.95,2024-10-22
+731,Kidepo,Elephant,39,27.7,188.0,Dry,No,0.97,2024-02-10
+732,Queen Elizabeth,Hippo,394,26.9,143.0,Wet,Yes,0.76,2024-11-08
+733,Murchison Falls,Lion,261,28.7,39.0,Wet,Yes,0.94,2024-09-30
+734,Mgahinga,Elephant,260,25.7,240.0,Wet,No,0.67,2024-05-30
+735,Kidepo,Lion,38,29.8,155.0,Wet,Yes,0.81,2024-10-23
+736,Queen Elizabeth,Leopard,46,29.2,149.0,Dry,No,0.74,2024-03-05
+737,Lake Mburo,Elephant,455,31.3,129.0,Dry,No,0.63,2024-05-11
+738,Murchison Falls,Hippo,77,28.3,77.0,Wet,No,0.9,2024-05-13
+739,Mgahinga,Hippo,140,26.2,270.0,Dry,No,0.98,2024-03-15
+740,Lake Mburo,Chimpanzee,98,32.2,211.0,Wet,Yes,0.82,2024-11-22
+741,Queen Elizabeth,Lion,315,30.5,176.0,Dry,No,0.87,2024-02-29
+742,Murchison Falls,Lion,257,24.8,154.0,Wet,Yes,0.69,2024-12-27
+743,Bwindi,Buffalo,154,20.5,222.0,Dry,No,0.95,2024-08-17
+744,Bwindi,Hippo,181,34.3,21.0,Dry,No,0.97,2024-08-09
+745,Lake Mburo,Hippo,459,22.6,138.0,Wet,Yes,0.63,2024-10-26
+746,Bwindi,Buffalo,415,29.5,123.0,Dry,No,0.83,2024-04-02
+747,Kidepo,Leopard,25,29.4,34.0,Dry,No,0.55,2024-02-23
+748,Kibale,Buffalo,199,21.7,145.0,Wet,Yes,0.52,2024-11-13
+749,Murchison Falls,Elephant,500,28.1,111.0,Dry,Yes,0.54,2024-11-05
+750,Queen Elizabeth,Buffalo,356,31,289.0,Dry,Yes,0.84,2024-05-09
+751,Kidepo,Buffalo,358,33.9,232.0,Wet,No,0.84,2024-12-07
+752,Mgahinga,Chimpanzee,185,22.4,37.0,Wet,Yes,0.69,2024-06-19
+753,Murchison Falls,Gorilla,436,22.5,225.0,Dry,No,0.98,2024-04-12
+754,Lake Mburo,Buffalo,111,29,55.0,Dry,No,0.61,2024-11-25
+755,Murchison Falls,Buffalo,386,22.4,17.0,Dry,Yes,0.78,2024-05-08
+756,Mgahinga,Buffalo,29,33.2,76.0,Dry,Yes,0.83,2024-05-16
+757,Queen Elizabeth,Hippo,188,33.4,294.0,Dry,No,0.73,2024-07-25
+758,Mgahinga,Hippo,419,31.8,35.0,Dry,Yes,0.69,2024-12-18
+759,Mgahinga,Chimpanzee,266,20.1,274.0,Wet,No,0.83,2024-07-24
+760,Murchison Falls,Hippo,351,19.5,273.0,Wet,Yes,0.91,2024-05-28
+761,Kibale,Lion,110,27.4,196.0,Dry,No,0.84,2024-02-24
+762,Kibale,Hippo,203,26.3,224.0,Dry,Yes,0.52,2024-01-13
+763,Kibale,Leopard,142,26.3,32.0,Wet,No,0.76,2024-08-18
+764,Murchison Falls,Elephant,193,19,21.0,Wet,Yes,0.6,2024-11-30
+765,Kibale,Leopard,254,34,274.0,Dry,Yes,0.95,2024-01-19
+766,Kibale,Lion,270,29.1,241.0,Dry,Yes,0.84,2024-03-07
+767,Murchison Falls,Lion,343,18.8,157.0,Dry,No,0.8,2024-10-29
+768,Murchison Falls,Chimpanzee,438,19.8,254.0,Dry,Yes,0.89,2024-08-06
+769,Kidepo,Chimpanzee,447,34.7,205.0,Wet,Yes,0.98,2024-10-21
+770,Lake Mburo,Lion,184,32.2,109.0,Dry,Yes,0.66,2024-03-02
+771,Kidepo,Lion,407,25.1,189.0,Dry,No,0.62,2024-10-24
+772,Murchison Falls,Lion,71,31.4,192.0,Dry,Yes,0.93,2024-02-11
+773,Murchison Falls,Elephant,111,33.7,145.0,Wet,No,0.84,2024-04-15
+774,Queen Elizabeth,Hippo,158,26.9,210.0,Dry,Yes,0.8,2024-01-20
+775,Lake Mburo,Lion,387,26.5,45.0,Wet,No,0.71,2024-10-12
+776,Queen Elizabeth,Lion,80,34.8,48.0,Wet,Yes,0.73,2024-11-16
+777,Kibale,Lion,161,18.9,57.0,Dry,No,0.74,2024-03-22
+778,Kibale,Elephant,47,29,145.0,Dry,No,0.62,2024-11-11
+779,Mgahinga,Chimpanzee,252,18.7,26.0,Dry,Yes,0.88,2024-09-05
+780,Lake Mburo,Elephant,56,33.2,227.0,Wet,No,0.6,2024-12-12
+781,Kidepo,Lion,418,19.9,116.0,Dry,Yes,0.86,2024-04-12
+782,Bwindi,Lion,57,26,248.0,Dry,No,0.57,2024-11-08
+783,Bwindi,Lion,218,24.3,234.0,Dry,No,0.98,2024-04-13
+784,Kidepo,Lion,36,29.8,30.0,Wet,Yes,0.55,2024-08-26
+785,Bwindi,Buffalo,107,30.9,112.0,Wet,Yes,0.89,2024-11-22
+786,Lake Mburo,Lion,315,34.5,117.0,Dry,No,0.92,2024-09-07
+787,Mgahinga,Lion,322,26,236.0,Wet,Yes,0.86,2024-05-06
+788,Queen Elizabeth,Gorilla,242,27.9,76.0,Dry,No,0.98,2024-01-21
+789,Bwindi,Hippo,413,26.6,217.0,Wet,No,0.9,2024-12-22
+790,Mgahinga,Elephant,251,26.4,42.0,Dry,No,0.97,2024-03-08
+791,Kidepo,Gorilla,142,29,46.0,Dry,No,0.83,2024-03-23
+792,Kibale,Buffalo,459,27.7,298.0,Dry,No,0.73,2024-03-11
+793,Mgahinga,Hippo,227,21.1,189.0,Wet,Yes,0.92,2024-02-06
+794,Bwindi,Hippo,190,27,151.0,Wet,No,0.84,2024-11-09
+795,Lake Mburo,Leopard,426,21.5,41.0,Wet,Yes,0.75,2024-12-11
+796,Kidepo,Elephant,76,24.5,238.0,Dry,No,0.68,2024-11-27
+797,Lake Mburo,Hippo,54,27.5,104.0,Dry,No,0.62,2024-02-28
+798,Kibale,Buffalo,397,34,297.0,Dry,Yes,0.66,2024-05-16
+799,Lake Mburo,Hippo,236,22.7,32.0,Wet,No,0.72,2024-09-13
+800,Lake Mburo,Chimpanzee,82,26,272.0,Wet,No,0.8,2024-12-10
+801,Kibale,Chimpanzee,472,19.1,234.0,Dry,Yes,0.69,2024-04-01
+802,Kidepo,Elephant,75,20.8,57.0,Dry,No,0.57,2024-04-14
+803,Lake Mburo,Hippo,31,23,277.0,Dry,No,0.67,2024-08-15
+804,Kibale,Hippo,30,23,32.0,Dry,Yes,0.91,2024-09-23
+805,Kibale,Gorilla,230,27.8,167.0,Wet,No,0.72,2024-10-17
+806,Queen Elizabeth,Chimpanzee,176,20.9,133.0,Dry,No,0.68,2024-05-27
+807,Mgahinga,Chimpanzee,44,20.5,145.0,Wet,Yes,0.8,2024-03-23
+808,Kibale,Leopard,166,21.1,89.0,Dry,Yes,0.62,2024-01-22
+809,Kidepo,Leopard,84,25.5,189.0,Dry,Yes,0.78,2024-01-18
+810,Kibale,Gorilla,196,20.5,229.0,Dry,No,0.56,2024-01-13
+811,Bwindi,Buffalo,413,20.5,234.0,Wet,Yes,0.5,2024-10-06
+812,Lake Mburo,Gorilla,351,30,242.0,Wet,Yes,0.89,2024-08-14
+813,Kidepo,Hippo,77,30.4,20.0,Dry,Yes,0.65,2024-07-24
+814,Lake Mburo,Chimpanzee,132,25.6,47.0,Wet,Yes,0.8,2024-04-09
+815,Lake Mburo,Leopard,133,31.3,142.0,Dry,Yes,0.54,2024-08-16
+816,Kibale,Hippo,64,34.6,201.0,Dry,No,0.66,2024-11-05
+817,Lake Mburo,Elephant,485,29.3,203.0,Dry,No,0.68,2024-07-09
+818,Murchison Falls,Gorilla,196,24,228.0,Dry,Yes,0.86,2024-08-15
+819,Kibale,Buffalo,431,25.5,83.0,Wet,No,0.57,2024-10-27
+820,Lake Mburo,Elephant,93,21.5,243.0,Wet,Yes,0.96,2024-10-29
+821,Mgahinga,Buffalo,65,18.1,139.0,Wet,Yes,0.77,2024-12-29
+822,Lake Mburo,Chimpanzee,488,20.3,95.0,Wet,No,0.77,2024-01-22
+823,Mgahinga,Chimpanzee,174,32.2,155.0,Wet,No,0.61,2024-01-02
+824,Queen Elizabeth,Gorilla,173,34.3,241.0,Dry,No,0.7,2024-09-08
+825,Kibale,Hippo,145,18.5,141.0,Wet,Yes,0.79,2024-07-04
+826,Lake Mburo,Buffalo,309,25.4,132.0,Wet,Yes,0.68,2024-10-21
+827,Murchison Falls,Chimpanzee,152,20.8,29.0,Dry,No,0.73,2024-12-20
+828,Queen Elizabeth,Gorilla,103,18.9,184.0,Wet,No,0.52,2024-05-29
+829,Lake Mburo,Hippo,499,19.3,99.0,Dry,Yes,0.79,2024-03-26
+830,Lake Mburo,Gorilla,466,23.4,154.0,Wet,No,0.55,2024-10-23
+831,Kidepo,Chimpanzee,93,18.2,265.0,Wet,No,0.88,2024-07-29
+832,Kidepo,Lion,72,21.7,257.0,Dry,Yes,0.89,2024-10-13
+833,Lake Mburo,Hippo,445,34.2,272.0,Dry,No,0.73,2024-02-09
+834,Murchison Falls,Chimpanzee,87,33.7,245.0,Wet,No,0.84,2024-03-12
+835,Mgahinga,Buffalo,475,34.8,267.0,Wet,Yes,0.85,2024-01-15
+836,Kibale,Chimpanzee,80,21.8,72.0,Dry,No,0.56,2024-03-07
+837,Murchison Falls,Buffalo,373,31,57.0,Dry,Yes,0.88,2024-08-08
+838,Murchison Falls,Lion,75,18.6,262.0,Dry,No,0.56,2024-05-09
+839,Murchison Falls,Elephant,174,29.3,49.0,Dry,Yes,0.79,2024-04-12
+840,Queen Elizabeth,Hippo,199,18.5,74.0,Wet,No,0.67,2024-09-13
+841,Mgahinga,Hippo,333,22.1,291.0,Dry,Yes,0.9,2024-01-08
+842,Lake Mburo,Lion,386,21.3,144.0,Dry,Yes,0.98,2024-02-20
+843,Queen Elizabeth,Leopard,455,30,187.0,Dry,No,0.83,2024-02-24
+844,Queen Elizabeth,Chimpanzee,201,34.7,217.0,Dry,Yes,0.7,2024-06-09
+845,Murchison Falls,Buffalo,76,26.8,253.0,Wet,No,0.77,2024-01-21
+846,Murchison Falls,Gorilla,272,20,145.0,Wet,No,0.84,2024-08-15
+847,Queen Elizabeth,Leopard,228,22.9,219.0,Dry,Yes,0.94,2024-08-31
+848,Kibale,Gorilla,111,18.2,251.0,Dry,No,0.71,2024-12-03
+849,Kibale,Elephant,81,20.4,205.0,Dry,Yes,0.53,2024-04-11
+850,Kidepo,Lion,324,32.3,206.0,Dry,Yes,0.91,2024-09-12
+851,Kidepo,Chimpanzee,385,31,139.0,Wet,No,0.73,2024-11-04
+852,Bwindi,Buffalo,281,22.7,232.0,Dry,Yes,0.62,2024-09-11
+853,Queen Elizabeth,Hippo,88,18.5,27.0,Dry,No,0.83,2024-04-01
+854,Bwindi,Leopard,367,23.6,155.0,Dry,Yes,0.82,2024-09-23
+855,Mgahinga,Buffalo,425,25.9,150.0,Wet,No,0.75,2024-10-04
+856,Kidepo,Chimpanzee,460,27.2,9.0,Dry,No,0.93,2024-03-01
+857,Bwindi,Buffalo,181,32.5,226.0,Wet,Yes,0.52,2024-10-12
+858,Kibale,Chimpanzee,419,23.2,84.0,Wet,No,0.57,2024-07-18
+859,Bwindi,Chimpanzee,76,27.7,251.0,Wet,No,0.78,2024-03-21
+860,Lake Mburo,Elephant,220,22.5,193.0,Wet,No,0.66,2024-01-15
+861,Lake Mburo,Elephant,85,32.2,178.0,Dry,No,0.69,2024-08-07
+862,Kidepo,Gorilla,230,24,125.0,Dry,Yes,0.82,2024-10-30
+863,Murchison Falls,Hippo,53,32.8,58.0,Wet,Yes,0.51,2024-06-15
+864,Murchison Falls,Buffalo,356,32.7,290.0,Wet,No,0.51,2024-08-28
+865,Lake Mburo,Elephant,182,24.4,199.0,Wet,Yes,0.9,2024-02-21
+866,Kibale,Hippo,125,23.7,257.0,Wet,Yes,0.8,2024-07-05
+867,Bwindi,Lion,274,28.8,38.0,Dry,No,0.63,2024-06-01
+868,Lake Mburo,Buffalo,431,21.8,47.0,Dry,No,0.63,2024-10-17
+869,Mgahinga,Leopard,263,25.3,177.0,Dry,No,0.75,2024-06-02
+870,Bwindi,Hippo,296,23.3,212.0,Wet,No,0.81,2024-08-20
+871,Kibale,Chimpanzee,300,21.1,9.0,Dry,No,0.6,2024-08-27
+872,Kidepo,Hippo,292,31.8,222.0,Dry,Yes,0.68,2024-03-16
+873,Queen Elizabeth,Lion,402,29.7,153.0,Wet,No,0.66,2024-02-02
+874,Kibale,Lion,453,25,146.0,Dry,No,0.84,2024-04-30
+875,Bwindi,Lion,78,20.5,14.0,Dry,No,0.73,2024-10-13
+876,Bwindi,Buffalo,351,33.4,103.0,Dry,No,0.57,2024-05-12
+877,Mgahinga,Chimpanzee,162,29.2,90.0,Dry,No,0.88,2024-01-29
+878,Mgahinga,Elephant,180,28.2,32.0,Wet,No,0.83,2024-02-16
+879,Bwindi,Chimpanzee,390,32.3,120.0,Dry,Yes,0.76,2024-10-24
+880,Mgahinga,Leopard,148,26.4,46.0,Dry,Yes,0.88,2024-06-09
+881,Kidepo,Chimpanzee,319,30.5,120.0,Wet,Yes,0.57,2024-03-30
+882,Queen Elizabeth,Gorilla,245,24.9,28.0,Wet,No,0.84,2024-02-27
+883,Kidepo,Leopard,236,26.1,126.0,Wet,Yes,0.68,2024-07-07
+884,Mgahinga,Gorilla,30,29,17.0,Dry,Yes,0.62,2024-07-15
+885,Kidepo,Hippo,378,24.2,62.0,Dry,No,0.69,2024-07-20
+886,Kidepo,Gorilla,66,33.9,120.0,Wet,Yes,0.92,2024-03-23
+887,Bwindi,Hippo,182,33,208.0,Dry,No,0.92,2024-09-08
+888,Bwindi,Hippo,231,33.8,170.0,Wet,Yes,0.9,2024-12-23
+889,Kidepo,Leopard,53,24,280.0,Wet,No,0.84,2024-01-27
+890,Kibale,Hippo,114,28.7,69.0,Dry,No,0.6,2024-06-05
+891,Kidepo,Leopard,62,19.9,127.0,Dry,No,0.89,2024-06-12
+892,Bwindi,Buffalo,467,30.5,133.0,Dry,No,0.89,2024-04-11
+893,Murchison Falls,Buffalo,208,21.1,193.0,Dry,Yes,0.96,2024-10-12
+894,Kibale,Leopard,340,21.9,45.0,Wet,Yes,0.63,2024-03-27
+895,Murchison Falls,Buffalo,336,25.3,133.0,Dry,Yes,0.97,2024-03-28
+896,Lake Mburo,Elephant,27,30.2,222.0,Wet,No,0.56,2024-12-31
+897,Queen Elizabeth,Lion,461,31.8,136.0,Wet,No,0.69,2024-08-08
+898,Mgahinga,Lion,327,21.7,144.0,Dry,No,0.59,2024-03-15
+899,Murchison Falls,Gorilla,154,22,230.0,Dry,No,0.79,2024-11-27
+900,Bwindi,Elephant,25,26,165.0,Wet,Yes,0.85,2024-12-28
+901,Bwindi,Hippo,325,22.4,48.0,Dry,Yes,0.66,2024-04-30
+902,Bwindi,Gorilla,330,34,23.0,Dry,No,0.75,2024-07-14
+903,Kidepo,Buffalo,363,24.3,286.0,Dry,Yes,0.63,2024-09-14
+904,Bwindi,Gorilla,469,26,45.0,Wet,No,0.57,2024-02-29
+905,Kidepo,Elephant,85,26.5,143.0,Wet,No,0.64,2024-05-14
+906,Lake Mburo,Chimpanzee,409,33.8,264.0,Wet,No,0.94,2024-06-10
+907,Kibale,Buffalo,411,34.2,284.0,Wet,Yes,0.59,2024-01-28
+908,Queen Elizabeth,Lion,38,26,83.0,Wet,No,0.56,2024-09-10
+909,Murchison Falls,Buffalo,202,34.8,287.0,Wet,No,0.74,2024-03-16
+910,Murchison Falls,Gorilla,67,21.5,145.0,Dry,Yes,0.87,2024-05-19
+911,Lake Mburo,Hippo,319,21.6,2.0,Dry,No,0.95,2024-05-06
+912,Mgahinga,Buffalo,366,19.6,168.0,Dry,No,0.83,2024-12-14
+913,Murchison Falls,Buffalo,211,28,54.0,Wet,Yes,0.51,2024-08-23
+914,Mgahinga,Hippo,357,26.2,137.0,Dry,No,0.98,2024-12-01
+915,Lake Mburo,Buffalo,186,34.1,291.0,Dry,Yes,0.92,2024-11-25
+916,Kidepo,Gorilla,428,18.9,36.0,Wet,Yes,0.7,2024-04-01
+917,Queen Elizabeth,Chimpanzee,463,24.8,10.0,Dry,Yes,0.69,2024-07-25
+918,Kidepo,Hippo,405,34.2,78.0,Dry,No,0.74,2024-08-09
+919,Kibale,Chimpanzee,491,23.3,67.0,Wet,Yes,0.91,2024-09-19
+920,Queen Elizabeth,Buffalo,248,33.1,243.0,Wet,No,0.54,2024-08-04
+921,Mgahinga,Gorilla,334,21.2,218.0,Dry,Yes,0.75,2024-08-25
+922,Kibale,Lion,351,29.7,79.0,Wet,Yes,0.64,2024-08-11
+923,Murchison Falls,Chimpanzee,264,23.1,65.0,Wet,Yes,0.76,2024-05-31
+924,Lake Mburo,Elephant,302,19.3,23.0,Dry,No,0.7,2024-08-25
+925,Kibale,Hippo,311,31.8,181.0,Wet,Yes,0.88,2024-01-09
+926,Murchison Falls,Hippo,358,25.9,93.0,Wet,Yes,0.54,2024-12-26
+927,Kidepo,Gorilla,320,30.3,230.0,Wet,No,0.97,2024-04-05
+928,Queen Elizabeth,Lion,60,30.7,132.0,Dry,No,0.76,2024-01-03
+929,Bwindi,Elephant,26,20.9,244.0,Wet,No,0.93,2024-11-04
+930,Kibale,Buffalo,175,28.5,184.0,Wet,No,0.54,2024-03-10
+931,Murchison Falls,Lion,77,31.9,96.0,Dry,Yes,0.74,2024-03-15
+932,Kibale,Lion,243,32.3,275.0,Dry,Yes,0.65,2024-08-25
+933,Queen Elizabeth,Buffalo,236,18.4,85.0,Dry,No,0.97,2024-08-29
+934,Murchison Falls,Chimpanzee,250,27.9,103.0,Wet,No,0.52,2024-01-05
+935,Murchison Falls,Hippo,453,30.1,212.0,Wet,No,0.52,2024-07-23
+936,Bwindi,Leopard,322,30.3,249.0,Dry,Yes,0.76,2024-08-04
+937,Lake Mburo,Gorilla,303,19.1,213.0,Wet,Yes,0.74,2024-11-26
+938,Kidepo,Buffalo,377,25.4,82.0,Wet,Yes,0.73,2024-08-12
+939,Queen Elizabeth,Leopard,132,28,173.0,Wet,Yes,0.93,2024-12-30
+940,Bwindi,Buffalo,446,34,184.0,Wet,Yes,0.8,2024-05-24
+941,Kibale,Hippo,64,29.3,66.0,Dry,Yes,0.58,2024-09-08
+942,Murchison Falls,Chimpanzee,232,34,252.0,Wet,Yes,0.6,2024-01-25
+943,Murchison Falls,Gorilla,471,22.4,81.0,Dry,Yes,0.9,2024-06-21
+944,Bwindi,Elephant,336,21.9,287.0,Dry,No,0.63,2024-06-23
+945,Mgahinga,Gorilla,413,18.8,285.0,Wet,Yes,0.92,2024-09-20
+946,Lake Mburo,Hippo,73,30,224.0,Wet,Yes,0.98,2024-11-08
+947,Lake Mburo,Chimpanzee,459,34.1,287.0,Dry,Yes,0.58,2024-03-01
+948,Mgahinga,Lion,486,24.1,149.0,Wet,No,0.86,2024-02-20
+949,Queen Elizabeth,Hippo,206,23.7,70.0,Dry,Yes,0.72,2024-07-31
+950,Mgahinga,Chimpanzee,23,22.2,242.0,Wet,No,0.75,2024-02-13
+951,Kidepo,Gorilla,386,30.8,184.0,Dry,Yes,0.87,2024-09-28
+952,Bwindi,Chimpanzee,136,20.3,219.0,Wet,No,0.94,2024-09-21
+953,Mgahinga,Hippo,205,34,226.0,Dry,Yes,0.85,2024-09-21
+954,Murchison Falls,Elephant,193,23.4,84.0,Wet,Yes,0.69,2024-01-19
+955,Kibale,Hippo,97,33.3,29.0,Wet,No,0.7,2024-12-14
+956,Kibale,Leopard,467,23.2,160.0,Wet,Yes,0.91,2024-09-27
+957,Lake Mburo,Lion,378,24.9,105.0,Wet,No,0.93,2024-11-28
+958,Bwindi,Chimpanzee,121,33,43.0,Dry,No,0.69,2024-03-05
+959,Lake Mburo,Leopard,165,21.6,261.0,Wet,No,0.87,2024-03-22
+960,Murchison Falls,Elephant,475,31.5,132.0,Dry,No,0.86,2024-09-15
+961,Murchison Falls,Hippo,50,32.3,132.0,Wet,Yes,0.52,2024-11-29
+962,Murchison Falls,Buffalo,172,27.7,2.0,Wet,No,0.98,2024-10-24
+963,Lake Mburo,Hippo,477,33.9,273.0,Dry,No,0.65,2024-12-07
+964,Mgahinga,Chimpanzee,386,27.7,71.0,Wet,Yes,0.55,2024-09-21
+965,Lake Mburo,Lion,441,31.2,232.0,Dry,Yes,0.85,2024-07-29
+966,Murchison Falls,Elephant,51,25.2,66.0,Wet,Yes,0.72,2024-07-08
+967,Kibale,Leopard,226,28,265.0,Wet,No,0.79,2024-11-21
+968,Bwindi,Buffalo,372,33.8,250.0,Wet,Yes,0.57,2024-03-06
+969,Bwindi,Hippo,254,20.2,262.0,Dry,Yes,0.72,2024-01-17
+970,Kibale,Lion,306,24.3,60.0,Wet,Yes,0.56,2024-10-19
+971,Kidepo,Elephant,287,20.6,190.0,Wet,No,0.65,2024-09-05
+972,Murchison Falls,Chimpanzee,93,20.4,215.0,Dry,No,0.94,2024-04-20
+973,Queen Elizabeth,Chimpanzee,398,26.3,62.0,Wet,Yes,0.93,2024-08-01
+974,Bwindi,Leopard,178,27.6,172.0,Wet,No,0.91,2024-11-06
+975,Queen Elizabeth,Chimpanzee,90,26.6,235.0,Wet,No,0.57,2024-06-15
+976,Murchison Falls,Chimpanzee,339,29.3,209.0,Wet,Yes,0.94,2024-06-22
+977,Lake Mburo,Elephant,363,33.1,142.0,Dry,Yes,0.85,2024-10-19
+978,Kibale,Chimpanzee,415,30,287.0,Dry,Yes,0.59,2024-11-12
+979,Lake Mburo,Leopard,407,18.9,291.0,Dry,No,0.75,2024-01-10
+980,Murchison Falls,Hippo,499,27,9.0,Wet,Yes,0.62,2024-12-27
+981,Mgahinga,Leopard,247,19.4,273.0,Wet,No,0.79,2024-09-08
+982,Mgahinga,Elephant,194,25.4,212.0,Dry,No,0.69,2024-02-16
+983,Murchison Falls,Elephant,297,20.9,73.0,Dry,No,0.88,2024-03-19
+984,Kidepo,Buffalo,367,20.9,166.0,Dry,Yes,0.85,2024-06-01
+985,Bwindi,Elephant,183,20.4,165.0,Wet,No,0.96,2024-03-02
+986,Murchison Falls,Lion,142,30.8,300.0,Dry,No,0.75,2024-09-15
+987,Bwindi,Elephant,157,19,237.0,Wet,Yes,0.74,2024-07-27
+988,Kibale,Lion,487,33.1,137.0,Dry,Yes,0.87,2024-11-29
+989,Mgahinga,Lion,175,27.7,228.0,Dry,Yes,0.88,2024-03-13
+990,Kidepo,Leopard,106,31.3,275.0,Wet,No,0.52,2024-08-25
+991,Mgahinga,Leopard,168,29.1,85.0,Dry,Yes,0.96,2024-09-03
+992,Kidepo,Leopard,148,32.3,194.0,Wet,Yes,0.79,2024-09-18
+993,Kidepo,Elephant,102,30.6,288.0,Dry,No,0.54,2024-12-23
+994,Murchison Falls,Chimpanzee,91,30.3,143.0,Wet,Yes,0.8,2024-06-11
+995,Kibale,Gorilla,345,22.4,231.0,Wet,Yes,0.82,2024-06-13
+996,Kidepo,Lion,255,34.3,168.0,Dry,Yes,0.82,2024-01-02
+997,Lake Mburo,Buffalo,22,33.3,88.0,Wet,No,0.87,2024-10-02
+998,Murchison Falls,Chimpanzee,468,29,39.0,Dry,No,0.83,2024-06-29
+999,Mgahinga,Buffalo,443,28.2,198.0,Dry,Yes,0.56,2024-07-08
+1000,Queen Elizabeth,Buffalo,24,21.8,10.0,Wet,No,,2024-11-10
+1001,Kibale,Gorilla,433,30.2,119.0,Wet,No,0.52,2024-09-09
+1002,Kibale,Hippo,330,21.6,100.0,Wet,Yes,0.93,2024-10-18
+1003,Lake Mburo,Buffalo,107,27.4,289.0,Dry,Yes,0.79,2024-02-03
+1004,Queen Elizabeth,Gorilla,497,27.7,116.0,Wet,Yes,0.92,2024-01-12
+1005,Kibale,Hippo,292,28.4,286.0,Wet,Yes,0.96,2024-11-24
+1006,Kibale,Hippo,46,32.5,165.0,Wet,No,0.63,2024-12-14
+1007,Lake Mburo,Buffalo,273,24.1,22.0,Dry,Yes,0.64,2024-08-03
+1008,Lake Mburo,Buffalo,181,18.1,99.0,Wet,Yes,0.93,2024-01-13
+1009,Kibale,Lion,373,25.2,38.0,Dry,Yes,0.58,2024-06-08
+1010,Murchison Falls,Hippo,340,19.6,245.0,Wet,Yes,0.79,2024-11-16
+1011,Kidepo,Chimpanzee,148,22.2,242.0,Dry,No,0.91,2024-06-19
+1012,Lake Mburo,Chimpanzee,141,34,224.0,Dry,No,0.78,2024-02-13
+1013,Murchison Falls,Elephant,213,23.3,33.0,Dry,Yes,0.95,2024-08-14
+1014,Murchison Falls,Gorilla,332,28.6,33.0,Dry,Yes,0.77,2024-05-30
+1015,Mgahinga,Buffalo,225,19.6,210.0,Dry,Yes,0.72,2024-08-25
+1016,Mgahinga,Buffalo,470,28.5,51.0,Wet,Yes,0.72,2024-06-17
+1017,Lake Mburo,Lion,75,19.7,34.0,Dry,Yes,0.81,2024-05-11
+1018,Kidepo,Buffalo,266,30.3,227.0,Dry,Yes,0.57,2024-01-23
+1019,Murchison Falls,Lion,179,27.9,262.0,Wet,No,0.79,2024-10-04
+1020,Mgahinga,Lion,95,26,175.0,Wet,No,0.98,2024-09-22
+1021,Lake Mburo,Hippo,367,20.5,121.0,Dry,No,0.67,2024-04-12
+1022,Kibale,Lion,422,19.2,96.0,Wet,No,0.79,2024-06-18
+1023,Mgahinga,Leopard,309,34.4,153.0,Wet,No,0.58,2024-08-20
+1024,Mgahinga,Elephant,273,21.7,1.0,Dry,Yes,0.73,2024-04-19
+1025,Queen Elizabeth,Buffalo,396,31.1,169.0,Wet,Yes,0.7,2024-01-04
+1026,Kidepo,Elephant,57,24.1,284.0,Dry,Yes,0.64,2024-04-09
+1027,Kibale,Leopard,487,31,22.0,Dry,Yes,0.6,2024-03-30
+1028,Queen Elizabeth,Gorilla,388,21,283.0,Dry,Yes,0.6,2024-03-31
+1029,Mgahinga,Gorilla,486,19.7,70.0,Wet,Yes,0.67,2024-04-17
+1030,Kidepo,Buffalo,142,24.3,190.0,Dry,No,0.93,2024-02-03
+1031,Murchison Falls,Lion,471,33.7,97.0,Dry,No,0.84,2024-06-11
+1032,Lake Mburo,Buffalo,345,22.2,23.0,Dry,No,0.89,2024-06-16
+1033,Queen Elizabeth,Elephant,342,31.5,64.0,Wet,Yes,0.86,2024-08-28
+1034,Mgahinga,Hippo,334,19.1,260.0,Wet,No,0.74,2024-08-25
+1035,Queen Elizabeth,Gorilla,384,24.4,247.0,Wet,No,0.63,2024-07-24
+1036,Kibale,Chimpanzee,318,29,106.0,Dry,Yes,0.72,2024-04-30
+1037,Bwindi,Lion,176,25.2,193.0,Dry,No,0.62,2024-02-13
+1038,Queen Elizabeth,Chimpanzee,63,23,265.0,Wet,Yes,0.79,2024-08-26
+1039,Lake Mburo,Leopard,192,25.2,239.0,Wet,No,0.68,2024-09-11
+1040,Kidepo,Gorilla,215,18.4,226.0,Dry,No,0.82,2024-07-02
+1041,Murchison Falls,Gorilla,451,26.5,279.0,Dry,No,0.95,2024-02-20
+1042,Murchison Falls,Elephant,204,18.7,102.0,Wet,Yes,0.83,2024-05-08
+1043,Kidepo,Hippo,437,31.1,140.0,Dry,Yes,0.99,2024-10-05
+1044,Kidepo,Elephant,414,23.1,177.0,Wet,No,0.9,2024-12-01
+1045,Murchison Falls,Buffalo,354,26.7,76.0,Wet,Yes,0.61,2024-04-17
+1046,Bwindi,Lion,284,28,282.0,Wet,No,0.67,2024-02-13
+1047,Kidepo,Chimpanzee,116,25.3,213.0,Dry,No,0.72,2024-10-12
+1048,Murchison Falls,Gorilla,91,27.8,65.0,Wet,Yes,0.74,2024-12-03
+1049,Mgahinga,Gorilla,193,21.8,217.0,Wet,No,0.66,2024-01-12
+1050,Lake Mburo,Chimpanzee,36,33.7,78.0,Wet,No,0.98,2024-04-14
+1051,Bwindi,Elephant,293,24.6,243.0,Dry,No,0.78,2024-08-19
+1052,Kibale,Gorilla,67,20.9,283.0,Dry,Yes,0.9,2024-11-04
+1053,Bwindi,Elephant,115,21.4,197.0,Wet,Yes,0.61,2024-12-03
+1054,Lake Mburo,Elephant,252,19,265.0,Dry,Yes,0.66,2024-07-29
+1055,Bwindi,Lion,76,20.2,214.0,Wet,Yes,0.69,2024-04-15
+1056,Queen Elizabeth,Chimpanzee,125,23.3,243.0,Dry,No,0.79,2024-09-14
+1057,Kibale,Hippo,254,22.7,3.0,Dry,No,0.53,2024-07-23
+1058,Lake Mburo,Chimpanzee,146,26.9,291.0,Wet,No,0.73,2024-01-21
+1059,Kibale,Elephant,167,29,233.0,Wet,No,0.69,2024-03-30
+1060,Bwindi,Lion,111,33.3,221.0,Wet,No,0.95,2024-04-03
+1061,Kibale,Leopard,68,24.7,22.0,Dry,Yes,0.63,2024-11-17
+1062,Lake Mburo,Gorilla,361,33.6,111.0,Wet,No,0.99,2024-10-10
+1063,Murchison Falls,Gorilla,59,30.8,258.0,Wet,No,0.72,2024-05-09
+1064,Queen Elizabeth,Leopard,42,25.9,37.0,Wet,No,0.67,2024-07-23
+1065,Mgahinga,Lion,223,18.6,128.0,Dry,Yes,0.66,2024-08-25
+1066,Bwindi,Buffalo,54,19.4,124.0,Wet,Yes,0.73,2024-05-22
+1067,Mgahinga,Lion,107,32.3,51.0,Dry,No,0.56,2024-07-19
+1068,Queen Elizabeth,Elephant,363,31,139.0,Dry,No,0.68,2024-04-20
+1069,Kibale,Elephant,477,29.5,110.0,Wet,Yes,0.91,2024-09-24
+1070,Kibale,Hippo,386,29.2,52.0,Wet,No,0.72,2024-11-02
+1071,Murchison Falls,Elephant,415,24.4,103.0,Dry,No,0.95,2024-04-12
+1072,Murchison Falls,Elephant,235,18.5,7.0,Wet,Yes,0.83,2024-02-02
+1073,Queen Elizabeth,Elephant,428,32.2,85.0,Dry,Yes,0.7,2024-02-25
+1074,Mgahinga,Gorilla,185,27.6,97.0,Dry,No,0.96,2024-03-02
+1075,Queen Elizabeth,Lion,74,24.1,88.0,Dry,No,0.82,2024-01-07
+1076,Bwindi,Lion,254,21.7,142.0,Wet,Yes,0.53,2024-04-21
+1077,Bwindi,Gorilla,412,28.2,52.0,Dry,No,0.97,2024-11-03
+1078,Kidepo,Hippo,376,24.6,68.0,Wet,Yes,0.81,2024-12-18
+1079,Kidepo,Chimpanzee,361,26.2,171.0,Dry,No,0.69,2024-11-23
+1080,Kibale,Lion,277,28,6.0,Dry,Yes,0.8,2024-03-04
+1081,Kidepo,Lion,397,25.3,124.0,Dry,Yes,0.57,2024-09-12
+1082,Kidepo,Lion,97,24.4,19.0,Dry,No,0.86,2024-06-17
+1083,Queen Elizabeth,Gorilla,182,28.9,20.0,Wet,No,0.87,2024-04-27
+1084,Mgahinga,Hippo,189,23.8,105.0,Dry,Yes,0.89,2024-12-22
+1085,Kibale,Lion,331,32.8,266.0,Wet,Yes,0.72,2024-01-04
+1086,Murchison Falls,Chimpanzee,271,19.2,98.0,Dry,Yes,0.96,2024-03-05
+1087,Murchison Falls,Lion,323,27.3,104.0,Dry,Yes,0.71,2024-08-27
+1088,Kidepo,Lion,389,21.4,217.0,Dry,Yes,0.65,2024-10-22
+1089,Bwindi,Hippo,123,22.6,246.0,Dry,No,0.7,2024-03-26
+1090,Bwindi,Buffalo,236,26.6,221.0,Dry,No,0.51,2024-07-14
+1091,Bwindi,Chimpanzee,62,30.9,153.0,Dry,Yes,0.63,2024-08-25
+1092,Kidepo,Buffalo,165,24.4,246.0,Dry,No,0.57,2024-08-28
+1093,Queen Elizabeth,Lion,489,21.2,6.0,Wet,No,0.7,2024-07-31
+1094,Bwindi,Hippo,211,24.5,157.0,Dry,No,0.93,2024-03-04
+1095,Bwindi,Leopard,103,21.3,223.0,Wet,No,0.75,2024-09-07
+1096,Kibale,Hippo,208,29.8,197.0,Wet,Yes,0.62,2024-01-18
+1097,Mgahinga,Gorilla,343,30,14.0,Dry,No,0.8,2024-12-14
+1098,Queen Elizabeth,Gorilla,146,28.2,82.0,Dry,Yes,0.88,2024-11-25
+1099,Kibale,Buffalo,223,30,41.0,Dry,No,0.58,2024-08-06
+1100,Kidepo,Hippo,174,26.5,272.0,Wet,No,0.86,2024-02-15
+1101,Murchison Falls,Hippo,313,31.2,176.0,Dry,No,0.87,2024-07-22
+1102,Kibale,Gorilla,23,34.8,251.0,Dry,Yes,0.53,2024-12-22
+1103,Bwindi,Leopard,233,29.1,220.0,Dry,Yes,0.68,2024-12-26
+1104,Queen Elizabeth,Lion,269,21.1,56.0,Wet,Yes,0.59,2024-01-31
+1105,Kibale,Lion,434,30.9,132.0,Wet,No,0.81,2024-11-15
+1106,Murchison Falls,Chimpanzee,345,20.8,150.0,Dry,No,0.56,2024-02-02
+1107,Kidepo,Elephant,319,22,248.0,Dry,Yes,0.53,2024-01-04
+1108,Kibale,Leopard,424,34.8,49.0,Dry,Yes,0.68,2024-09-23
+1109,Mgahinga,Gorilla,497,26.3,172.0,Wet,No,0.68,2024-06-24
+1110,Kidepo,Chimpanzee,142,34,204.0,Wet,Yes,0.98,2024-06-18
+1111,Mgahinga,Elephant,21,25.8,205.0,Dry,Yes,0.79,2024-09-28
+1112,Kidepo,Hippo,404,31.9,188.0,Wet,No,0.75,2024-12-04
+1113,Queen Elizabeth,Elephant,346,34.3,164.0,Dry,No,0.93,2024-06-15
+1114,Kibale,Buffalo,139,28.3,204.0,Dry,No,0.71,2024-08-31
+1115,Kibale,Chimpanzee,378,33.4,197.0,Wet,Yes,0.85,2024-09-23
+1116,Lake Mburo,Chimpanzee,458,30.2,16.0,Dry,No,0.89,2024-06-03
+1117,Mgahinga,Hippo,300,34.8,239.0,Dry,No,0.97,2024-09-03
+1118,Kibale,Leopard,143,22.1,87.0,Dry,Yes,0.71,2024-01-15
+1119,Queen Elizabeth,Gorilla,482,24.5,143.0,Dry,No,0.83,2024-12-09
+1120,Murchison Falls,Hippo,89,33.7,251.0,Dry,No,0.93,2024-10-21
+1121,Mgahinga,Leopard,53,28.9,193.0,Wet,No,0.9,2024-04-24
+1122,Kidepo,Elephant,168,19.5,45.0,Wet,Yes,0.86,2024-02-29
+1123,Lake Mburo,Gorilla,85,32.5,194.0,Dry,No,0.53,2024-10-01
+1124,Queen Elizabeth,Chimpanzee,218,34.7,163.0,Wet,Yes,0.75,2024-11-04
+1125,Lake Mburo,Lion,74,24.7,275.0,Wet,No,0.57,2024-05-31
+1126,Mgahinga,Lion,275,29.6,75.0,Wet,Yes,0.87,2024-12-25
+1127,Murchison Falls,Leopard,183,23.3,63.0,Wet,No,0.81,2024-04-20
+1128,Bwindi,Gorilla,380,34.4,30.0,Wet,Yes,0.91,2024-04-17
+1129,Mgahinga,Hippo,498,31.8,26.0,Dry,No,0.86,2024-06-02
+1130,Mgahinga,Hippo,487,32.4,11.0,Wet,No,0.71,2024-08-30
+1131,Kidepo,Chimpanzee,220,24.6,270.0,Wet,No,0.84,2024-04-09
+1132,Kibale,Chimpanzee,300,24.7,67.0,Wet,Yes,0.92,2024-12-29
+1133,Kidepo,Buffalo,355,20.8,70.0,Wet,No,0.64,2024-03-15
+1134,Queen Elizabeth,Lion,431,30.7,4.0,Wet,Yes,0.83,2024-03-16
+1135,Bwindi,Buffalo,367,32.3,28.0,Dry,No,0.98,2024-04-01
+1136,Murchison Falls,Elephant,283,29.1,222.0,Dry,No,0.62,2024-03-01
+1137,Queen Elizabeth,Buffalo,270,23.1,88.0,Wet,Yes,0.88,2024-11-28
+1138,Bwindi,Gorilla,343,29.1,188.0,Dry,Yes,0.56,2024-03-03
+1139,Bwindi,Hippo,362,33.4,115.0,Dry,No,0.63,2024-02-18
+1140,Mgahinga,Leopard,112,24.5,222.0,Wet,Yes,0.55,2024-02-02
+1141,Kibale,Chimpanzee,427,27.1,207.0,Dry,No,0.77,2024-10-01
+1142,Mgahinga,Chimpanzee,291,26.3,265.0,Dry,Yes,0.97,2024-03-01
+1143,Queen Elizabeth,Chimpanzee,326,29.8,2.0,Wet,No,0.56,2024-03-06
+1144,Lake Mburo,Lion,354,20.7,287.0,Wet,Yes,0.54,2024-03-04
+1145,Lake Mburo,Gorilla,206,34.4,87.0,Wet,Yes,0.62,2024-01-24
+1146,Lake Mburo,Chimpanzee,170,29.2,227.0,Dry,No,0.84,2024-09-24
+1147,Kidepo,Leopard,295,26.7,50.0,Dry,Yes,0.52,2024-03-13
+1148,Kidepo,Chimpanzee,446,21.7,68.0,Dry,No,0.64,2024-11-14
+1149,Bwindi,Elephant,301,22.3,195.0,Dry,No,0.72,2024-05-10
+1150,Kibale,Buffalo,375,20.4,104.0,Dry,No,0.99,2024-12-22
+1151,Kibale,Lion,385,24.3,261.0,Dry,No,0.9,2024-06-10
+1152,Mgahinga,Buffalo,214,18.4,126.0,Dry,No,0.56,2024-02-26
+1153,Kibale,Leopard,228,19.1,45.0,Wet,No,0.88,2024-03-15
+1154,Mgahinga,Chimpanzee,135,22.7,50.0,Wet,Yes,0.69,2024-02-23
+1155,Mgahinga,Elephant,109,27,156.0,Wet,Yes,0.76,2024-12-24
+1156,Lake Mburo,Chimpanzee,164,27.4,50.0,Dry,Yes,0.66,2024-07-18
+1157,Queen Elizabeth,Gorilla,432,30.6,272.0,Wet,No,0.79,2024-05-12
+1158,Murchison Falls,Hippo,282,30.1,64.0,Dry,No,0.78,2024-05-16
+1159,Murchison Falls,Hippo,347,34.6,127.0,Wet,No,0.59,2024-06-30
+1160,Mgahinga,Buffalo,277,22.9,219.0,Dry,No,0.81,2024-02-14
+1161,Kidepo,Buffalo,414,23.3,46.0,Dry,Yes,0.86,2024-02-17
+1162,Queen Elizabeth,Leopard,49,19.4,146.0,Wet,Yes,0.97,2024-08-05
+1163,Kibale,Leopard,497,30.4,245.0,Wet,Yes,0.7,2024-11-11
+1164,Queen Elizabeth,Chimpanzee,401,18.1,217.0,Wet,Yes,0.99,2024-12-04
+1165,Mgahinga,Leopard,370,28.4,229.0,Dry,Yes,0.59,2024-07-06
+1166,Mgahinga,Lion,283,24,26.0,Wet,No,0.69,2024-07-10
+1167,Murchison Falls,Gorilla,487,29.5,276.0,Dry,No,0.65,2024-05-30
+1168,Kidepo,Lion,21,30.5,291.0,Wet,Yes,0.95,2024-11-25
+1169,Lake Mburo,Chimpanzee,477,18.6,237.0,Wet,Yes,0.67,2024-11-11
+1170,Bwindi,Gorilla,172,24,2.0,Wet,Yes,0.7,2024-01-05
+1171,Murchison Falls,Buffalo,271,21.4,270.0,Dry,No,0.56,2024-09-06
+1172,Murchison Falls,Lion,413,29.2,115.0,Wet,No,0.68,2024-07-05
+1173,Bwindi,Lion,294,31.8,55.0,Wet,No,0.58,2024-06-30
+1174,Kibale,Buffalo,22,24.1,101.0,Dry,Yes,0.64,2024-03-09
+1175,Bwindi,Buffalo,400,23.6,16.0,Dry,Yes,0.96,2024-12-06
+1176,Kidepo,Elephant,235,26.3,253.0,Dry,No,0.87,2024-07-23
+1177,Lake Mburo,Hippo,492,30.6,199.0,Dry,Yes,0.97,2024-01-11
+1178,Queen Elizabeth,Lion,196,26.5,121.0,Dry,No,0.71,2024-11-01
+1179,Kibale,Elephant,242,26.2,144.0,Wet,Yes,0.87,2024-05-06
+1180,Lake Mburo,Lion,393,26.7,127.0,Wet,Yes,0.92,2024-12-24
+1181,Queen Elizabeth,Hippo,440,25.3,242.0,Dry,Yes,0.59,2024-10-29
+1182,Kibale,Hippo,96,21.9,67.0,Wet,Yes,0.63,2024-04-08
+1183,Queen Elizabeth,Buffalo,29,28.5,46.0,Dry,No,0.7,2024-06-05
+1184,Kibale,Hippo,138,21.8,218.0,Wet,Yes,0.75,2024-11-25
+1185,Murchison Falls,Gorilla,76,22.6,143.0,Wet,No,0.62,2024-01-25
+1186,Queen Elizabeth,Elephant,20,18.9,164.0,Dry,No,0.73,2024-11-06
+1187,Murchison Falls,Buffalo,114,22.3,251.0,Wet,No,0.65,2024-02-19
+1188,Kibale,Elephant,369,27.4,66.0,Wet,No,0.86,2024-07-04
+1189,Kibale,Chimpanzee,321,27,190.0,Dry,No,0.6,2024-07-15
+1190,Murchison Falls,Elephant,86,28.7,61.0,Dry,Yes,0.59,2024-08-16
+1191,Murchison Falls,Elephant,299,28.5,154.0,Wet,Yes,0.76,2024-03-19
+1192,Murchison Falls,Lion,118,25.1,129.0,Wet,No,0.72,2024-03-01
+1193,Bwindi,Elephant,267,25.1,257.0,Dry,Yes,0.79,2024-12-22
+1194,Queen Elizabeth,Gorilla,43,34.2,31.0,Dry,No,0.74,2024-09-29
+1195,Mgahinga,Leopard,58,20.8,260.0,Wet,No,0.7,2024-05-19
+1196,Queen Elizabeth,Lion,21,20.7,111.0,Dry,No,0.75,2024-09-25
+1197,Kidepo,Gorilla,456,21.7,137.0,Dry,Yes,0.61,2024-09-30
+1198,Queen Elizabeth,Gorilla,40,28.9,142.0,Dry,No,0.93,2024-01-27
+1199,Kibale,Lion,441,21.6,59.0,Dry,No,0.81,2024-07-07
+1200,Kidepo,Elephant,381,33,135.0,Dry,No,0.94,2024-05-30
+1201,Kidepo,Elephant,340,31.9,182.0,Dry,No,0.59,2024-01-09
+1202,Lake Mburo,Hippo,464,31.2,298.0,Dry,No,0.96,2024-05-11
+1203,Mgahinga,Hippo,344,28.3,105.0,Wet,Yes,0.66,2024-04-14
+1204,Lake Mburo,Hippo,433,32.6,202.0,Dry,No,0.61,2024-08-10
+1205,Kidepo,Lion,481,26.1,253.0,Dry,No,0.59,2024-03-31
+1206,Queen Elizabeth,Leopard,271,34,92.0,Wet,Yes,0.65,2024-03-31
+1207,Mgahinga,Buffalo,371,28.3,35.0,Dry,Yes,0.71,2024-08-20
+1208,Kibale,Buffalo,71,30.3,70.0,Dry,Yes,0.69,2024-01-11
+1209,Murchison Falls,Chimpanzee,26,31,22.0,Dry,Yes,0.88,2024-05-17
+1210,Queen Elizabeth,Hippo,327,18.2,4.0,Dry,No,0.92,2024-02-13
+1211,Queen Elizabeth,Lion,265,30.9,227.0,Dry,No,0.66,2024-03-20
+1212,Queen Elizabeth,Elephant,298,29.8,278.0,Dry,Yes,0.9,2024-02-22
+1213,Lake Mburo,Gorilla,72,26.7,212.0,Dry,Yes,0.95,2024-01-13
+1214,Queen Elizabeth,Buffalo,217,20.5,146.0,Dry,No,0.84,2024-02-27
+1215,Bwindi,Lion,76,21.8,144.0,Wet,Yes,0.8,2024-03-01
+1216,Kidepo,Elephant,478,18.7,77.0,Dry,No,0.76,2024-11-03
+1217,Queen Elizabeth,Hippo,237,20.6,154.0,Wet,No,0.93,2024-05-18
+1218,Bwindi,Hippo,208,33.9,39.0,Dry,Yes,0.88,2024-03-16
+1219,Kidepo,Lion,219,25.6,244.0,Dry,Yes,0.78,2024-05-22
+1220,Queen Elizabeth,Elephant,185,34.9,93.0,Wet,No,0.66,2024-08-05
+1221,Bwindi,Hippo,231,28.2,170.0,Dry,Yes,0.69,2024-10-08
+1222,Bwindi,Leopard,293,26.4,274.0,Dry,No,0.54,2024-08-03
+1223,Lake Mburo,Leopard,417,29.8,112.0,Dry,Yes,0.68,2024-04-14
+1224,Mgahinga,Elephant,205,27.5,68.0,Dry,Yes,0.95,2024-07-03
+1225,Mgahinga,Chimpanzee,463,31.2,71.0,Wet,No,0.57,2024-10-09
+1226,Bwindi,Lion,127,32.1,28.0,Dry,Yes,0.97,2024-12-26
+1227,Queen Elizabeth,Buffalo,395,18.4,217.0,Wet,Yes,0.84,2024-12-05
+1228,Lake Mburo,Elephant,264,32.2,80.0,Dry,Yes,0.68,2024-02-10
+1229,Queen Elizabeth,Elephant,26,27.7,213.0,Dry,Yes,0.73,2024-03-12
+1230,Kibale,Leopard,377,34.1,240.0,Wet,No,0.72,2024-11-26
+1231,Kibale,Elephant,166,19.9,30.0,Dry,Yes,0.75,2024-01-06
+1232,Bwindi,Chimpanzee,236,29.6,232.0,Wet,No,0.85,2024-08-04
+1233,Queen Elizabeth,Gorilla,67,26.9,64.0,Dry,No,0.8,2024-04-22
+1234,Bwindi,Lion,441,30.7,286.0,Dry,No,0.73,2024-11-30
+1235,Kibale,Buffalo,443,24.5,27.0,Wet,No,0.6,2024-02-25
+1236,Murchison Falls,Elephant,205,28.3,171.0,Dry,Yes,0.64,2024-10-04
+1237,Murchison Falls,Elephant,128,28.2,158.0,Dry,Yes,0.81,2024-01-17
+1238,Queen Elizabeth,Gorilla,63,34.6,289.0,Dry,No,0.52,2024-06-10
+1239,Murchison Falls,Gorilla,24,34.7,144.0,Wet,Yes,0.65,2024-07-19
+1240,Kibale,Gorilla,86,29.9,49.0,Wet,No,0.94,2024-09-14
+1241,Murchison Falls,Leopard,433,31.2,12.0,Wet,No,0.79,2024-01-20
+1242,Kidepo,Lion,97,29.6,40.0,Dry,Yes,0.93,2024-12-14
+1243,Kibale,Lion,413,30.2,256.0,Wet,No,0.88,2024-06-22
+1244,Kidepo,Gorilla,339,32.6,220.0,Dry,No,0.62,2024-11-08
+1245,Lake Mburo,Elephant,98,27.6,254.0,Dry,Yes,0.57,2024-06-07
+1246,Lake Mburo,Chimpanzee,428,31.3,44.0,Wet,Yes,0.72,2024-03-27
+1247,Kidepo,Lion,54,22.8,186.0,Wet,Yes,0.53,2024-12-29
+1248,Mgahinga,Buffalo,152,34.8,131.0,Wet,Yes,0.96,2024-10-18
+1249,Bwindi,Elephant,206,32.6,205.0,Wet,Yes,0.72,2024-09-19
+1250,Mgahinga,Leopard,180,24.4,211.0,Wet,No,0.93,2024-12-15
+1251,Murchison Falls,Leopard,349,19,125.0,Dry,Yes,0.92,2024-05-28
+1252,Bwindi,Lion,311,24.8,37.0,Dry,No,0.93,2024-12-08
+1253,Murchison Falls,Gorilla,258,26,273.0,Wet,Yes,0.54,2024-02-25
+1254,Bwindi,Chimpanzee,241,21.4,168.0,Dry,No,0.67,2024-11-05
+1255,Bwindi,Lion,379,30.6,58.0,Wet,No,0.52,2024-03-20
+1256,Bwindi,Lion,347,21.6,290.0,Dry,No,0.53,2024-07-04
+1257,Mgahinga,Buffalo,262,21.6,108.0,Dry,No,0.63,2024-11-21
+1258,Queen Elizabeth,Elephant,92,19.2,207.0,Dry,No,0.93,2024-08-19
+1259,Mgahinga,Buffalo,288,21.6,132.0,Dry,Yes,0.55,2024-08-07
+1260,Kidepo,Chimpanzee,172,20.8,178.0,Wet,No,0.73,2024-12-18
+1261,Mgahinga,Lion,376,25.4,292.0,Wet,Yes,0.77,2024-11-01
+1262,Queen Elizabeth,Elephant,390,29.4,74.0,Wet,No,0.51,2024-08-22
+1263,Queen Elizabeth,Buffalo,462,23.4,208.0,Wet,Yes,0.98,2024-03-05
+1264,Kibale,Buffalo,347,34.5,49.0,Dry,Yes,0.87,2024-04-06
+1265,Bwindi,Hippo,299,31.2,193.0,Dry,No,0.6,2024-04-07
+1266,Kibale,Leopard,27,24.3,186.0,Dry,No,0.94,2024-09-14
+1267,Mgahinga,Chimpanzee,83,29.9,233.0,Wet,No,0.67,2024-10-04
+1268,Bwindi,Leopard,411,23.7,90.0,Wet,No,0.68,2024-10-10
+1269,Lake Mburo,Lion,297,25.4,145.0,Wet,No,0.84,2024-02-20
+1270,Murchison Falls,Chimpanzee,448,19.8,8.0,Wet,Yes,0.74,2024-11-15
+1271,Lake Mburo,Elephant,344,25.5,297.0,Dry,No,0.92,2024-04-18
+1272,Queen Elizabeth,Chimpanzee,252,27.4,58.0,Dry,No,0.97,2024-06-28
+1273,Mgahinga,Buffalo,231,33.4,202.0,Dry,No,0.88,2024-09-16
+1274,Kidepo,Gorilla,470,29.2,157.0,Wet,Yes,0.5,2024-07-31
+1275,Murchison Falls,Elephant,33,20.6,191.0,Wet,No,0.58,2024-10-19
+1276,Bwindi,Lion,304,34.5,98.0,Wet,Yes,0.89,2024-10-22
+1277,Bwindi,Lion,500,28.8,88.0,Wet,No,0.75,2024-08-11
+1278,Queen Elizabeth,Elephant,383,31.6,258.0,Dry,No,0.91,2024-11-17
+1279,Kidepo,Chimpanzee,303,20.7,165.0,Dry,Yes,0.55,2024-08-11
+1280,Murchison Falls,Hippo,414,28.1,14.0,Dry,No,0.51,2024-03-07
+1281,Bwindi,Hippo,343,31.2,95.0,Dry,Yes,0.65,2024-10-01
+1282,Mgahinga,Lion,391,31.3,193.0,Wet,Yes,0.63,2024-03-14
+1283,Kibale,Elephant,346,34.7,52.0,Dry,No,0.95,2024-03-03
+1284,Murchison Falls,Lion,164,22.5,92.0,Dry,Yes,0.74,2024-07-04
+1285,Mgahinga,Lion,220,19.7,11.0,Wet,Yes,0.74,2024-11-16
+1286,Murchison Falls,Lion,371,25.1,160.0,Wet,Yes,0.59,2024-01-06
+1287,Queen Elizabeth,Hippo,310,28.7,16.0,Dry,No,0.99,2024-09-04
+1288,Lake Mburo,Leopard,299,18.1,267.0,Wet,Yes,0.59,2024-01-16
+1289,Lake Mburo,Elephant,285,26.7,78.0,Dry,No,0.56,2024-04-21
+1290,Murchison Falls,Gorilla,90,21.7,64.0,Wet,No,0.74,2024-02-17
+1291,Kidepo,Hippo,302,29.1,239.0,Wet,No,0.75,2024-07-23
+1292,Queen Elizabeth,Gorilla,108,21.4,143.0,Wet,Yes,0.79,2024-10-27
+1293,Kidepo,Lion,426,21.5,249.0,Wet,No,0.71,2024-05-19
+1294,Mgahinga,Gorilla,338,19.8,196.0,Wet,Yes,0.78,2024-07-10
+1295,Kibale,Chimpanzee,52,25.6,17.0,Wet,No,0.64,2024-11-26
+1296,Lake Mburo,Gorilla,223,18.5,92.0,Wet,No,0.89,2024-07-02
+1297,Queen Elizabeth,Elephant,130,29.2,190.0,Dry,No,0.56,2024-06-12
+1298,Kibale,Elephant,387,23.6,238.0,Wet,Yes,0.78,2024-07-16
+1299,Kidepo,Leopard,128,27,52.0,Wet,Yes,0.78,2024-11-26
+1300,Bwindi,Hippo,407,25.4,163.0,Dry,Yes,0.52,2024-09-09
+1301,Bwindi,Elephant,160,25.2,63.0,Wet,Yes,0.79,2024-10-29
+1302,Bwindi,Lion,315,18.4,9.0,Dry,No,0.64,2024-07-25
+1303,Murchison Falls,Leopard,490,27,172.0,Dry,Yes,0.73,2024-07-31
+1304,Kibale,Gorilla,160,23.4,177.0,Wet,Yes,0.77,2024-06-09
+1305,Bwindi,Leopard,44,24.7,232.0,Wet,Yes,0.91,2024-11-12
+1306,Murchison Falls,Elephant,134,18.8,5.0,Dry,Yes,0.99,2024-12-18
+1307,Kibale,Buffalo,135,20.9,97.0,Wet,Yes,0.96,2024-01-27
+1308,Kidepo,Chimpanzee,42,19.9,155.0,Dry,No,0.66,2024-11-09
+1309,Mgahinga,Chimpanzee,214,22.6,87.0,Dry,No,0.56,2024-06-12
+1310,Mgahinga,Lion,405,27.9,211.0,Wet,Yes,0.76,2024-05-03
+1311,Lake Mburo,Buffalo,358,26.3,143.0,Wet,No,0.61,2024-05-15
+1312,Mgahinga,Gorilla,384,19.4,285.0,Dry,Yes,0.84,2024-02-08
+1313,Bwindi,Elephant,128,18.2,110.0,Wet,No,0.59,2024-02-23
+1314,Kidepo,Lion,436,28,270.0,Wet,No,0.85,2024-12-01
+1315,Queen Elizabeth,Chimpanzee,278,19.8,66.0,Dry,No,0.69,2024-08-19
+1316,Mgahinga,Leopard,282,21.5,204.0,Dry,Yes,0.64,2024-03-25
+1317,Kibale,Gorilla,465,27.8,52.0,Dry,No,0.93,2024-02-26
+1318,Queen Elizabeth,Elephant,477,25.8,136.0,Dry,No,0.82,2024-08-19
+1319,Kidepo,Gorilla,80,33.8,43.0,Wet,No,0.6,2024-07-22
+1320,Lake Mburo,Buffalo,280,23.7,225.0,Wet,No,0.55,2024-11-28
+1321,Bwindi,Hippo,495,25.2,150.0,Dry,No,0.59,2024-05-21
+1322,Lake Mburo,Leopard,272,26.8,55.0,Dry,Yes,0.97,2024-04-22
+1323,Murchison Falls,Elephant,478,18.6,136.0,Dry,Yes,0.76,2024-05-21
+1324,Queen Elizabeth,Leopard,378,30.2,200.0,Wet,Yes,0.61,2024-12-20
+1325,Kidepo,Buffalo,125,20.9,104.0,Wet,No,0.85,2024-05-27
+1326,Kibale,Elephant,68,21.1,244.0,Wet,Yes,0.58,2024-12-14
+1327,Murchison Falls,Lion,115,23.6,233.0,Dry,Yes,0.83,2024-08-07
+1328,Kidepo,Elephant,110,34.6,39.0,Dry,Yes,0.79,2024-08-30
+1329,Lake Mburo,Elephant,270,32.8,241.0,Dry,Yes,0.9,2024-10-17
+1330,Kibale,Gorilla,447,21.9,257.0,Dry,Yes,0.88,2024-02-21
+1331,Kidepo,Chimpanzee,396,23.7,251.0,Wet,No,0.83,2024-05-09
+1332,Kidepo,Buffalo,26,32.1,154.0,Wet,No,0.56,2024-12-17
+1333,Lake Mburo,Hippo,347,18.4,210.0,Dry,Yes,0.68,2024-01-16
+1334,Queen Elizabeth,Leopard,399,29.8,220.0,Wet,Yes,0.86,2024-04-09
+1335,Bwindi,Hippo,75,34.4,278.0,Wet,Yes,0.63,2024-12-13
+1336,Kidepo,Gorilla,220,28,141.0,Wet,Yes,0.52,2024-09-23
+1337,Kibale,Gorilla,447,28.4,221.0,Wet,No,0.64,2024-01-05
+1338,Bwindi,Hippo,95,25.9,76.0,Wet,Yes,0.65,2024-05-27
+1339,Murchison Falls,Chimpanzee,170,18.3,20.0,Dry,No,0.9,2024-03-04
+1340,Murchison Falls,Buffalo,176,18.1,180.0,Dry,Yes,0.62,2024-06-28
+1341,Kidepo,Chimpanzee,459,26.5,287.0,Dry,Yes,0.85,2024-03-14
+1342,Kibale,Lion,241,27.9,41.0,Wet,Yes,0.52,2024-06-30
+1343,Queen Elizabeth,Chimpanzee,367,28.8,216.0,Wet,Yes,0.94,2024-06-03
+1344,Lake Mburo,Gorilla,108,27.6,165.0,Dry,Yes,0.62,2024-08-01
+1345,Lake Mburo,Lion,174,23.2,152.0,Wet,Yes,0.68,2024-08-11
+1346,Murchison Falls,Lion,289,25.5,160.0,Wet,No,0.67,2024-08-26
+1347,Bwindi,Buffalo,256,18.5,286.0,Dry,No,0.54,2024-03-12
+1348,Lake Mburo,Gorilla,422,22.1,262.0,Wet,Yes,0.8,2024-10-16
+1349,Kidepo,Elephant,406,32.4,64.0,Wet,Yes,0.73,2024-09-22
+1350,Bwindi,Chimpanzee,47,19.4,138.0,Dry,No,0.79,2024-05-28
+1351,Lake Mburo,Buffalo,373,23.6,31.0,Dry,Yes,0.84,2024-09-21
+1352,Queen Elizabeth,Leopard,399,34.4,69.0,Dry,Yes,0.65,2024-06-08
+1353,Kibale,Elephant,432,26.2,102.0,Dry,Yes,0.5,2024-11-05
+1354,Murchison Falls,Leopard,69,22.2,53.0,Wet,Yes,0.91,2024-08-15
+1355,Bwindi,Elephant,494,20.1,207.0,Wet,Yes,0.9,2024-10-06
+1356,Kidepo,Chimpanzee,333,29.6,63.0,Wet,Yes,0.81,2024-04-04
+1357,Queen Elizabeth,Chimpanzee,401,29.2,87.0,Dry,No,0.74,2024-05-28
+1358,Kibale,Elephant,321,26.4,140.0,Wet,No,0.84,2024-02-24
+1359,Bwindi,Buffalo,436,25.2,14.0,Wet,No,0.56,2024-07-18
+1360,Murchison Falls,Leopard,175,18.6,227.0,Dry,No,0.97,2024-08-27
+1361,Kibale,Buffalo,161,18.2,81.0,Wet,Yes,0.67,2024-12-27
+1362,Lake Mburo,Buffalo,282,19.1,77.0,Wet,No,0.73,2024-03-12
+1363,Kidepo,Chimpanzee,410,29.2,201.0,Dry,No,0.68,2024-08-29
+1364,Lake Mburo,Hippo,112,27.8,259.0,Wet,Yes,0.84,2024-10-28
+1365,Lake Mburo,Gorilla,319,28.5,206.0,Dry,Yes,0.51,2024-03-22
+1366,Queen Elizabeth,Elephant,360,19.8,243.0,Wet,Yes,0.98,2024-05-01
+1367,Murchison Falls,Lion,392,33.2,215.0,Dry,Yes,0.8,2024-02-28
+1368,Murchison Falls,Chimpanzee,403,19.2,191.0,Dry,Yes,0.66,2024-12-23
+1369,Bwindi,Buffalo,88,34.8,293.0,Dry,Yes,0.62,2024-08-12
+1370,Kibale,Gorilla,135,21.4,82.0,Wet,Yes,0.54,2024-01-13
+1371,Kibale,Hippo,69,21.5,71.0,Dry,No,0.88,2024-10-17
+1372,Lake Mburo,Chimpanzee,56,23.8,270.0,Wet,Yes,0.91,2024-10-19
+1373,Mgahinga,Buffalo,276,24,286.0,Dry,Yes,0.72,2024-11-16
+1374,Bwindi,Chimpanzee,56,27.7,65.0,Wet,Yes,0.56,2024-04-28
+1375,Murchison Falls,Leopard,296,23.6,114.0,Wet,No,0.69,2024-07-02
+1376,Murchison Falls,Chimpanzee,466,20.7,147.0,Dry,Yes,0.92,2024-11-08
+1377,Lake Mburo,Gorilla,224,28.5,279.0,Dry,No,0.96,2024-05-14
+1378,Kibale,Elephant,36,23.7,133.0,Dry,No,0.94,2024-01-31
+1379,Queen Elizabeth,Lion,300,31.9,168.0,Dry,Yes,0.74,2024-10-15
+1380,Lake Mburo,Hippo,447,31,18.0,Wet,Yes,0.97,2024-11-02
+1381,Kibale,Leopard,495,19.4,282.0,Wet,Yes,0.63,2024-01-22
+1382,Murchison Falls,Elephant,274,26.6,179.0,Wet,No,0.65,2024-04-26
+1383,Murchison Falls,Elephant,33,31.2,100.0,Wet,Yes,0.77,2024-01-27
+1384,Bwindi,Chimpanzee,213,29.8,220.0,Wet,Yes,0.56,2024-03-01
+1385,Lake Mburo,Gorilla,200,21.3,223.0,Dry,Yes,0.61,2024-10-28
+1386,Murchison Falls,Lion,231,30.7,274.0,Dry,Yes,0.93,2024-05-07
+1387,Mgahinga,Elephant,59,19,224.0,Dry,No,0.52,2024-06-28
+1388,Lake Mburo,Hippo,475,22.2,149.0,Dry,No,0.73,2024-03-03
+1389,Kibale,Elephant,59,22.3,278.0,Dry,No,0.85,2024-07-01
+1390,Mgahinga,Lion,247,30.1,187.0,Wet,Yes,0.76,2024-05-16
+1391,Kidepo,Hippo,297,26.6,27.0,Wet,No,0.85,2024-11-14
+1392,Bwindi,Gorilla,60,21.5,70.0,Dry,No,0.86,2024-04-17
+1393,Murchison Falls,Gorilla,391,31.9,72.0,Dry,Yes,0.84,2024-11-28
+1394,Mgahinga,Buffalo,78,18.4,17.0,Wet,No,0.79,2024-06-02
+1395,Mgahinga,Elephant,50,22.7,196.0,Wet,Yes,0.92,2024-07-15
+1396,Bwindi,Elephant,134,21.5,94.0,Wet,Yes,0.82,2024-01-17
+1397,Lake Mburo,Chimpanzee,198,33.9,172.0,Wet,Yes,0.87,2024-06-23
+1398,Kibale,Chimpanzee,338,25.4,218.0,Dry,Yes,0.77,2024-12-13
+1399,Kidepo,Chimpanzee,500,27.1,217.0,Wet,Yes,0.97,2024-08-27
+1400,Kibale,Lion,87,33.4,143.0,Wet,Yes,0.99,2024-10-04
+1401,Kidepo,Gorilla,312,24.7,140.0,Wet,No,0.82,2024-11-30
+1402,Mgahinga,Chimpanzee,331,18.2,157.0,Wet,No,0.92,2024-08-15
+1403,Bwindi,Elephant,245,18.2,18.0,Wet,No,0.81,2024-10-11
+1404,Queen Elizabeth,Buffalo,49,27.9,40.0,Wet,No,0.97,2024-08-13
+1405,Queen Elizabeth,Gorilla,412,31.4,132.0,Wet,Yes,0.61,2024-03-30
+1406,Queen Elizabeth,Chimpanzee,336,29.2,119.0,Dry,Yes,0.59,2024-09-16
+1407,Mgahinga,Buffalo,316,23.4,283.0,Dry,Yes,0.97,2024-05-12
+1408,Kidepo,Elephant,367,32.4,180.0,Dry,Yes,0.67,2024-02-09
+1409,Lake Mburo,Buffalo,77,26.7,121.0,Dry,No,0.78,2024-12-14
+1410,Bwindi,Elephant,348,25.3,144.0,Dry,Yes,0.66,2024-07-03
+1411,Kidepo,Buffalo,479,29.1,240.0,Wet,Yes,0.58,2024-01-23
+1412,Kidepo,Lion,486,28.1,54.0,Dry,No,0.75,2024-09-17
+1413,Mgahinga,Leopard,384,23.8,110.0,Wet,Yes,0.82,2024-03-17
+1414,Bwindi,Chimpanzee,352,19.3,39.0,Dry,No,0.76,2024-03-03
+1415,Mgahinga,Leopard,428,18.9,241.0,Wet,No,0.63,2024-10-21
+1416,Kidepo,Lion,188,22.1,185.0,Dry,No,0.65,2024-02-29
+1417,Kibale,Lion,247,30.5,209.0,Wet,Yes,0.67,2024-09-15
+1418,Murchison Falls,Gorilla,354,26.2,117.0,Wet,No,0.61,2024-03-05
+1419,Lake Mburo,Lion,417,33.5,299.0,Dry,No,0.89,2024-06-23
+1420,Kidepo,Elephant,61,24.9,258.0,Dry,No,0.81,2024-04-11
+1421,Queen Elizabeth,Buffalo,27,20.8,214.0,Wet,No,0.86,2024-03-05
+1422,Mgahinga,Elephant,446,25.3,85.0,Dry,Yes,0.75,2024-09-28
+1423,Bwindi,Buffalo,201,20.2,285.0,Dry,No,0.56,2024-06-21
+1424,Lake Mburo,Leopard,335,19.8,23.0,Dry,No,0.97,2024-07-28
+1425,Kibale,Buffalo,399,32.2,148.0,Wet,Yes,0.86,2024-10-28
+1426,Mgahinga,Leopard,62,20.6,3.0,Wet,No,0.69,2024-08-12
+1427,Queen Elizabeth,Leopard,389,28,49.0,Dry,No,0.74,2024-01-25
+1428,Lake Mburo,Leopard,479,26.9,260.0,Wet,No,0.66,2024-06-12
+1429,Mgahinga,Lion,93,18.7,107.0,Wet,No,0.78,2024-11-11
+1430,Kidepo,Elephant,197,22.8,60.0,Wet,No,0.74,2024-04-24
+1431,Queen Elizabeth,Gorilla,500,33.6,54.0,Dry,No,0.57,2024-04-15
+1432,Lake Mburo,Chimpanzee,280,30.8,14.0,Dry,Yes,0.5,2024-01-14
+1433,Kidepo,Lion,164,34,292.0,Wet,No,0.76,2024-08-20
+1434,Kidepo,Elephant,386,30,61.0,Wet,No,0.74,2024-02-14
+1435,Mgahinga,Lion,162,30.4,59.0,Wet,Yes,0.86,2024-04-23
+1436,Kibale,Elephant,187,20.7,171.0,Wet,No,0.81,2024-09-19
+1437,Kibale,Chimpanzee,57,30,161.0,Dry,No,0.55,2024-12-27
+1438,Mgahinga,Leopard,182,21.2,285.0,Dry,Yes,0.62,2024-10-27
+1439,Bwindi,Chimpanzee,132,29.4,135.0,Wet,Yes,0.74,2024-04-05
+1440,Kibale,Buffalo,164,20.2,45.0,Dry,Yes,0.71,2024-09-08
+1441,Lake Mburo,Leopard,126,30.1,19.0,Wet,No,0.8,2024-11-19
+1442,Lake Mburo,Lion,346,23.9,271.0,Dry,No,0.91,2024-05-29
+1443,Kibale,Buffalo,270,31.5,200.0,Wet,No,0.64,2024-04-22
+1444,Murchison Falls,Chimpanzee,411,22.9,228.0,Wet,Yes,0.82,2024-02-29
+1445,Queen Elizabeth,Buffalo,183,29.2,177.0,Wet,Yes,0.88,2024-09-04
+1446,Mgahinga,Chimpanzee,462,26.3,210.0,Dry,Yes,0.64,2024-09-16
+1447,Queen Elizabeth,Chimpanzee,420,25,287.0,Wet,No,0.83,2024-07-29
+1448,Bwindi,Chimpanzee,246,25.2,133.0,Dry,No,0.74,2024-04-22
+1449,Kidepo,Hippo,439,18.8,229.0,Wet,Yes,0.78,2024-03-26
+1450,Lake Mburo,Lion,419,28.6,168.0,Dry,Yes,0.97,2024-01-11
+1451,Mgahinga,Buffalo,66,31.3,170.0,Wet,Yes,0.82,2024-09-22
+1452,Queen Elizabeth,Gorilla,294,21.4,80.0,Wet,Yes,0.64,2024-03-23
+1453,Kidepo,Gorilla,231,21.7,127.0,Dry,Yes,0.91,2024-09-26
+1454,Murchison Falls,Leopard,223,31.5,21.0,Dry,No,0.65,2024-04-27
+1455,Kibale,Chimpanzee,372,22.2,139.0,Dry,No,0.82,2024-03-08
+1456,Mgahinga,Hippo,468,22.6,43.0,Dry,Yes,0.75,2024-12-26
+1457,Mgahinga,Hippo,232,18.3,277.0,Dry,Yes,0.86,2024-07-19
+1458,Queen Elizabeth,Chimpanzee,330,32.6,165.0,Wet,Yes,0.65,2024-08-22
+1459,Queen Elizabeth,Elephant,155,34.5,295.0,Wet,No,0.64,2024-02-17
+1460,Queen Elizabeth,Buffalo,307,22.7,145.0,Dry,No,0.51,2024-09-11
+1461,Kibale,Buffalo,210,31,55.0,Wet,Yes,0.78,2024-01-13
+1462,Bwindi,Chimpanzee,138,25.6,244.0,Dry,No,0.66,2024-11-18
+1463,Murchison Falls,Elephant,307,20.9,250.0,Dry,Yes,0.57,2024-11-11
+1464,Mgahinga,Buffalo,287,30.3,290.0,Dry,Yes,0.88,2024-05-09
+1465,Bwindi,Gorilla,399,23.7,77.0,Dry,No,0.84,2024-11-02
+1466,Bwindi,Chimpanzee,22,22.6,107.0,Wet,No,0.65,2024-11-29
+1467,Queen Elizabeth,Gorilla,256,30.1,263.0,Dry,Yes,0.71,2024-02-09
+1468,Bwindi,Lion,407,18.2,266.0,Dry,Yes,0.6,2024-02-28
+1469,Murchison Falls,Buffalo,273,20.9,268.0,Wet,Yes,0.87,2024-10-07
+1470,Bwindi,Buffalo,24,23,222.0,Wet,No,0.76,2024-11-10
+1471,Kidepo,Leopard,352,20.8,148.0,Dry,No,0.75,2024-05-08
+1472,Bwindi,Buffalo,127,33.9,69.0,Dry,No,0.5,2024-08-01
+1473,Queen Elizabeth,Lion,260,19.1,2.0,Wet,Yes,0.6,2024-02-18
+1474,Lake Mburo,Buffalo,189,19.6,239.0,Dry,Yes,0.67,2024-10-13
+1475,Queen Elizabeth,Gorilla,341,18.2,98.0,Wet,No,0.9,2024-08-06
+1476,Lake Mburo,Hippo,176,24.2,206.0,Wet,Yes,0.54,2024-03-19
+1477,Murchison Falls,Hippo,130,22.8,134.0,Dry,Yes,0.89,2024-10-27
+1478,Kibale,Chimpanzee,216,23.6,141.0,Wet,Yes,0.58,2024-04-28
+1479,Queen Elizabeth,Elephant,495,31.7,75.0,Dry,Yes,0.73,2024-01-01
+1480,Kidepo,Elephant,478,34.5,70.0,Wet,No,0.83,2024-06-16
+1481,Kidepo,Leopard,409,20,286.0,Wet,No,0.88,2024-12-27
+1482,Bwindi,Gorilla,179,32.3,162.0,Dry,Yes,0.97,2024-11-20
+1483,Mgahinga,Gorilla,384,20.4,223.0,Wet,No,0.84,2024-05-08
+1484,Kibale,Elephant,305,33.3,178.0,Dry,Yes,0.92,2024-08-26
+1485,Mgahinga,Hippo,197,30.4,109.0,Dry,No,0.68,2024-01-06
+1486,Queen Elizabeth,Buffalo,204,26.9,2.0,Wet,No,0.55,2024-07-07
+1487,Kidepo,Leopard,491,18.2,139.0,Dry,No,0.81,2024-07-22
+1488,Murchison Falls,Hippo,380,22.3,29.0,Dry,No,0.99,2024-11-19
+1489,Bwindi,Buffalo,108,26,279.0,Dry,Yes,0.68,2024-11-09
+1490,Kibale,Lion,381,30.5,67.0,Dry,No,0.91,2024-03-02
+1491,Murchison Falls,Buffalo,346,30.1,160.0,Dry,No,0.98,2024-04-09
+1492,Kibale,Leopard,397,18.3,162.0,Dry,No,0.75,2024-12-06
+1493,Bwindi,Buffalo,448,29.4,31.0,Dry,Yes,0.9,2024-09-13
+303,Kidepo,Leopard,413,28.4,203.0,Wet,Yes,0.81,2024-08-18
+1493,Bwindi,Buffalo,448,29.4,31.0,Dry,Yes,0.9,2024-09-13
+547,Bwindi,Leopard,322,19.2,193.0,Wet,Yes,0.55,2024-04-13
+172,Kibale,Chimpanzee,457,19.5,259.0,Wet,No,0.78,2024-01-22
+354,Murchison Falls,Elephant,129,26.1,67.0,Dry,No,0.5,2024-12-22
+909,Murchison Falls,Buffalo,202,34.8,287.0,Wet,No,0.74,2024-03-16
+92,Kidepo,Chimpanzee,321,34.8,156.0,Dry,Yes,0.96,2024-04-16
