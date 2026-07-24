@@ -71,6 +71,39 @@ if not animals:
     ])
 
 
+def get_animal_image_path(animal):
+    if not isinstance(animal, str):
+        return "images/fallback.jpg"
+
+    normalized = animal.strip().lower()
+    image_mapping = {
+        "buffalo": "animals/buffalo.jpg",
+        "elephant": "animals/elephant.jpg",
+        "gorilla": "animals/Glorilla.jpg",
+        "hippo": "animals/Hippo.jpg",
+        "leopard": "animals/leopard.jpg",
+        "lion": "animals/lion.jpg",
+    }
+
+    if normalized in image_mapping:
+        return image_mapping[normalized]
+
+    if "buffalo" in normalized:
+        return image_mapping["buffalo"]
+    if "elephant" in normalized:
+        return image_mapping["elephant"]
+    if "gorilla" in normalized:
+        return image_mapping["gorilla"]
+    if "hippo" in normalized:
+        return image_mapping["hippo"]
+    if "leopard" in normalized:
+        return image_mapping["leopard"]
+    if "lion" in normalized:
+        return image_mapping["lion"]
+
+    return "images/fallback.jpg"
+
+
 # ----------------------------------------------------
 # 3. REVISIONARY RECOMMENDATION LOGIC
 # ----------------------------------------------------
@@ -169,6 +202,7 @@ def predict():
 
         result = build_recommendation(animal, temperature, rainfall, season)
         result["selected_animal"] = animal
+        result["animal_image"] = get_animal_image_path(animal)
         return render_template("result.html", **result)
 
     default_animal = "Crested Crane" if "Crested Crane" in animals else (animals[0] if animals else "Unknown")
