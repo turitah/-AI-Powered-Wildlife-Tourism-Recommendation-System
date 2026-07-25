@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -184,4 +184,556 @@
       });
     </script>
   </body>
+</html> -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Wildlife Explorer | AI Wildlife Tourism</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+
+  <body class="page-shell">
+
+    <!-- ================= BACKGROUND VIDEO ================= -->
+
+    <div class="video-scene" aria-hidden="true">
+
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        class="background-video"
+        poster="{{ url_for('static', filename='images/fallback.jpg') }}"
+      >
+
+        <source
+          src="{{ url_for('static', filename='videos/crestedCrane.mp4') }}"
+          type="video/mp4"
+        />
+
+      </video>
+
+      <div class="video-overlay"></div>
+
+    </div>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+      <div class="container">
+
+        <a
+          class="navbar-brand fw-bold"
+          href="{{ url_for('home') }}"
+        >
+          Wildlife Explorer
+        </a>
+
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navLinks"
+          aria-controls="navLinks"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+
+          <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div
+          class="collapse navbar-collapse"
+          id="navLinks"
+        >
+
+          <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item">
+
+              <a
+                class="nav-link active-nav"
+                href="{{ url_for('home') }}"
+              >
+                Home
+              </a>
+
+            </li>
+
+
+            <li class="nav-item">
+
+              <a
+                id="about-link"
+                class="nav-link"
+                href="{{ url_for('about', animal=selected_animal) }}"
+              >
+                About
+              </a>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+
+    <!-- ================= MAIN HERO SECTION ================= -->
+
+    <main class="container hero-section py-5">
+
+      <div class="row align-items-center g-5">
+
+
+        <!-- ================= LEFT SIDE ================= -->
+
+        <div class="col-lg-7">
+
+          <div class="hero-copy p-4 p-lg-5 rounded-4">
+
+            <span class="badge text-bg-light mb-3 hero-badge">
+              🤖 AI-powered wildlife planning
+            </span>
+
+
+            <h1 class="display-5 fw-bold mb-3">
+
+              Discover the best Ugandan national park
+              for your wildlife adventure
+
+            </h1>
+
+
+            <p class="lead mb-4">
+
+              Our intelligent recommendation system uses historical
+              tourism and wildlife observation data to suggest the
+              national park where you are most likely to encounter
+              your preferred wildlife under your selected travel
+              conditions.
+
+            </p>
+
+
+            <ul class="list-unstyled feature-list">
+
+              <li>
+                <span>✓</span>
+                Predict wildlife sightings using weather and season
+              </li>
+
+              <li>
+                <span>✓</span>
+                Recommend the best Ugandan national park
+              </li>
+
+              <li>
+                <span>✓</span>
+                Plan more informed and rewarding wildlife trips
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= RIGHT SIDE FORM ================= -->
+
+        <div class="col-lg-5">
+
+          <div class="card content-card recommendation-card shadow-lg border-0 rounded-4">
+
+            <div class="card-body p-4">
+
+              <div class="form-heading mb-4">
+
+                <span class="form-icon">🦁</span>
+
+                <div>
+
+                  <h2 class="h4 fw-bold mb-1">
+                    Plan your visit
+                  </h2>
+
+                  <p class="small text-light mb-0">
+                    Enter your travel conditions for an AI recommendation.
+                  </p>
+
+                </div>
+
+              </div>
+
+
+              <!-- ================= FORM ================= -->
+
+              <form
+                action="{{ url_for('predict') }}"
+                method="post"
+                id="recommendation-form"
+              >
+
+
+                <!-- WILDLIFE -->
+
+                <div class="mb-3">
+
+                  <label
+                    class="form-label"
+                    for="animal"
+                  >
+                    🦁 Wildlife you want to see
+                  </label>
+
+
+                  <select
+                    class="form-select"
+                    id="animal"
+                    name="animal"
+                    required
+                  >
+
+                    {% for animal in animals %}
+
+                    <option value="{{ animal }}">
+
+                      {{ animal }}
+
+                    </option>
+
+                    {% endfor %}
+
+                  </select>
+
+                </div>
+
+
+                <!-- TEMPERATURE AND RAINFALL -->
+
+                <div class="row g-3">
+
+                  <div class="col-md-6">
+
+                    <label
+                      class="form-label"
+                      for="temperature"
+                    >
+                      🌡️ Temperature (°C)
+                    </label>
+
+
+                    <input
+                      class="form-control"
+                      id="temperature"
+                      name="temperature"
+                      type="number"
+                      step="0.1"
+                      min="0"
+                      value="24"
+                      required
+                    />
+
+                  </div>
+
+
+                  <div class="col-md-6">
+
+                    <label
+                      class="form-label"
+                      for="rainfall"
+                    >
+                      🌧️ Rainfall (mm)
+                    </label>
+
+
+                    <input
+                      class="form-control"
+                      id="rainfall"
+                      name="rainfall"
+                      type="number"
+                      step="0.1"
+                      min="0"
+                      value="150"
+                      required
+                    />
+
+                  </div>
+
+                </div>
+
+
+                <!-- SEASON -->
+
+                <div class="mt-3">
+
+                  <label
+                    class="form-label"
+                    for="season"
+                  >
+                    🌿 Season
+                  </label>
+
+
+                  <select
+                    class="form-select"
+                    id="season"
+                    name="season"
+                    required
+                  >
+
+                    <option value="Dry">
+                      Dry
+                    </option>
+
+                    <option value="Wet">
+                      Wet
+                    </option>
+
+                  </select>
+
+                </div>
+
+
+                <!-- HELPFUL NOTE -->
+
+                <p class="form-help-text mt-3 mb-0">
+
+                  💡 Select your preferred wildlife and expected
+                  environmental conditions.
+
+                </p>
+
+
+                <!-- SUBMIT BUTTON -->
+
+                <button
+                  class="btn btn-success w-100 mt-4 recommendation-btn"
+                  type="submit"
+                  id="recommendation-button"
+                >
+
+                  <span id="button-text">
+                    Get recommendation
+                  </span>
+
+                  <span
+                    id="button-loading"
+                    class="d-none"
+                  >
+                    🔄 Analyzing wildlife data...
+                  </span>
+
+                </button>
+
+
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ================= FEATURE CARDS ================= -->
+
+      <section class="features-section mt-5 pt-4">
+
+        <div class="row g-4">
+
+
+          <div class="col-md-4">
+
+            <div class="feature-card">
+
+              <div class="feature-icon">
+                🤖
+              </div>
+
+              <h3>
+                AI-Powered Predictions
+              </h3>
+
+              <p>
+                Use historical wildlife and environmental data
+                to generate intelligent tourism recommendations.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="col-md-4">
+
+            <div class="feature-card">
+
+              <div class="feature-icon">
+                🦁
+              </div>
+
+              <h3>
+                Wildlife Discovery
+              </h3>
+
+              <p>
+                Explore Uganda's incredible wildlife and discover
+                where different species can be found.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="col-md-4">
+
+            <div class="feature-card">
+
+              <div class="feature-icon">
+                🇺🇬
+              </div>
+
+              <h3>
+                Explore Uganda
+              </h3>
+
+              <p>
+                Discover Uganda's national parks and make more
+                informed decisions when planning your safari.
+              </p>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+
+      document.addEventListener("DOMContentLoaded", function () {
+
+        const animalSelect =
+          document.getElementById("animal");
+
+        const aboutLink =
+          document.getElementById("about-link");
+
+        const form =
+          document.getElementById("recommendation-form");
+
+        const button =
+          document.getElementById("recommendation-button");
+
+        const buttonText =
+          document.getElementById("button-text");
+
+        const buttonLoading =
+          document.getElementById("button-loading");
+
+
+        /*
+        ==========================================
+        UPDATE ABOUT LINK
+        ==========================================
+        */
+
+        function updateAboutLink() {
+
+          if (!animalSelect || !aboutLink) {
+            return;
+          }
+
+
+          const selectedAnimal =
+            animalSelect.value || "Elephant";
+
+
+          aboutLink.href =
+            "{{ url_for('about') }}?animal=" +
+            encodeURIComponent(selectedAnimal);
+
+        }
+
+
+        updateAboutLink();
+
+
+        if (animalSelect) {
+
+          animalSelect.addEventListener(
+            "change",
+            updateAboutLink
+          );
+
+        }
+
+
+        /*
+        ==========================================
+        SHOW LOADING MESSAGE
+        ==========================================
+        */
+
+        if (form) {
+
+          form.addEventListener(
+            "submit",
+            function () {
+
+              button.disabled = true;
+
+              buttonText.classList.add("d-none");
+
+              buttonLoading.classList.remove("d-none");
+
+            }
+          );
+
+        }
+
+      });
+
+    </script>
+
+  </body>
+
 </html>
