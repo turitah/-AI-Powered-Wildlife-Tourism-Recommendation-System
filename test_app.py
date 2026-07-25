@@ -37,6 +37,15 @@ def test_prediction_result(client):
     assert b"Recommendation ready" in response.data
 
 
+def test_prediction_uses_elephant_background_video(client):
+    response = client.post(
+        "/predict",
+        data={"animal": "Elephant", "temperature": "24", "rainfall": "150", "season": "Dry"},
+    )
+    assert response.status_code == 200
+    assert b"videos/elephant.mp4" in response.data
+
+
 def test_build_recommendation():
     result = build_recommendation("Elephant", 24, 150, "Dry")
     assert "recommended_park" in result
