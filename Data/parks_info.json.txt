@@ -1,0 +1,247 @@
+{
+  "Kibale National Park": {
+    "region": "Western Uganda",
+    "district": "Kabarole, Kyenjojo, Kamwenge and Kasese",
+    "established": 1993,
+    "size_km2": 795,
+    "description": "Kibale National Park is renowned for its rich tropical rainforest and exceptional primate diversity. It is considered one of the best places in Africa to experience chimpanzee tracking.",
+    "main_attractions": [
+      "Chimpanzee Tracking",
+      "Bigodi Wetland Sanctuary",
+      "Bird Watching",
+      "Nature Walks"
+    ],
+    "main_wildlife": [
+      "Chimpanzee",
+      "Hippo",
+      "Elephant",
+      "Buffalo",
+      "Colobus Monkey"
+    ],
+    "best_visiting_months": [
+      "June",
+      "July",
+      "August",
+      "December",
+      "January",
+      "February"
+    ],
+    "activities": [
+      "Chimpanzee Tracking",
+      "Forest Walks",
+      "Bird Watching",
+      "Photography"
+    ],
+    "park_image": "static/Parks/kibale.jpg"
+  },
+
+  "Bwindi Impenetrable National Park": {
+    "region": "Southwestern Uganda",
+    "district": "Kanungu, Kisoro and Rubanda",
+    "established": 1991,
+    "size_km2": 331,
+    "description": "Bwindi is a UNESCO World Heritage Site famous for mountain gorilla trekking. Nearly half of the world's remaining mountain gorillas live here.",
+    "main_attractions": [
+      "Mountain Gorilla Trekking",
+      "Forest Hiking",
+      "Bird Watching",
+      "Batwa Cultural Experience"
+    ],
+    "main_wildlife": [
+      "Mountain Gorilla",
+      "Chimpanzee",
+      "Forest Elephant",
+      "Duiker"
+    ],
+    "best_visiting_months": [
+      "June",
+      "July",
+      "August",
+      "December",
+      "January",
+      "February"
+    ],
+    "activities": [
+      "Gorilla Trekking",
+      "Nature Walks",
+      "Photography",
+      "Bird Watching"
+    ],
+    "park_image": "Static/Parks/Bwindi.jpg"
+  },
+
+  "Queen Elizabeth National Park": {
+    "region": "Western Uganda",
+    "district": "Kasese, Rubirizi, Rukungiri and Kamwenge",
+    "established": 1952,
+    "size_km2": 1978,
+    "description": "Queen Elizabeth National Park is Uganda's most visited national park. It is famous for tree-climbing lions, the Kazinga Channel and incredible biodiversity.",
+    "main_attractions": [
+      "Tree-climbing Lions",
+      "Kazinga Channel Boat Cruise",
+      "Game Drives",
+      "Bird Watching"
+    ],
+    "main_wildlife": [
+      "Lion",
+      "Elephant",
+      "Buffalo",
+      "Hippo",
+      "Leopard"
+    ],
+    "best_visiting_months": [
+      "January",
+      "February",
+      "June",
+      "July",
+      "August"
+    ],
+    "activities": [
+      "Game Drives",
+      "Boat Cruise",
+      "Photography",
+      "Nature Walks"
+    ],
+    "park_image": "Static/Parks/Queen_elizabeth.jpg"
+  },
+
+  "Murchison Falls National Park": {
+    "region": "Northwestern Uganda",
+    "district": "Masindi, Nwoya, Buliisa, Kiryandongo and Pakwach",
+    "established": 1952,
+    "size_km2": 3840,
+    "description": "Uganda's largest national park, famous for the spectacular Murchison Falls where the Nile River forces through a narrow gorge before plunging downstream.",
+    "main_attractions": [
+      "Murchison Falls",
+      "Boat Cruise",
+      "Game Drives",
+      "Top of the Falls"
+    ],
+    "main_wildlife": [
+      "Elephant",
+      "Lion",
+      "Leopard",
+      "Hippo",
+      "Buffalo"
+    ],
+    "best_visiting_months": [
+      "December",
+      "January",
+      "February",
+      "June",
+      "July"
+    ],
+    "activities": [
+      "Game Drives",
+      "Boat Safari",
+      "Bird Watching",
+      "Photography"
+    ],
+    "park_image": "Static/Parks/murchison_falls.jpg"
+  },
+
+  "Kidepo Valley National Park": {
+    "region": "Northeastern Uganda",
+    "district": "Kaabong",
+    "established": 1962,
+    "size_km2": 1442,
+    "description": "Kidepo Valley National Park offers one of Africa's most spectacular wilderness experiences with vast savannahs and unique wildlife.",
+    "main_attractions": [
+      "Game Drives",
+      "Narus Valley",
+      "Kanangorok Hot Springs",
+      "Cultural Tours"
+    ],
+    "main_wildlife": [
+      "Leopard",
+      "Lion",
+      "Elephant",
+      "Buffalo",
+      "Cheetah"
+    ],
+    "best_visiting_months": [
+      "September",
+      "October",
+      "November",
+      "December",
+      "January"
+    ],
+    "activities": [
+      "Game Drives",
+      "Photography",
+      "Bird Watching",
+      "Nature Walks"
+    ],
+    "park_image": "Static/Parks/kidepo.jpg"
+  },
+
+  "Lake Mburo National Park": {
+    "region": "Western Uganda",
+    "district": "Kiruhura",
+    "established": 1983,
+    "size_km2": 370,
+    "description": "Lake Mburo National Park is Uganda's smallest savannah park and is well known for zebras, impalas, buffaloes and boat cruises on Lake Mburo.",
+    "main_attractions": [
+      "Boat Cruise",
+      "Game Drives",
+      "Horseback Safaris",
+      "Cycling Safaris"
+    ],
+    "main_wildlife": [
+      "Buffalo",
+      "Zebra",
+      "Impala",
+      "Hippo",
+      "Eland"
+    ],
+    "best_visiting_months": [
+      "June",
+      "July",
+      "August",
+      "December",
+      "January"
+    ],
+    "activities": [
+      "Boat Cruise",
+      "Horse Riding",
+      "Game Drives",
+      "Bird Watching"
+    ],
+    "park_image": "Static/Parks/lake_mburo.jpg"
+  },
+
+  "Mgahinga Gorilla National Park": {
+    "region": "Southwestern Uganda",
+    "district": "Kisoro",
+    "established": 1991,
+    "size_km2": 33.7,
+    "description": "Mgahinga Gorilla National Park is Uganda's smallest national park and protects part of the Virunga Mountains. It is famous for mountain gorillas and golden monkeys.",
+    "main_attractions": [
+      "Mountain Gorilla Trekking",
+      "Golden Monkey Tracking",
+      "Volcano Hiking",
+      "Batwa Cultural Trail"
+    ],
+    "main_wildlife": [
+      "Mountain Gorilla",
+      "Golden Monkey",
+      "Buffalo",
+      "Forest Elephant"
+    ],
+    "best_visiting_months": [
+      "June",
+      "July",
+      "August",
+      "December",
+      "January",
+      "February"
+    ],
+    "activities": [
+      "Gorilla Trekking",
+      "Golden Monkey Tracking",
+      "Hiking",
+      "Photography"
+    ],
+    "park_image": "Static/Parks/Mgahinga.jpg"
+  }
+}

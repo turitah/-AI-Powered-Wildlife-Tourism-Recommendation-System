@@ -14,37 +14,17 @@
     />
   </head>
   <body class="page-shell">
-    {% set animal_key = (selected_animal or 'Elephant')|lower %} {% set
-    video_name = 'crestedCrane.mp4' if 'crane' in animal_key else 'buffalo.mp4'
-    if 'buffalo' in animal_key else 'gorilla.mp4' if 'gorilla' in animal_key
-    else 'lion.mp4' if 'lion' in animal_key else 'leopard.mp4' if 'leopard' in
-    animal_key else 'hippo.mp4' if 'hippo' in animal_key else 'crestedCrane.mp4'
-    %}
-    <div class="video-scene" aria-hidden="true">
-      <video
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="auto"
-        class="background-video"
-        poster="{{ url_for('static', filename='images/fallback.jpg') }}"
-      >
-        <source
-          src="{{ url_for('static', filename='videos/' ~ video_name) }}"
-          type="video/mp4"
-        />
-      </video>
-      <div class="video-overlay"></div>
-    </div>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm" style="background: rgba(255,255,255,0.92); backdrop-filter: blur(12px);">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="{{ url_for('home') }}"
-          >Wildlife Explorer</a
-        >
-        <div class="ms-auto">
-          <a class="nav-link text-white" href="{{ url_for('home') }}">Home</a>
+        <a class="navbar-brand fw-bold" href="{{ url_for('home') }}">LAMBULA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('home') }}">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('home') }}">Back</a></li>
+          </ul>
         </div>
       </div>
     </nav>

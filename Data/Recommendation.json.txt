@@ -1,0 +1,92 @@
+{
+  "Hippo": {
+    "recommended_animals": [
+      "Elephant",
+      "Buffalo",
+      "Crocodile"
+    ],
+    "recommended_parks": [
+      "Queen Elizabeth National Park",
+      "Murchison Falls National Park",
+      "Lake Mburo National Park"
+    ]
+  },
+
+  "Lion": {
+    "recommended_animals": [
+      "Leopard",
+      "Elephant",
+      "Buffalo"
+    ],
+    "recommended_parks": [
+      "Queen Elizabeth National Park",
+      "Kidepo Valley National Park",
+      "Murchison Falls National Park"
+    ]
+  },
+
+  "Elephant": {
+    "recommended_animals": [
+      "Buffalo",
+      "Lion",
+      "Hippo"
+    ],
+    "recommended_parks": [
+      "Murchison Falls National Park",
+      "Queen Elizabeth National Park",
+      "Kidepo Valley National Park"
+    ]
+  },
+
+  "Buffalo": {
+    "recommended_animals": [
+      "Elephant",
+      "Hippo",
+      "Lion"
+    ],
+    "recommended_parks": [
+      "Lake Mburo National Park",
+      "Murchison Falls National Park",
+      "Queen Elizabeth National Park"
+    ]
+  },
+
+  "Chimpanzee": {
+    "recommended_animals": [
+      "Gorilla",
+      "Elephant",
+      "Buffalo"
+    ],
+    "recommended_parks": [
+      "Kibale National Park",
+      "Bwindi Impenetrable National Park",
+      "Mgahinga Gorilla National Park"
+    ]
+  },
+
+  "Gorilla": {
+    "recommended_animals": [
+      "Chimpanzee",
+      "Elephant",
+      "Buffalo"
+    ],
+    "recommended_parks": [
+      "Bwindi Impenetrable National Park",
+      "Mgahinga Gorilla National Park",
+      "Kibale National Park"
+    ]
+  },
+
+  "Leopard": {
+    "recommended_animals": [
+      "Lion",
+      "Elephant",
+      "Buffalo"
+    ],
+    "recommended_parks": [
+      "Kidepo Valley National Park",
+      "Queen Elizabeth National Park",
+      "Murchison Falls National Park"
+    ]
+  }
+}

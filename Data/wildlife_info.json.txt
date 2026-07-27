@@ -1,0 +1,182 @@
+{
+  "Hippo": {
+    "scientific_name": "Hippopotamus amphibius",
+    "description": "The hippopotamus is a large semi-aquatic mammal commonly found in rivers, lakes, and wetlands. It spends most of the day in water to stay cool and emerges at night to graze.",
+    "habitat": "Rivers, lakes, wetlands and swamps",
+    "diet": "Herbivore",
+    "conservation_status": "Vulnerable",
+    "best_viewing_time": "Early morning and late evening",
+    "interesting_fact": "Hippos can hold their breath underwater for up to five minutes without surfacing.",
+    "recommended_park": "Kibale National Park",
+
+    "images": [
+      "static/animals/Hippo/image_1.jpg",
+      "static/animals/Hippo/image_2.jpg",
+      "static/animals/Hippo/image_3.jpg",
+      "static/animals/Hippo/image_4.jpg",
+      "static/animals/Hippo/image_5.jpg",
+      "static/animals/Hippo/image_6.jpg"
+    ],
+
+    "videos": [
+      "static/videos/Hippo/Hippos in Uganda [6uPUnsxb5w4].mp4",
+      "static/videos/Hippo/Hippos in uganda [ZgYdX3uOuRY].mp4"
+    ]
+  },
+
+
+  "Lion": {
+    "scientific_name": "Panthera leo",
+    "description": "The lion is Africa's largest cat and one of Uganda's most iconic predators. Lions live in prides and are famous for their strength and hunting skills.",
+    "habitat": "Savannah grasslands and open woodlands",
+    "diet": "Carnivore",
+    "conservation_status": "Vulnerable",
+    "best_viewing_time": "Early morning and sunset",
+    "interesting_fact": "Queen Elizabeth National Park is famous for its tree-climbing lions.",
+    "recommended_park": "Queen Elizabeth National Park",
+
+    "images": [
+      "static/animals/Lion/image_1.jpg",
+      "static/animals/Lion/image_2.jpg",
+      "static/animals/Lion/image_3.jpg",
+      "static/animals/Lion/image_4.jpg",
+      "static/animals/Lion/image_5.jpg",
+      "static/animals/Lion/image_6.jpg"
+    ],
+
+    "videos": [
+      "static/videos/Lion/Lions in the wild： up close in Uganda [13ITcWqbVHA] .mp4",
+      "static/videos/Lion/LIONS- Terrifying, Majestic Kings of the Jungle! [W41dNtCJoA0].mp4"
+    ]
+  },
+
+
+  "Elephant": {
+    "scientific_name": "Loxodonta africana",
+    "description": "The African elephant is the world's largest land mammal and plays an important role in maintaining healthy ecosystems.",
+    "habitat": "Savannahs, forests and wetlands",
+    "diet": "Herbivore",
+    "conservation_status": "Endangered",
+    "best_viewing_time": "Morning and late afternoon",
+    "interesting_fact": "An adult elephant can consume more than 150 kilograms of vegetation daily.",
+    "recommended_park": "Murchison Falls National Park",
+
+    "images": [
+      "static/animals/Elephant/image_1.jpg",
+      "static/animals/Elephant/image_2.jpg",
+      "static/animals/Elephant/image_3.jpg",
+      "static/animals/Elephant/image_4.jpg",
+      "static/animals/Elephant/image_5.jpg",
+      "static/animals/Elephant/image_6.jpg"
+    ],
+
+    "videos": [
+      "static/videos/Elephant/Elephants - Murchison Falls National Park - Uganda 4K [Z5UgvikJlZ8].mp4",
+      "static/videos/Elephant/Elephants in Uganda [Y494U10IDoA].mp4"
+    ]
+  },
+
+
+  "Buffalo": {
+    "scientific_name": "Syncerus caffer",
+    "description": "The African buffalo is one of Africa's most powerful herbivores and is commonly seen grazing in large herds.",
+    "habitat": "Grasslands, woodlands and wetlands",
+    "diet": "Herbivore",
+    "conservation_status": "Least Concern",
+    "best_viewing_time": "Morning and evening",
+    "interesting_fact": "Buffaloes are known for protecting injured members of their herd.",
+    "recommended_park": "Lake Mburo National Park",
+
+    "images": [
+      "static/animals/Buffalo/image_1.jpg",
+      "static/animals/Buffalo/image_2.jpg",
+      "static/animals/Buffalo/image_3.jpg",
+      "static/animals/Buffalo/image_4.jpg",
+      "static/animals/Buffalo/image_5.jpg",
+      "static/animals/Buffalo/image_6.jpg"
+    ],
+
+    "videos": [
+      "static/videos/Buffalo/SOUTH AFRICA cape buffaloes, Kruger national park (hd-video) [9CblliWIcDg].mp4",
+      "static/videos/Buffalo/THE BIGGEST HARD OF BUFFALOS IN THE ALL WORLD 🌎 Uganda 🇺🇬 @Bushbeatjourneys [AW6REff_7cs].mp4"
+    ]
+  },
+
+
+  "Chimpanzee": {
+    "scientific_name": "Pan troglodytes",
+    "description": "Chimpanzees are intelligent primates that share about 98% of their DNA with humans. Uganda is one of Africa's best destinations for chimpanzee tracking.",
+    "habitat": "Tropical rainforests",
+    "diet": "Omnivore",
+    "conservation_status": "Endangered",
+    "best_viewing_time": "Morning",
+    "interesting_fact": "Chimpanzees use tools such as sticks to collect insects and honey.",
+    "recommended_park": "Kibale National Park",
+
+    "images": [
+      "static/animals/Chimpanzee/image_1.jpg",
+      "static/animals/Chimpanzee/image_2.jpg",
+      "static/animals/Chimpanzee/image_3.jpg",
+      "static/animals/Chimpanzee/image_4.jpg",
+      "static/animals/Chimpanzee/image_5.jpg",
+      "static/animals/Chimpanzee/image_6.jpg"
+    ],
+
+    "videos": [
+      "static/videos/Chimpanzee/The long road to trust： Conservationists spend years tracking chimps in Uganda to dispel fear [Zs-7RT7DZZo].mp4",
+      "static/videos/Chimpanzee/VISIT GORILLAS & CHIMPANZEES - UGANDA TRAILS [X96hF5jY4o4].mp4"
+    ]
+  },
+
+
+  "Gorilla": {
+    "scientific_name": "Gorilla beringei beringei",
+    "description": "Mountain gorillas are among the world's rarest primates and one of Uganda's greatest wildlife attractions.",
+    "habitat": "Montane forests",
+    "diet": "Herbivore",
+    "conservation_status": "Endangered",
+    "best_viewing_time": "Morning",
+    "interesting_fact": "Uganda protects a large population of the world's remaining mountain gorillas.",
+    "recommended_park": "Bwindi Impenetrable National Park",
+
+    "images": [
+      "static/animals/Gorilla/image_1.jpg",
+      "static/animals/Gorilla/image_2.jpg",
+      "static/animals/Gorilla/image_3.jpg",
+      "static/animals/Gorilla/image_4.jpg",
+      "static/animals/Gorilla/image_5.jpg",
+      "static/animals/Gorilla/image_6.jpg"
+    ],
+
+    "videos": [
+      "static/videos/Gorilla/gorilla1.mp4",
+      "static/videos/Gorilla/gorilla2.mp4"
+    ]
+  },
+
+
+  "Leopard": {
+    "scientific_name": "Panthera pardus",
+    "description": "The leopard is a solitary and adaptable big cat known for its climbing ability and spotted coat.",
+    "habitat": "Savannahs, forests and rocky areas",
+    "diet": "Carnivore",
+    "conservation_status": "Vulnerable",
+    "best_viewing_time": "Night and early morning",
+    "interesting_fact": "Leopards often drag their prey into trees to protect it from scavengers.",
+    "recommended_park": "Kidepo Valley National Park",
+
+    "images": [
+      "static/animals/Leopard/image_1.jpg",
+      "static/animals/Leopard/image_2.jpg",
+      "static/animals/Leopard/image_3.jpg",
+      "static/animals/Leopard/image_4.jpg",
+      "static/animals/Leopard/image_5.jpg",
+      "static/animals/Leopard/image_6.jpg"
+    ],
+
+    "videos": [
+      "static/videos/Leopard/Buck Doesn't See the Leopard Behind This Tree... [zReSMP1pM5M].mp4",
+      "static/videos/Leopard/The Leopard is a Pouncer, Not a Chaser ｜ Nat Geo Wild [vPv2lFYP35Y].mp4"
+    ]
+  }
+} 

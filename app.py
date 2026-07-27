@@ -1,3 +1,4 @@
+import json
 import sys
 from pathlib import Path
 
@@ -11,6 +12,8 @@ app = Flask(__name__, template_folder="templates", static_folder="static")
 base_dir = Path(__file__).resolve().parent
 DATASET_PATH = base_dir / "Dataset" / "Tourism_Game_Park_Datasets.csv"
 MODELS_DIR = base_dir / "Notebook" / "models"
+WILDLIFE_INFO_PATH = base_dir / "Data" / "wildlife_info.json.txt"
+PARK_INFO_PATH = base_dir / "Data" / "parks_info.json.txt"
 
 # ----------------------------------------------------
 # 1. LOAD DATASET FOR BACKUP & SIGHTING DETAILS
@@ -105,7 +108,124 @@ def get_animal_image_path(animal):
 
 
 # ----------------------------------------------------
-# 3. REVISIONARY RECOMMENDATION LOGIC
+# 3. METADATA LOADING
+# ----------------------------------------------------
+
+wildlife_info = {}
+park_info = {}
+
+try:
+    with open(WILDLIFE_INFO_PATH, "r", encoding="utf-8") as file:
+        wildlife_info = json.load(file)
+except Exception as e:
+    print(f"WARNING: Failed to load wildlife metadata. Details: {e}", file=sys.stderr)
+
+try:
+    with open(PARK_INFO_PATH, "r", encoding="utf-8") as file:
+        park_info = json.load(file)
+except Exception as e:
+    print(f"WARNING: Failed to load park metadata. Details: {e}", file=sys.stderr)
+
+
+def asset_path(value, default="images/fallback.jpg"):
+    if not value or not isinstance(value, str):
+        return default
+    normalized = value.strip().replace("\\", "/").lstrip("/")
+    if normalized.lower().startswith("static/"):
+        normalized = normalized[7:]
+    return normalized or default
+
+
+def get_wildlife_primary_image(animal):
+    animal_data = wildlife_info.get(animal, {})
+    image_list = animal_data.get("images", [])
+    if image_list and isinstance(image_list, list):
+        return asset_path(image_list[0])
+    return get_animal_image_path(animal)
+
+
+def get_wildlife_gallery(animal, limit=6):
+    animal_data = wildlife_info.get(animal, {})
+    image_list = animal_data.get("images", [])
+    if not isinstance(image_list, list):
+        return []
+    gallery = [asset_path(image) for image in image_list if isinstance(image, str)]
+    return gallery[:limit]
+
+
+def get_wildlife_video(animal):
+    animal_data = wildlife_info.get(animal, {})
+    video_list = animal_data.get("videos", [])
+    if video_list and isinstance(video_list, list):
+        return asset_path(video_list[0])
+
+    normalized = animal.strip().lower()
+    if "lion" in normalized:
+        return "videos/lion.mp4"
+    if "buffalo" in normalized:
+        return "videos/buffalo.mp4"
+    if "elephant" in normalized:
+        return "videos/elephant.mp4"
+    if "hippo" in normalized:
+        return "videos/hippo.mp4"
+    if "leopard" in normalized:
+        return "videos/leopard.mp4"
+    if "gorilla" in normalized or "chimp" in normalized:
+        return "videos/gorilla.mp4"
+    return "videos/crestedCrane.mp4"
+
+
+def get_park_image(park_data, park_name=None):
+    if not isinstance(park_data, dict):
+        return "images/fallback.jpg"
+
+    candidate = asset_path(park_data.get("park_image", ""))
+    candidate_path = base_dir / "static" / candidate
+    if candidate and candidate_path.exists():
+        return candidate
+
+    if park_name and isinstance(park_name, str):
+        park_folder = base_dir / "static" / "Parks" / park_name
+        if park_folder.exists() and park_folder.is_dir():
+            for img_file in sorted(park_folder.iterdir()):
+                if img_file.suffix.lower() in {".jpg", ".jpeg", ".png", ".webp"}:
+                    return str(Path("Parks") / park_name / img_file.name).replace("\\", "/")
+
+    return "images/fallback.jpg"
+
+
+def get_full_park_name(short_name):
+    if not isinstance(short_name, str):
+        return short_name
+    normalized = short_name.strip().lower()
+    for full_name in park_info:
+        if normalized == full_name.lower() or normalized in full_name.lower():
+            return full_name
+    for full_name in park_info:
+        if full_name.lower().startswith(normalized):
+            return full_name
+    return short_name
+
+
+def get_park_features(park_data, limit=5):
+    if not isinstance(park_data, dict):
+        return []
+    features = park_data.get("activities", []) or park_data.get("main_attractions", [])
+    if not isinstance(features, list):
+        return []
+    return features[:limit]
+
+
+def get_related_animals(park_data, recommended_animal):
+    if not isinstance(park_data, dict):
+        return []
+    animals = park_data.get("main_wildlife", [])
+    if not isinstance(animals, list):
+        return []
+    return [animal for animal in animals if animal != recommended_animal][:4]
+
+# ----------------------------------------------------
+# 4. REVISIONARY RECOMMENDATION LOGIC
 # ----------------------------------------------------
 def build_recommendation(animal, temperature, rainfall, season):
     # Safety Check: If the system files didn't boot, yield an elegant fallback error dict
@@ -203,6 +323,21 @@ def predict():
         result = build_recommendation(animal, temperature, rainfall, season)
         result["selected_animal"] = animal
         result["animal_image"] = get_animal_image_path(animal)
+
+        wildlife_data = dict(wildlife_info.get(animal, {}))
+        wildlife_data["image_path"] = get_wildlife_primary_image(animal)
+        wildlife_data["gallery"] = get_wildlife_gallery(animal)
+        wildlife_data["video_path"] = get_wildlife_video(animal)
+        result["wildlife_data"] = wildlife_data
+
+        full_park_name = get_full_park_name(result["recommended_park"])
+        park_data = dict(park_info.get(full_park_name, {}))
+        park_data["name"] = full_park_name
+        park_data["park_image_path"] = get_park_image(park_data, full_park_name)
+        park_data["highlights"] = get_park_features(park_data)
+        result["recommended_park"] = full_park_name
+        result["park_data"] = park_data
+        result["related_animals"] = get_related_animals(park_data, result["recommended_animal"])
         return render_template("result.html", **result)
 
     default_animal = "Crested Crane" if "Crested Crane" in animals else (animals[0] if animals else "Unknown")
