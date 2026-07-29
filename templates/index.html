@@ -3,116 +3,237 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wildlife Tourism Recommendation</title>
+    <title>LAMBULA — AI Wildlife Tourism Guide</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="{{ url_for('static', filename='styles.css') }}"
     />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='home.css') }}"
+    />
   </head>
-  <body class="page-shell">
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm" style="background: rgba(255,255,255,0.92); backdrop-filter: blur(12px);">
+  <body
+    class="home-page"
+    style="background-image: url('{{ url_for('static', filename='images/home-background.png') }}');"
+  >
+    <nav class="navbar navbar-expand-lg home-navbar sticky-top">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="{{ url_for('home') }}">LAMBULA</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+        <a class="navbar-brand home-brand" href="{{ url_for('home') }}">
+          <span class="home-brand-icon"><i class="fa-solid fa-paw"></i></span>
+          <span class="home-brand-text">
+            <strong>LAMBULA</strong>
+            <small>AI Wildlife Tourism Guide</small>
+          </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navLinks"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navLinks">
-          <ul class="navbar-nav ms-auto align-items-center">
-            <li class="nav-item"><a class="nav-link active" href="{{ url_for('home') }}">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url_for('about', animal=selected_animal) }}">About</a></li>
+          <ul class="navbar-nav mx-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="{{ url_for('home') }}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#how-it-works">How it works</a>
+            </li>
           </ul>
+          <div class="d-flex align-items-center gap-2">
+            {% if user_name %}
+            <span class="nav-user d-none d-lg-inline">Hi, {{ user_name.split()[0] }}</span>
+            <a class="btn btn-home-outline" href="{{ url_for('logout') }}">Logout</a>
+            {% else %}
+            <a class="btn btn-home-outline" href="{{ url_for('login') }}">Login</a>
+            {% endif %}
+            <a
+              class="btn btn-home-primary"
+              href="{{ url_for('about', animal=selected_animal) }}"
+            >
+              About Lambula <i class="fa-solid fa-circle-info ms-1"></i>
+            </a>
+          </div>
         </div>
       </div>
     </nav>
 
-    <main class="hero-section py-5">
-      <div class="container">
-        <div class="row align-items-center gx-4 gy-4">
-          <div class="col-xl-6">
-            <div class="hero-copy p-5 rounded-4 shadow-sm">
-              <span class="badge text-bg-success mb-3">AI Wildlife Explorer</span>
-              <h1 class="display-5 fw-bold mb-3">Discover the best park and wildlife sighting chances in Uganda.</h1>
-              <p class="lead text-muted mb-4">Match your weather forecast and season input to the most likely wildlife and national park recommendation.</p>
-              <div class="row g-3">
-                <div class="col-sm-6">
-                  <div class="feature-box rounded-4 p-3">
-                    <strong>Prediction engine</strong>
-                    <p class="small text-muted mb-0">AI-powered match from weather to wildlife.</p>
+    <main class="home-main container">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-6">
+          <section
+            class="home-hero-panel"
+            style="background-image: url('{{ url_for('static', filename='animals/Lion/image_4.jpg') }}');"
+          >
+            <div class="home-hero-panel-overlay"></div>
+            <div class="home-hero-panel-content">
+              <h1 class="home-hero-title">
+                Discover the best <span class="text-green">park</span> and
+                <span class="text-green">wildlife</span> sighting chances in
+                <span class="text-green">Uganda</span>.
+              </h1>
+              <p class="home-hero-lead">
+                Enter your weather forecast and season details below and let Lambula AI
+                recommend the most likely wildlife and best park to visit.
+              </p>
+              <ul class="home-feature-list">
+                <li>
+                  <span class="home-feature-icon"><i class="fa-solid fa-bullseye"></i></span>
+                  <div>
+                    <strong>AI-Powered Predictions</strong>
+                    <span>Advanced machine learning for more reliable wildlife suggestions.</span>
                   </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="feature-box rounded-4 p-3">
-                    <strong>Park preview</strong>
-                    <p class="small text-muted mb-0">See the recommended park with image and highlights.</p>
+                </li>
+                <li>
+                  <span class="home-feature-icon"><i class="fa-solid fa-tree"></i></span>
+                  <div>
+                    <strong>Best Park Recommendation</strong>
+                    <span>Get the top park suggestion for your selected wildlife.</span>
                   </div>
+                </li>
+                <li>
+                  <span class="home-feature-icon"><i class="fa-solid fa-binoculars"></i></span>
+                  <div>
+                    <strong>Plan with Confidence</strong>
+                    <span>Prepare your trip around the highest chances of great sightings.</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <div class="col-lg-6">
+          <section class="home-form-card" id="how-it-works">
+            <div class="home-form-header">
+              <span class="home-form-badge"><i class="fa-solid fa-leaf"></i></span>
+              <h2>Get Your Wildlife Recommendation</h2>
+            </div>
+            <form action="{{ url_for('predict') }}" method="post" class="home-form">
+              <div class="mb-3">
+                <label class="form-label" for="temperature">Temperature (°C)</label>
+                <div class="home-input-group">
+                  <i class="fa-solid fa-temperature-half"></i>
+                  <input
+                    class="form-control"
+                    id="temperature"
+                    name="temperature"
+                    type="number"
+                    step="0.1"
+                    min="0"
+                    placeholder="e.g. 24"
+                    value="24"
+                    required
+                  />
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-xl-6">
-            <div class="card content-card rounded-4 shadow-lg p-4">
-              <h2 class="h4 fw-bold mb-4">Plan your visit</h2>
-              <form action="{{ url_for('predict') }}" method="post">
-                <div class="mb-3">
-                  <label class="form-label" for="animal">Wildlife you want to see</label>
+              <div class="mb-3">
+                <label class="form-label" for="animal">Wildlife you want to see</label>
+                <div class="home-input-group">
+                  <i class="fa-solid fa-paw"></i>
                   <select class="form-select" id="animal" name="animal" required>
                     {% for animal in animals %}
-                    <option value="{{ animal }}">{{ animal }}</option>
+                    <option value="{{ animal }}" {% if animal == selected_animal %}selected{% endif %}>
+                      {{ animal }}
+                    </option>
                     {% endfor %}
                   </select>
                 </div>
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <label class="form-label" for="temperature">Temperature (°C)</label>
-                    <input class="form-control" id="temperature" name="temperature" type="number" step="0.1" min="0" value="24" required />
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label" for="rainfall">Rainfall (mm)</label>
-                    <input class="form-control" id="rainfall" name="rainfall" type="number" step="0.1" min="0" value="150" required />
-                  </div>
-                </div>
-                <div class="mt-3">
-                  <label class="form-label" for="season">Season</label>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label" for="season">Season</label>
+                <div class="home-input-group">
+                  <i class="fa-regular fa-calendar"></i>
                   <select class="form-select" id="season" name="season" required>
+                    <option value="" disabled selected>Select season</option>
                     <option value="Dry">Dry</option>
                     <option value="Wet">Wet</option>
                   </select>
                 </div>
-                <button class="btn btn-success w-100 mt-4" type="submit">Get recommendation</button>
-              </form>
-            </div>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label" for="rainfall">Rainfall (mm)</label>
+                <div class="home-input-group">
+                  <i class="fa-solid fa-cloud-rain"></i>
+                  <input
+                    class="form-control"
+                    id="rainfall"
+                    name="rainfall"
+                    type="number"
+                    step="0.1"
+                    min="0"
+                    placeholder="e.g. 80"
+                    value="80"
+                    required
+                  />
+                </div>
+              </div>
+
+              <button class="btn btn-home-submit w-100" type="submit">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                Get Recommendation
+              </button>
+              <p class="home-form-footer">
+                <i class="fa-solid fa-shield-halved"></i>
+                Powered by Lambula AI • Accurate • Reliable • Fast
+              </p>
+            </form>
+          </section>
+        </div>
+      </div>
+
+      <section class="home-why-bar" id="parks">
+        <div class="home-why-title">Why use Lambula?</div>
+        <div class="home-why-items">
+          <div class="home-why-item">
+            <i class="fa-regular fa-clock"></i>
+            <span>Save Time</span>
+          </div>
+          <div class="home-why-item">
+            <i class="fa-solid fa-paw"></i>
+            <span>Better Sightings</span>
+          </div>
+          <div class="home-why-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Explore Uganda</span>
+          </div>
+          <div class="home-why-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Trusted Data</span>
           </div>
         </div>
-
-        <section class="mt-5">
-          <div class="row g-4">
-            <div class="col-md-4">
-              <div class="feature-card rounded-4 p-4 h-100">
-                <h3 class="h6 mb-2">Smarter decisions</h3>
-                <p class="small text-muted">Predict sightings using historical data and weather inputs.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="feature-card rounded-4 p-4 h-100">
-                <h3 class="h6 mb-2">Wildlife gallery</h3>
-                <p class="small text-muted">Your recommendation includes matched animal imagery.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="feature-card rounded-4 p-4 h-100">
-                <h3 class="h6 mb-2">Park insights</h3>
-                <p class="small text-muted">Discover a park that fits your chosen season and conditions.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+        <div class="home-why-image">
+          <img
+            src="{{ url_for('static', filename='animals/Elephant/image_4.jpg') }}"
+            alt="Elephants in Uganda"
+          />
+        </div>
+      </section>
     </main>
+
+    <footer class="home-contact-footer" id="contact">
+      <div class="container text-center">
+        <p class="mb-0">
+          Contact Lambula at
+          <a href="mailto:hello@lambula.ug">hello@lambula.ug</a>
+          — plan smarter wildlife adventures across Uganda.
+        </p>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>

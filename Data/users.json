@@ -1,0 +1,12 @@
+{
+  "t@test.com": {
+    "full_name": "T",
+    "password_hash": "scrypt:32768:8:1$8pGL25ASvEsGiGhd$e6825f0cda22ce45dcb94c91e8defbbe926b85428d1eb935b58f54648253466c031703726ea9c7539a71c6741dfe87af1eb03560f5dc79fe58283b6c69910eaf",
+    "provider": "local"
+  },
+  "tukaheebwaritah@gmail.com": {
+    "full_name": "Tukahebwa Ruth",
+    "password_hash": "scrypt:32768:8:1$Mz509DyPsCoFtDJ9$5d054cf03b6f704a07b2c09a4b1bb401439dc1234d0f9abe5d2f819aba3390a1faafc791ceed5b33cc8011a8ecba56056a3e51132b81f671b20ec8725f1f04b9",
+    "provider": "local"
+  }
+}

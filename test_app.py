@@ -9,26 +9,85 @@ def client():
         yield client
 
 
-def test_home_page(client):
-    response = client.get("/")
+def test_auth_page(client):
+    response = client.get("/login")
     assert response.status_code == 200
-    assert b"Plan your visit" in response.data
+    assert b"Welcome Back!" in response.data
+
+
+def test_register_page(client):
+    response = client.get("/register")
+    assert response.status_code == 200
+    assert b"Create Account" in response.data
+
+
+def test_home_requires_login(client):
+    response = client.get("/home")
+    assert response.status_code == 302
+    assert response.location.endswith("/login")
+
+
+def test_register_and_home_page(client):
+    response = client.post(
+        "/register",
+        data={
+            "full_name": "Test Explorer",
+            "email": "test@example.com",
+            "password": "secret123",
+            "confirm_password": "secret123",
+            "terms": "on",
+        },
+        follow_redirects=True,
+    )
+    assert response.status_code == 200
+    assert b"Discover the best" in response.data
+    assert b"Number of Visitors" not in response.data
 
 
 def test_home_page_does_not_offer_removed_animal(client):
-    response = client.get("/")
+    client.post(
+        "/register",
+        data={
+            "full_name": "Test Explorer",
+            "email": "test2@example.com",
+            "password": "secret123",
+            "confirm_password": "secret123",
+            "terms": "on",
+        },
+    )
+    response = client.get("/home")
     assert response.status_code == 200
     assert b"Chimpanzee" not in response.data
     assert b"chimpazee" not in response.data.lower()
 
 
 def test_about_page(client):
+    client.post(
+        "/register",
+        data={
+            "full_name": "Test Explorer",
+            "email": "test3@example.com",
+            "password": "secret123",
+            "confirm_password": "secret123",
+            "terms": "on",
+        },
+    )
     response = client.get("/about")
     assert response.status_code == 200
     assert b"About the AI-powered wildlife recommendation system" in response.data
 
 
 def test_prediction_result(client):
+    client.post(
+        "/register",
+        data={
+            "full_name": "Test Explorer",
+            "email": "test4@example.com",
+            "password": "secret123",
+            "confirm_password": "secret123",
+            "terms": "on",
+        },
+    )
     response = client.post(
         "/predict",
         data={"animal": "Elephant", "temperature": "24", "rainfall": "150", "season": "Dry"},
@@ -38,6 +97,16 @@ def test_prediction_result(client):
 
 
 def test_prediction_uses_elephant_background_video(client):
+    client.post(
+        "/register",
+        data={
+            "full_name": "Test Explorer",
+            "email": "test5@example.com",
+            "password": "secret123",
+            "confirm_password": "secret123",
+            "terms": "on",
+        },
+    )
     response = client.post(
         "/predict",
         data={"animal": "Elephant", "temperature": "24", "rainfall": "150", "season": "Dry"},

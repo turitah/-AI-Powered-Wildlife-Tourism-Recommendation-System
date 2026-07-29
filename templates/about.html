@@ -12,59 +12,225 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='styles.css') }}"
     />
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About the Project</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+
+    <!-- Your external CSS -->
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='styles.css') }}"
+    />
+
+    <!-- About page specific CSS -->
+    <style>
+        body.page-shell {
+            background: url("{{ url_for('static', filename='images/home-background.png') }}")
+                no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        body.page-shell::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.45);
+            z-index: -1;
+        }
+
+         .hero-copy,
+         .feature-box,
+         .trust-card {
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+      
+
+        .card {
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .hero-image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
   </head>
   <body class="page-shell">
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm" style="background: rgba(255,255,255,0.92); backdrop-filter: blur(12px);">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm" style="background: rgba(2, 6, 23, 0.92); backdrop-filter: blur(10px);">
       <div class="container">
         <a class="navbar-brand fw-bold" href="{{ url_for('home') }}">LAMBULA</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navLinks">
-          <ul class="navbar-nav ms-auto align-items-center">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
             <li class="nav-item"><a class="nav-link" href="{{ url_for('home') }}">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url_for('home') }}">Back</a></li>
+            <li class="nav-item"><a class="nav-link active" href="{{ url_for('about', animal=selected_animal) }}">About</a></li>
           </ul>
+          <div class="d-none d-lg-flex align-items-center gap-3">
+            <div class="text-white text-end">
+              <div class="fw-bold">25°C</div>
+              <small class="text-white-50">Kampala, UG</small>
+            </div>
+            <button class="btn btn-outline-light rounded-pill px-4 py-2">Ritah</button>
+          </div>
         </div>
       </div>
     </nav>
 
     <main class="container py-5">
-      <div class="row g-4">
-        <div class="col-lg-8">
-          <div class="card shadow-sm border-0 rounded-4 p-4">
-            <h1 class="display-6 fw-bold mb-3">
-              About the AI-powered wildlife recommendation system
-            </h1>
-            <p class="text-muted">
-              This project addresses the challenge of helping tourists and
-              wildlife enthusiasts identify the most suitable Ugandan national
-              park and environmental conditions for viewing specific wildlife.
-            </p>
-            <p>
-              By learning from historical tourism and wildlife observation data,
-              the model identifies patterns between weather, season, and
-              sightings. It then recommends the wildlife most likely to be found
-              and the park best matched to the selected conditions.
-            </p>
-            <p>
-              The web application delivers that intelligence through a simple,
-              responsive interface so visitors can plan smarter trips with
-              confidence.
-            </p>
+      <section class="hero-section">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-copy rounded-4 p-5">
+              <span class="badge mb-3 px-3 py-2 text-uppercase fw-bold" style="background-color: rgba(255,255,255,0.95); color: #166534;">About Lambula</span>
+              <h1 class="display-5 fw-bold mb-4">AI-Powered Wildlife Explorer for Uganda</h1>
+              <p class="lead mb-4">
+                Lambula is an intelligent wildlife recommendation and prediction system designed to help tourists, travelers, and safari planners discover the best wildlife experiences in Uganda.
+              </p>
+              <p class="mb-0">
+                Using machine learning and historical environmental data, Lambula predicts the most likely wildlife you can encounter based on weather conditions and suggests the best parks to visit.
+              </p>
+            </div>
+            <div class="row g-3 mt-4">
+              <div class="col-sm-6">
+                <div class="feature-box rounded-4 p-4 h-100">
+                  <div class="d-flex align-items-start gap-3 mb-3">
+                    <span class="badge bg-success rounded-circle p-3"><i class="fa-solid fa-leaf fa-lg"></i></span>
+                    <div>
+                      <strong>Conservation Focused</strong>
+                    </div>
+                  </div>
+                  <p class="mb-0">We support wildlife conservation by promoting responsible and informed tourism.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="feature-box rounded-4 p-4 h-100">
+                  <div class="d-flex align-items-start gap-3 mb-3">
+                    <span class="badge bg-success rounded-circle p-3"><i class="fa-solid fa-user-friends fa-lg"></i></span>
+                    <div>
+                      <strong>User Friendly</strong>
+                    </div>
+                  </div>
+                  <p class="mb-0">Simple, fast and intuitive interface for everyone from tourists to tour operators.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image-card rounded-4 overflow-hidden shadow-sm">
+              <img src="{{ url_for('static', filename='animals/leopard/image_4.jpg') }}" alt="Leopard in Uganda" />
+            </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="card content-card shadow-sm border-0 rounded-4 p-4">
-            <h2 class="h5 fw-bold mb-3">Project goals</h2>
-            <ul>
-              <li>Support informed safari planning</li>
-              <li>Improve wildlife viewing success</li>
-              <li>Promote Uganda’s national parks</li>
-            </ul>
+      </section>
+
+      <section class="mt-5">
+        <div class="text-center mb-4">
+          <p class="text-success fw-bold mb-2 text-uppercase">Our Mission</p>
+          <h2 class="fw-bold">To promote sustainable tourism in Uganda by leveraging artificial intelligence to provide accurate wildlife insights, support conservation and create meaningful travel experiences.</h2>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-3">
+            <div class="trust-card rounded-4 p-4 text-center">
+              <div class="mb-3">
+                <span class="badge bg-success rounded-circle p-3"><i class="fa-solid fa-seedling fa-lg"></i></span>
+              </div>
+              <strong>Conservation Focused</strong>
+              <p class="mt-2 mb-0">We support wildlife conservation by promoting responsible and informed tourism.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="trust-card rounded-4 p-4 text-center">
+              <div class="mb-3">
+                <span class="badge bg-success rounded-circle p-3"><i class="fa-solid fa-user-check fa-lg"></i></span>
+              </div>
+              <strong>User Friendly</strong>
+              <p class="mt-2 mb-0">Simple, fast and intuitive interface for everyone from tourists to tour operators.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="trust-card rounded-4 p-4 text-center">
+              <div class="mb-3">
+                <span class="badge bg-success rounded-circle p-3"><i class="fa-solid fa-database fa-lg"></i></span>
+              </div>
+              <strong>Reliable Data</strong>
+              <p class="mt-2 mb-0">Our predictions are trained on real historical data for dependable and accurate results.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="trust-card rounded-4 p-4 text-center">
+              <div class="mb-3">
+                <span class="badge bg-success rounded-circle p-3"><i class="fa-solid fa-people-group fa-lg"></i></span>
+              </div>
+              <strong>Community Driven</strong>
+              <p class="mt-2 mb-0">Built for travelers, by travelers and wildlife lovers who care about Uganda.</p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section class="row g-3 mt-4">
+        <div class="col-md-3">
+          <div class="card rounded-4 p-4 text-white" style="background: linear-gradient(135deg, #0f4e25 0%, #184b30 100%);">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <span class="badge bg-white text-success rounded-circle p-3"><i class="fa-solid fa-map-location-dot fa-lg"></i></span>
+              <div>
+                <h3 class="h5 fw-bold mb-0">7+</h3>
+                <small>National Parks Covered in Uganda</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card rounded-4 p-4 text-white" style="background: linear-gradient(135deg, #0f4e25 0%, #184b30 100%);">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <span class="badge bg-white text-success rounded-circle p-3"><i class="fa-solid fa-paw fa-lg"></i></span>
+              <div>
+                <h3 class="h5 fw-bold mb-0">7</h3>
+                <small>Wildlife Species You can discover</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card rounded-4 p-4 text-white" style="background: linear-gradient(135deg, #0f4e25 0%, #184b30 100%);">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <span class="badge bg-white text-success rounded-circle p-3"><i class="fa-solid fa-chart-column fa-lg"></i></span>
+              <div>
+                <h3 class="h5 fw-bold mb-0">1500+</h3>
+                <small>Historical Records Used for Training</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card rounded-4 p-4 text-white" style="background: linear-gradient(135deg, #0f4e25 0%, #184b30 100%);">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <span class="badge bg-white text-success rounded-circle p-3"><i class="fa-solid fa-heart fa-lg"></i></span>
+              <div>
+                <h3 class="h5 fw-bold mb-0">100%</h3>
+                <small>Built for Sustainable Wildlife Tourism</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

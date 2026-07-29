@@ -1,19 +1,108 @@
 import json
+import os
 import sys
+from functools import wraps
 from pathlib import Path
 
 import joblib
 import pandas as pd
-from flask import Flask, render_template, request
+from authlib.integrations.flask_client import OAuth
+from flask import Flask, redirect, render_template, request, session, url_for
 from sklearn.preprocessing import LabelEncoder
+from werkzeug.security import check_password_hash, generate_password_hash
+
+try:
+    from dotenv import load_dotenv
+
+    load_dotenv()
+except ImportError:
+    pass
 
 app = Flask(__name__, template_folder="templates", static_folder="static")
+app.secret_key = os.getenv("SECRET_KEY", "lambula-wildlife-tourism-dev-key")
+
+oauth = OAuth(app)
+google_oauth = oauth.register(
+    name="google",
+    client_id=os.getenv("GOOGLE_CLIENT_ID"),
+    client_secret=os.getenv("GOOGLE_CLIENT_SECRET"),
+    server_metadata_url="https://accounts.google.com/.well-known/openid-configuration",
+    client_kwargs={"scope": "openid email profile"},
+)
 
 base_dir = Path(__file__).resolve().parent
 DATASET_PATH = base_dir / "Dataset" / "Tourism_Game_Park_Datasets.csv"
 MODELS_DIR = base_dir / "Notebook" / "models"
 WILDLIFE_INFO_PATH = base_dir / "Data" / "wildlife_info.json.txt"
 PARK_INFO_PATH = base_dir / "Data" / "parks_info.json.txt"
+USERS_PATH = base_dir / "Data" / "users.json"
+
+
+def load_users():
+    if not USERS_PATH.exists():
+        return {}
+    try:
+        with open(USERS_PATH, "r", encoding="utf-8") as file:
+            data = json.load(file)
+            return data if isinstance(data, dict) else {}
+    except Exception as e:
+        print(f"WARNING: Failed to load users file. Details: {e}", file=sys.stderr)
+        return {}
+
+
+def save_users(users):
+    USERS_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with open(USERS_PATH, "w", encoding="utf-8") as file:
+        json.dump(users, file, indent=2)
+
+
+def login_required(view):
+    @wraps(view)
+    def wrapped_view(*args, **kwargs):
+        if not session.get("user_email"):
+            return redirect(url_for("login"))
+        return view(*args, **kwargs)
+
+    return wrapped_view
+
+
+def get_available_animals():
+    excluded = {"gorilla", "unknown"}
+    available = sorted([
+        animal for animal in animals
+        if str(animal).strip().lower() not in excluded
+    ])
+    if not any(str(animal).strip().lower() == "chimpanzee" for animal in available):
+        available.append("Chimpanzee")
+        available.sort()
+    return available
+
+
+def google_oauth_configured():
+    return bool(os.getenv("GOOGLE_CLIENT_ID") and os.getenv("GOOGLE_CLIENT_SECRET"))
+
+
+def login_google_user(user_info):
+    email = user_info.get("email", "").strip().lower()
+    if not email:
+        return False
+
+    full_name = user_info.get("name") or email.split("@")[0]
+    users = load_users()
+    if email not in users:
+        users[email] = {
+            "full_name": full_name,
+            "password_hash": generate_password_hash(os.urandom(16).hex()),
+            "provider": "google",
+        }
+        save_users(users)
+    elif not users[email].get("full_name"):
+        users[email]["full_name"] = full_name
+        save_users(users)
+
+    session["user_email"] = email
+    session["user_name"] = users[email].get("full_name", full_name)
+    return True
 
 # ----------------------------------------------------
 # 1. LOAD DATASET FOR BACKUP & SIGHTING DETAILS
@@ -58,7 +147,7 @@ try:
 
     animals = sorted([
         animal for animal in animal_encoder.classes_
-        if str(animal).strip().lower() not in {"chimpanzee", "chimpazee", "unknown"}
+        if str(animal).strip().lower() not in {"gorilla", "unknown"}
     ])
 except FileNotFoundError as fnf_err:
     print(f"CRITICAL ERROR: Missing core machine learning asset. Details: {fnf_err}", file=sys.stderr)
@@ -70,7 +159,7 @@ if not animals:
     animals = sorted([
         animal
         for animal in raw_df["Animal"].dropna().astype(str).str.strip().unique().tolist()
-        if str(animal).strip().lower() not in {"chimpanzee", "chimpazee", "unknown"}
+        if str(animal).strip().lower() not in {"gorilla", "unknown"}
     ])
 
 
@@ -81,6 +170,7 @@ def get_animal_image_path(animal):
     normalized = animal.strip().lower()
     image_mapping = {
         "buffalo": "animals/buffalo.jpg",
+        "chimpanzee": "animals/Chimpanzee/image_4.jpg",
         "elephant": "animals/elephant.jpg",
         "gorilla": "animals/Glorilla.jpg",
         "hippo": "animals/Hippo.jpg",
@@ -300,19 +390,128 @@ def build_recommendation(animal, temperature, rainfall, season):
 # 4. FLASK URL ROUTING STRATEGY
 # ----------------------------------------------------
 @app.route("/")
+def root():
+    if session.get("user_email"):
+        return redirect(url_for("home"))
+    return redirect(url_for("login"))
+
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if session.get("user_email"):
+        return redirect(url_for("home"))
+
+    if request.method == "POST":
+        email = request.form.get("email", "").strip().lower()
+        password = request.form.get("password", "")
+        users = load_users()
+        user = users.get(email)
+
+        if not user or not check_password_hash(user.get("password_hash", ""), password):
+            return render_template("login.html", error="Invalid email or password.")
+
+        session["user_email"] = email
+        session["user_name"] = user.get("full_name", email)
+        session.permanent = bool(request.form.get("remember"))
+        return redirect(url_for("home"))
+
+    return render_template("login.html")
+
+
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    if session.get("user_email"):
+        return redirect(url_for("home"))
+
+    if request.method == "POST":
+        full_name = request.form.get("full_name", "").strip()
+        email = request.form.get("email", "").strip().lower()
+        password = request.form.get("password", "")
+        confirm_password = request.form.get("confirm_password", "")
+
+        if not full_name or not email or not password:
+            return render_template("register.html", error="Please fill in all required fields.")
+        if password != confirm_password:
+            return render_template("register.html", error="Passwords do not match.")
+        if len(password) < 6:
+            return render_template("register.html", error="Password must be at least 6 characters.")
+
+        users = load_users()
+        if email in users:
+            return render_template("register.html", error="An account with this email already exists.")
+
+        users[email] = {
+            "full_name": full_name,
+            "password_hash": generate_password_hash(password),
+            "provider": "local",
+        }
+        save_users(users)
+
+        session["user_email"] = email
+        session["user_name"] = full_name
+        return redirect(url_for("home"))
+
+    return render_template("register.html")
+
+
+@app.route("/auth/google")
+def google_login():
+    if not google_oauth_configured():
+        return render_template(
+            "login.html",
+            error="Google sign-in is not configured yet. Set GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET.",
+        )
+    redirect_uri = url_for("google_callback", _external=True)
+    return google_oauth.authorize_redirect(redirect_uri)
+
+
+@app.route("/auth/google/callback")
+def google_callback():
+    if not google_oauth_configured():
+        return redirect(url_for("login"))
+
+    try:
+        token = google_oauth.authorize_access_token()
+        user_info = token.get("userinfo")
+        if not user_info:
+            user_info = google_oauth.get("userinfo").json()
+        if not login_google_user(user_info):
+            return render_template("login.html", error="Google sign-in did not return a valid email.")
+    except Exception as exc:
+        print(f"WARNING: Google OAuth callback failed. Details: {exc}", file=sys.stderr)
+        return render_template("login.html", error="Google sign-in failed. Please try again.")
+
+    return redirect(url_for("home"))
+
+
+@app.route("/logout")
+def logout():
+    session.clear()
+    return redirect(url_for("login"))
+
+
+@app.route("/home")
+@login_required
 def home():
-    # Graceful fallback selection if animals list failed to build
-    default_animal = "Crested Crane" if "Crested Crane" in animals else (animals[0] if animals else "Unknown")
-    return render_template("index.html", animals=animals, selected_animal=default_animal)
+    available_animals = get_available_animals()
+    default_animal = "Elephant" if "Elephant" in available_animals else (available_animals[0] if available_animals else "Unknown")
+    return render_template(
+        "index.html",
+        animals=available_animals,
+        selected_animal=default_animal,
+        user_name=session.get("user_name"),
+    )
 
 
 @app.route("/about")
+@login_required
 def about():
     selected_animal = request.args.get("animal", "Elephant")
-    return render_template("about.html", selected_animal=selected_animal)
+    return render_template("about.html", selected_animal=selected_animal, user_name=session.get("user_name"))
 
 
 @app.route("/predict", methods=["GET", "POST"])
+@login_required
 def predict():
     if request.method == "POST":
         animal = request.form.get("animal", "Elephant")
@@ -340,8 +539,13 @@ def predict():
         result["related_animals"] = get_related_animals(park_data, result["recommended_animal"])
         return render_template("result.html", **result)
 
-    default_animal = "Crested Crane" if "Crested Crane" in animals else (animals[0] if animals else "Unknown")
-    return render_template("index.html", animals=animals, selected_animal=default_animal)
+    default_animal = "Elephant" if "Elephant" in get_available_animals() else (get_available_animals()[0] if get_available_animals() else "Unknown")
+    return render_template(
+        "index.html",
+        animals=get_available_animals(),
+        selected_animal=default_animal,
+        user_name=session.get("user_name"),
+    )
 
 
 if __name__ == "__main__":
