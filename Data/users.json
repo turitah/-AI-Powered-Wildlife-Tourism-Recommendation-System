@@ -8,5 +8,10 @@
     "full_name": "Tukahebwa Ruth",
     "password_hash": "scrypt:32768:8:1$Mz509DyPsCoFtDJ9$5d054cf03b6f704a07b2c09a4b1bb401439dc1234d0f9abe5d2f819aba3390a1faafc791ceed5b33cc8011a8ecba56056a3e51132b81f671b20ec8725f1f04b9",
     "provider": "local"
+  },
+  "joy@gmail.com": {
+    "full_name": "Mansi Joy",
+    "password_hash": "scrypt:32768:8:1$eCEDsoILjzJ84xHq$20267ce471567c45e59190c798d076305b4a33dd181e4a3d0959e4440df65da343665a1c74e3f1fed4cb49695643fb168acb9b97525326183ca4dbb4b2b57081",
+    "provider": "local"
   }
 }

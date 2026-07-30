@@ -1,8 +1,8 @@
-import json
 import os
 import sys
-from functools import wraps
+import json
 from pathlib import Path
+from functools import wraps
 
 import joblib
 import pandas as pd
@@ -362,7 +362,7 @@ def build_recommendation(animal, temperature, rainfall, season):
         park_rows = matching_rows[matching_rows["Park"] == predicted_park]
         if park_rows.empty:
             park_rows = matching_rows
-        
+
         average_temp = round(float(park_rows["TempC"].mean()), 1)
         average_rainfall = round(float(park_rows["RainfallMM"].mean()), 1)
         dominant_season = park_rows["Season"].mode().iloc[0] if not park_rows["Season"].mode().empty else season_value
@@ -537,6 +537,7 @@ def predict():
         result["recommended_park"] = full_park_name
         result["park_data"] = park_data
         result["related_animals"] = get_related_animals(park_data, result["recommended_animal"])
+        result["user_name"] = session.get("user_name")
         return render_template("result.html", **result)
 
     default_animal = "Elephant" if "Elephant" in get_available_animals() else (get_available_animals()[0] if get_available_animals() else "Unknown")
@@ -544,6 +545,91 @@ def predict():
         "index.html",
         animals=get_available_animals(),
         selected_animal=default_animal,
+        user_name=session.get("user_name"),
+    )
+
+
+# ----------------------------------------------------
+# 5. PLAN SAFARI / BOOKING (BUSINESS MODULE)
+# ----------------------------------------------------
+SAFARI_PACKAGES = [
+    {
+        "key": "trail_tracker",
+        "name": "Trail Tracker",
+        "days": 2,
+        "price_per_person": 240,
+        "description": "Shared guide and a budget lodge — a short, focused trip built around your prediction window.",
+    },
+    {
+        "key": "canopy_explorer",
+        "name": "Canopy Explorer",
+        "days": 3,
+        "price_per_person": 460,
+        "description": "Private guide and a mid-tier eco-lodge close to the park entrance.",
+    },
+    {
+        "key": "rangers_reserve",
+        "name": "Ranger's Reserve",
+        "days": 5,
+        "price_per_person": 980,
+        "description": "Multi-park route with a premium camp and dedicated ranger support.",
+    },
+]
+
+GUIDE_FEE = 40
+PERMIT_FEE = 70
+SERVICE_FEE = 18
+
+
+@app.route("/plan-safari")
+@login_required
+def plan_safari():
+    animal = request.args.get("animal", "Elephant")
+    park = request.args.get("park", "Kibale National Park")
+    confidence = request.args.get("confidence", "")
+    try:
+        travelers = max(1, int(request.args.get("travelers", 2)))
+    except (TypeError, ValueError):
+        travelers = 2
+
+    packages = []
+    for pkg in SAFARI_PACKAGES:
+        subtotal = pkg["price_per_person"] * travelers
+        total = subtotal + GUIDE_FEE + PERMIT_FEE + SERVICE_FEE
+        packages.append({**pkg, "subtotal": subtotal, "total": total})
+
+    return render_template(
+        "plan_safari.html",
+        selected_animal=animal,
+        animal_image=get_wildlife_primary_image(animal),
+        park=park,
+        confidence=confidence,
+        travelers=travelers,
+        packages=packages,
+        guide_fee=GUIDE_FEE,
+        permit_fee=PERMIT_FEE,
+        service_fee=SERVICE_FEE,
+        user_name=session.get("user_name"),
+    )
+
+
+@app.route("/book-safari", methods=["POST"])
+@login_required
+def book_safari():
+    animal = request.form.get("animal", "Elephant")
+    park = request.form.get("park", "Kibale National Park")
+    package_name = request.form.get("package_name", "Trail Tracker")
+    total = request.form.get("total", "0")
+    travelers = request.form.get("travelers", "2")
+
+    return render_template(
+        "booking_confirmation.html",
+        selected_animal=animal,
+        animal_image=get_wildlife_primary_image(animal),
+        park=park,
+        package_name=package_name,
+        total=total,
+        travelers=travelers,
         user_name=session.get("user_name"),
     )
 
