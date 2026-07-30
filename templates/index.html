@@ -55,6 +55,7 @@
           <div class="d-flex align-items-center gap-2">
             {% if user_name %}
             <span class="nav-user d-none d-lg-inline">Hi, {{ user_name.split()[0] }}</span>
+            <a class="btn btn-home-outline" href="{{ url_for('history') }}">History</a>
             <a class="btn btn-home-outline" href="{{ url_for('logout') }}">Logout</a>
             {% else %}
             <a class="btn btn-home-outline" href="{{ url_for('login') }}">Login</a>

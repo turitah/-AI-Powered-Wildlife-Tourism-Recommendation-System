@@ -100,7 +100,6 @@
                   <input class="form-check-input" type="checkbox" id="remember-me" name="remember" />
                   <label class="form-check-label" for="remember-me">Remember me</label>
                 </div>
-                <a class="auth-link" href="#">Forgot password?</a>
               </div>
 
               <button class="btn btn-auth-primary w-100" type="submit">
@@ -110,19 +109,11 @@
 
               <div class="auth-divider"><span>OR</span></div>
 
-              <a class="btn btn-auth-google w-100" href="{{ url_for('google_login') }}">
-                <img
-                  src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
-                  alt=""
-                  width="18"
-                  height="18"
-                />
-                Continue with Google
+              <a class="btn btn-auth-primary w-100" href="{{ url_for('register') }}">
+                <i class="fa-solid fa-user-plus"></i>
+                Create Account
               </a>
 
-              <p class="auth-footnote">
-                By logging in, you agree to our Terms &amp; Conditions.
-              </p>
               <p class="auth-footnote mb-0">
                 Don't have an account?
                 <a class="auth-link" href="{{ url_for('register') }}">Create one</a>

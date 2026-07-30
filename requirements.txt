@@ -1,4 +1,5 @@
 flask
+flask-sqlalchemy
 pandas
 scikit-learn
 pytest

@@ -8,8 +8,9 @@ import joblib
 import pandas as pd
 from authlib.integrations.flask_client import OAuth
 from flask import Flask, redirect, render_template, request, session, url_for
-from sklearn.preprocessing import LabelEncoder
 from werkzeug.security import check_password_hash, generate_password_hash
+
+from models import PredictionHistory, User, db
 
 try:
     from dotenv import load_dotenv
@@ -21,6 +22,93 @@ except ImportError:
 app = Flask(__name__, template_folder="templates", static_folder="static")
 app.secret_key = os.getenv("SECRET_KEY", "lambula-wildlife-tourism-dev-key")
 
+# ----------------------------------------------------
+# DATABASE CONFIGURATION (SQLAlchemy + SQLite)
+# ----------------------------------------------------
+base_dir = Path(__file__).resolve().parent
+DB_PATH = base_dir / "lambula.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = f"sqlite:///{DB_PATH.as_posix()}"
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+
+db.init_app(app)
+
+# Legacy JSON path — kept only for one-time migration of existing accounts.
+USERS_PATH = base_dir / "Data" / "users.json"
+
+
+def _migrate_json_users_to_db():
+    """Copy any existing users from Data/users.json into the SQLite database.
+
+    This runs once at startup. Users that already exist in the database are
+    skipped, so it is safe to call repeatedly.
+    """
+    if not USERS_PATH.exists():
+        return
+
+    try:
+        with open(USERS_PATH, "r", encoding="utf-8") as file:
+            data = json.load(file)
+    except Exception as e:
+        print(f"WARNING: Could not read legacy users.json for migration. Details: {e}", file=sys.stderr)
+        return
+
+    if not isinstance(data, dict):
+        return
+
+    migrated = 0
+    for email, info in data.items():
+        if not isinstance(info, dict):
+            continue
+        # Skip if a DB user with this email already exists.
+        if User.query.filter_by(email=email).first() is not None:
+            continue
+
+        user = User(
+            email=email,
+            full_name=info.get("full_name", ""),
+            password_hash=info.get("password_hash", generate_password_hash(os.urandom(16).hex())),
+            provider=info.get("provider", "local"),
+        )
+        db.session.add(user)
+        migrated += 1
+
+    if migrated:
+        db.session.commit()
+        print(f"SUCCESS: Migrated {migrated} user(s) from users.json into the database.")
+
+
+def _init_database():
+    with app.app_context():
+        print(f"INIT DB: Using database at {DB_PATH.resolve()}", file=sys.stderr)
+        if DB_PATH.exists():
+            print("INIT DB: Database file exists, verifying tables...", file=sys.stderr)
+            try:
+                db.create_all()
+                print("INIT DB: Tables verified successfully.", file=sys.stderr)
+            except Exception as exc:
+                print(f"WARNING: Database verification failed ({exc}). Data may be preserved.", file=sys.stderr)
+                try:
+                    db.create_all()
+                except Exception as exc2:
+                    print(f"WARNING: Could not create tables. Details: {exc2}", file=sys.stderr)
+        else:
+            print("INIT DB: Database file does not exist, creating...", file=sys.stderr)
+            db.create_all()
+            print("INIT DB: Database created successfully.", file=sys.stderr)
+        _migrate_json_users_to_db()
+        try:
+            user_count = User.query.count()
+            print(f"INIT DB: Total users in database: {user_count}", file=sys.stderr)
+        except Exception as exc:
+            print(f"INIT DB: Could not count users. Details: {exc}", file=sys.stderr)
+
+
+_init_database()
+
+
+# ----------------------------------------------------
+# OAUTH CONFIGURATION
+# ----------------------------------------------------
 oauth = OAuth(app)
 google_oauth = oauth.register(
     name="google",
@@ -30,30 +118,10 @@ google_oauth = oauth.register(
     client_kwargs={"scope": "openid email profile"},
 )
 
-base_dir = Path(__file__).resolve().parent
 DATASET_PATH = base_dir / "Dataset" / "Tourism_Game_Park_Datasets.csv"
 MODELS_DIR = base_dir / "Notebook" / "models"
 WILDLIFE_INFO_PATH = base_dir / "Data" / "wildlife_info.json.txt"
 PARK_INFO_PATH = base_dir / "Data" / "parks_info.json.txt"
-USERS_PATH = base_dir / "Data" / "users.json"
-
-
-def load_users():
-    if not USERS_PATH.exists():
-        return {}
-    try:
-        with open(USERS_PATH, "r", encoding="utf-8") as file:
-            data = json.load(file)
-            return data if isinstance(data, dict) else {}
-    except Exception as e:
-        print(f"WARNING: Failed to load users file. Details: {e}", file=sys.stderr)
-        return {}
-
-
-def save_users(users):
-    USERS_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with open(USERS_PATH, "w", encoding="utf-8") as file:
-        json.dump(users, file, indent=2)
 
 
 def login_required(view):
@@ -83,26 +151,31 @@ def google_oauth_configured():
 
 
 def login_google_user(user_info):
+    """Create or look up a Google user in the database and set the session."""
     email = user_info.get("email", "").strip().lower()
     if not email:
         return False
 
     full_name = user_info.get("name") or email.split("@")[0]
-    users = load_users()
-    if email not in users:
-        users[email] = {
-            "full_name": full_name,
-            "password_hash": generate_password_hash(os.urandom(16).hex()),
-            "provider": "google",
-        }
-        save_users(users)
-    elif not users[email].get("full_name"):
-        users[email]["full_name"] = full_name
-        save_users(users)
+    user = User.query.filter_by(email=email).first()
+
+    if user is None:
+        user = User(
+            email=email,
+            full_name=full_name,
+            password_hash=generate_password_hash(os.urandom(16).hex()),
+            provider="google",
+        )
+        db.session.add(user)
+        db.session.commit()
+    elif not user.full_name:
+        user.full_name = full_name
+        db.session.commit()
 
     session["user_email"] = email
-    session["user_name"] = users[email].get("full_name", full_name)
+    session["user_name"] = user.full_name or full_name
     return True
+
 
 # ----------------------------------------------------
 # 1. LOAD DATASET FOR BACKUP & SIGHTING DETAILS
@@ -387,7 +460,7 @@ def build_recommendation(animal, temperature, rainfall, season):
     }
 
 # ----------------------------------------------------
-# 4. FLASK URL ROUTING STRATEGY
+# 5. FLASK URL ROUTING STRATEGY
 # ----------------------------------------------------
 @app.route("/")
 def root():
@@ -404,15 +477,20 @@ def login():
     if request.method == "POST":
         email = request.form.get("email", "").strip().lower()
         password = request.form.get("password", "")
-        users = load_users()
-        user = users.get(email)
+        user = User.query.filter_by(email=email).first()
 
-        if not user or not check_password_hash(user.get("password_hash", ""), password):
+        print(f"LOGIN ATTEMPT: email={email}, user_found={user is not None}", file=sys.stderr)
+        if user is not None:
+            print(f"LOGIN DEBUG: stored_hash={user.password_hash[:20]}...", file=sys.stderr)
+
+        if not user or not check_password_hash(user.password_hash, password):
+            print(f"LOGIN FAILED: email={email}", file=sys.stderr)
             return render_template("login.html", error="Invalid email or password.")
 
         session["user_email"] = email
-        session["user_name"] = user.get("full_name", email)
+        session["user_name"] = user.full_name or email
         session.permanent = bool(request.form.get("remember"))
+        print(f"LOGIN SUCCESS: email={email}", file=sys.stderr)
         return redirect(url_for("home"))
 
     return render_template("login.html")
@@ -436,16 +514,18 @@ def register():
         if len(password) < 6:
             return render_template("register.html", error="Password must be at least 6 characters.")
 
-        users = load_users()
-        if email in users:
+        if User.query.filter_by(email=email).first() is not None:
             return render_template("register.html", error="An account with this email already exists.")
 
-        users[email] = {
-            "full_name": full_name,
-            "password_hash": generate_password_hash(password),
-            "provider": "local",
-        }
-        save_users(users)
+        user = User(
+            email=email,
+            full_name=full_name,
+            password_hash=generate_password_hash(password),
+            provider="local",
+        )
+        db.session.add(user)
+        db.session.commit()
+        print(f"REGISTER SUCCESS: email={email}, user_id={user.id}", file=sys.stderr)
 
         session["user_email"] = email
         session["user_name"] = full_name
@@ -486,8 +566,29 @@ def google_callback():
 
 @app.route("/logout")
 def logout():
-    session.clear()
+    session.pop("user_email", None)
+    session.pop("user_name", None)
+    session.permanent = False
+    session.modified = True
     return redirect(url_for("login"))
+
+
+@app.route("/history")
+@login_required
+def history():
+    user = User.query.filter_by(email=session.get("user_email")).first()
+    predictions = []
+    if user is not None:
+        predictions = (
+            PredictionHistory.query.filter_by(user_id=user.id)
+            .order_by(PredictionHistory.created_at.desc())
+            .all()
+        )
+    return render_template(
+        "history.html",
+        predictions=predictions,
+        user_name=session.get("user_name"),
+    )
 
 
 @app.route("/home")
@@ -538,6 +639,25 @@ def predict():
         result["park_data"] = park_data
         result["related_animals"] = get_related_animals(park_data, result["recommended_animal"])
         result["user_name"] = session.get("user_name")
+
+        try:
+            user = User.query.filter_by(email=session.get("user_email")).first()
+            if user is not None:
+                history_entry = PredictionHistory(
+                    user_id=user.id,
+                    animal=animal,
+                    temperature=float(temperature),
+                    rainfall=float(rainfall),
+                    season=season,
+                    recommended_park=full_park_name,
+                    confidence=result.get("confidence"),
+                )
+                db.session.add(history_entry)
+                db.session.commit()
+        except Exception as exc:
+            print(f"WARNING: Could not save prediction history. Details: {exc}", file=sys.stderr)
+            db.session.rollback()
+
         return render_template("result.html", **result)
 
     default_animal = "Elephant" if "Elephant" in get_available_animals() else (get_available_animals()[0] if get_available_animals() else "Unknown")
